@@ -1,16 +1,19 @@
 import React from "react";
+import "../css/ProjectCard.css";
 
 export default function ProjectCard({photo, title, description, tools, github, website}) {
 	return (
-		<div>
+		<div className='project-card'>
 			<img src={photo} alt={title} />
-			<p>{title}</p>
-			<p>{description}</p>
-			<ul>
-				{tools.map((t) => (
-					<li>{t}</li>
-				))}
-			</ul>
+			<div className='project-card-data'>
+				<p className='project-card-title'>{title}</p>
+				<p className='project-card-description'>{description}</p>
+				<ul className='project-card-tools'>
+					{tools.map((t) => (
+						<li>{t}</li>
+					))}
+				</ul>
+			</div>
 		</div>
 	);
 }

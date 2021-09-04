@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+:root {
+	/* Theme */
+	--theme-1: #3e236b;
+	--theme-2: #52436b;
+	--theme-3: #7040c2;
+	--theme-4: #874deb;
+	--theme-5: #b696ee;
+
+	--black: #000;
+	--gray-1: #111;
+	--gray-2: #222;
+	--gray-3: #333;
+	--gray-4: #444;
+	--gray-5: #555;
+	--gray-6: #666;
+	--gray-7: #777;
+	--gray-8: #888;
+	--gray-9: #999;
+	--gray-A: #aaa;
+	--gray-B: #bbb;
+	--gray-C: #ccc;
+	--gray-D: #ddd;
+	--gray-E: #eee;
+	--white: #fff;
+}
+
+body {
+	background-color: var(--gray-1);
+}
+
+* {
+	font-family: "Mulish", sans-serif;
+}
+
+.button {
+	padding: 0.5em 1em;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+.solid-button {
+	border: 1px solid var(--theme-3);
+	background-color: var(--theme-3);
+	color: var(--white);
+}
+
+.solid-button:hover {
+	background-color: var(--theme-4);
+}
+
+.ghost-button {
+	border: 1px solid var(--white);
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.ghost-button:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+.empty-button {
+	border: none;
+	background-color: transparent;
+	color: var(--white);
+}
+
+.empty-button:hover {
+	text-decoration: underline;
+}

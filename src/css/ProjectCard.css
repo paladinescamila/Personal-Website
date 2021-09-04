@@ -1,0 +1,32 @@
+.project-card {
+	width: 350px;
+	background-color: var(--gray-2);
+}
+
+.project-card img {
+	width: 100%;
+}
+
+.project-card-data {
+	padding: 0.5em 1em;
+}
+
+.project-card-title {
+	color: var(--gray-C);
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.project-card-description {
+	color: var(--gray-7);
+}
+
+.project-card-tools {
+	list-style: none;
+	display: flex;
+	color: var(--gray-5);
+}
+
+.project-card-tools li {
+	padding-right: 1em;
+}

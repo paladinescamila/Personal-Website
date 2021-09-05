@@ -12,6 +12,7 @@ import ProjectCard from "./components/ProjectCard";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 			/>
 			<About />
 			<Experience />
+			<Projects />
 			<Contact />
 			<footer className='signature'>
 				<p>

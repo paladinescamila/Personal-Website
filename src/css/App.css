@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("normalize.css");
 
 :root {
 	/* Theme */
+
 	--theme-1: #3e236b;
 	--theme-2: #52436b;
 	--theme-3: #7040c2;
 	--theme-4: #874deb;
 	--theme-5: #b696ee;
+
+	/* Gray scale */
 
 	--black: #000;
 	--gray-1: #111;
@@ -26,24 +30,38 @@
 	--white: #fff;
 }
 
+/* !FALTA PONER LOS ESTILOS DE SCROLL, TEXTO SELECCIONADO Y OTROS */
+
+/* Main styles */
+
 body {
 	background-color: var(--gray-1);
+	font-family: "Mulish", sans-serif;
 }
 
 * {
-	font-family: "Mulish", sans-serif;
+	outline: none;
 }
+
+ul {
+	padding-left: 0;
+}
+
+/* Buttons */
 
 .button {
 	padding: 0.5em 1em;
 	font-size: 1.1em;
 	cursor: pointer;
+	font-family: "Mulish", sans-serif;
 }
 
 .solid-button {
-	border: 1px solid var(--theme-3);
+	border: 2px solid var(--theme-3);
 	background-color: var(--theme-3);
 	color: var(--white);
+	width: 150px;
+	height: 50px;
 }
 
 .solid-button:hover {
@@ -51,9 +69,11 @@ body {
 }
 
 .ghost-button {
-	border: 1px solid var(--white);
+	border: 2px solid var(--white);
 	background-color: var(--black);
 	color: var(--white);
+	width: 150px;
+	height: 50px;
 }
 
 .ghost-button:hover {
@@ -68,5 +88,37 @@ body {
 }
 
 .empty-button:hover {
+	text-decoration: underline;
+}
+
+/* Text */
+
+.section-title {
+	color: var(--white);
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.section-text {
+	color: var(--gray-A);
+}
+
+/* Signature */
+.signature {
+	font-family: monospace;
+	color: #fff;
+	opacity: 0.3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 0;
+}
+
+.signature a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.signature a:hover {
 	text-decoration: underline;
 }

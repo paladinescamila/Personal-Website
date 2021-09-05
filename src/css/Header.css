@@ -1,0 +1,17 @@
+.header {
+	list-style: none;
+	color: var(--gray-E);
+	display: flex;
+}
+
+.header-languages {
+	border: none;
+	background-color: var(--black);
+	color: var(--gray-C);
+	cursor: pointer;
+}
+
+.header-languages option {
+	border: none;
+	background-color: var(--black);
+}

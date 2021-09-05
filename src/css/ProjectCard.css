@@ -30,3 +30,8 @@
 .project-card-tools li {
 	padding-right: 1em;
 }
+
+.project-card-github img,
+.project-card-website img {
+	width: 30px;
+}

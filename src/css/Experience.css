@@ -1,0 +1,11 @@
+.experience-section {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.experience-section img {
+	width: 500px;
+}

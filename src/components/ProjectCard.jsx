@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/ProjectCard.css";
+import projectGitHub from "../img/project-github.svg";
+import projectWebsite from "../img/project-website.svg";
 
 export default function ProjectCard({photo, title, description, tools, github, website}) {
 	return (
@@ -13,6 +15,12 @@ export default function ProjectCard({photo, title, description, tools, github, w
 						<li>{t}</li>
 					))}
 				</ul>
+				<a className='project-card-github' href={github}>
+					<img src={projectGitHub} alt='GitHub' />
+				</a>
+				<a className='project-card-website' href={website}>
+					<img src={projectWebsite} alt='Website' />
+				</a>
 			</div>
 		</div>
 	);

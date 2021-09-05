@@ -29,6 +29,7 @@
 
 .project-card-tools li {
 	padding-right: 1em;
+	font-weight: bold;
 }
 
 .project-card-github img,

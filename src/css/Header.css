@@ -4,6 +4,10 @@
 	display: flex;
 }
 
+.header-logo {
+	width: 100px;
+}
+
 .header-languages {
 	border: none;
 	background-color: var(--black);

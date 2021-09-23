@@ -1,0 +1,4 @@
+.banner-section img {
+    width: 450px;
+    border-bottom: 5px solid var(--theme-3);
+}

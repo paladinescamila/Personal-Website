@@ -25,3 +25,7 @@
 .skill-card-items li {
 	margin-right: 0.5em;
 }
+
+.skill-card img {
+	width: 40px;
+}

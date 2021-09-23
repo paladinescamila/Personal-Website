@@ -60,11 +60,12 @@ ul {
 	border: 2px solid var(--theme-3);
 	background-color: var(--theme-3);
 	color: var(--white);
-	width: 150px;
+	width: 170px;
 	height: 50px;
 }
 
 .solid-button:hover {
+	border: 2px solid var(--theme-4);
 	background-color: var(--theme-4);
 }
 
@@ -72,7 +73,7 @@ ul {
 	border: 2px solid var(--white);
 	background-color: var(--black);
 	color: var(--white);
-	width: 150px;
+	width: 170px;
 	height: 50px;
 }
 

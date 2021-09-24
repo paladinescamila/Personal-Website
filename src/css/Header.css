@@ -1,6 +1,6 @@
 .header {
 	min-height: 15vh;
-	padding: 0.5em 5em;
+	padding: 0.5em 10em;
 	color: var(--gray-E);
 	display: flex;
 	align-items: center;

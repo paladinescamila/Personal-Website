@@ -1,7 +1,6 @@
 .header {
 	min-height: 15vh;
 	padding: 0.5em 5em;
-	list-style: none;
 	color: var(--gray-E);
 	display: flex;
 	align-items: center;
@@ -25,7 +24,7 @@
 	opacity: 0.9;
 }
 
-.header li:hover{
+.header li:hover {
 	opacity: 1;
 }
 

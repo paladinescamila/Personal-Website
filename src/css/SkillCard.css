@@ -10,6 +10,10 @@
 	justify-content: center;
 }
 
+.skill-card img {
+	width: 40px;
+}
+
 .skill-card-title {
 	color: var(--gray-D);
 	font-weight: bold;
@@ -18,14 +22,4 @@
 .skill-card-items {
 	color: var(--gray-9);
 	font-size: 0.9em;
-	list-style: none;
-	display: flex;
-}
-
-.skill-card-items li {
-	margin-right: 0.5em;
-}
-
-.skill-card img {
-	width: 40px;
 }

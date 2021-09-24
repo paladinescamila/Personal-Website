@@ -7,6 +7,15 @@
 	width: 100%;
 }
 
+.project-card-photo{
+	/* filter: hue-rotate(290deg); */
+	filter: grayscale(100%);
+}
+
+.project-card-photo:hover{
+	filter: grayscale(0%);
+}
+
 .project-card-data {
 	padding: 0.5em 1em;
 }

@@ -10,3 +10,23 @@
 	text-align: center;
 	width: 600px;
 }
+
+.contact-follow{
+	color: var(--gray-7);
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.contact-social{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contact-social a {
+	width: 50px;
+}
+
+.contact-social img {
+	width: 100%;
+}

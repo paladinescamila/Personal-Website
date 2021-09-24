@@ -8,8 +8,8 @@ export default function Projects() {
 		<div className='projects-section'>
 			<p className='section-title'>Projects</p>
 			<div className='projects-container'>
-				{projects.map((project) => (
-					<ProjectCard photo={project.photo} title={project.name} description={project.description} tools={project.tools} github={project.github} website={project.website} />
+				{projects.map((p) => (
+					<ProjectCard project={p} />
 				))}
 			</div>
 		</div>

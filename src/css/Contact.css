@@ -1,24 +1,18 @@
-.contact-section {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
 .contact-text {
 	text-align: center;
 	width: 600px;
 }
 
 .contact-section button {
-	margin: 3em 0;
+	margin: 2em 0 0 0;
 }
 
 .contact-follow {
 	color: var(--gray-7);
 	font-size: 1.3em;
 	font-weight: 700;
+	padding-top: 5em;
+	margin: 0;
 }
 
 .contact-social {

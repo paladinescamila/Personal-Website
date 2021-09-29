@@ -1,11 +1,8 @@
-.experience-section {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
 .experience-section img {
 	width: 500px;
+}
+
+.searching-experience{
+	margin-top: 1em;
+	opacity: 0.5;
 }

@@ -7,7 +7,7 @@ import toolsImage from "../img/skill-tools.svg";
 
 export default function About() {
 	return (
-		<div className='about-section'>
+		<div className='section-container'>
 			<p className='section-title'>About</p>
 			<p className='section-text about-text'>
 				My name is Camila Paladines, I am a Frontend Web Developer, Computer Science degree at Pontificia Universidad Javeriana in Cali, Colombia. I am passionate about designing and

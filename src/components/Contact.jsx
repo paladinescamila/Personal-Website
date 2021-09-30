@@ -15,7 +15,6 @@ export default function Contact() {
 				I'll do my best to answer you.
 			</p>
 			<Button value='Say hello' type='solid' />
-			<p className="contact-follow" >Follow me</p>
 			<div className="contact-social" >
 				<a href="https://github.com/paladinescamila">
 					<img alt="GitHub" src={socialGitHub}></img>

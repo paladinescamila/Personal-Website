@@ -39,3 +39,13 @@
 	border: none;
 	background-color: var(--black);
 }
+
+@media (max-width: 1000px){
+	.header{
+		padding: 0.5em 5em;
+	}
+
+	.header ul{
+		display: none;
+	}
+}

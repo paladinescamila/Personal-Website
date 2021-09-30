@@ -1,19 +1,28 @@
 .project-card {
-	width: 350px;
-	background-color: var(--gray-2);
-}
-
-.project-card img {
-	width: 100%;
+	width: 1000px;
+	height: 250px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-gap: 2em;
+	margin: 3em 0 5em 0;
 }
 
 .project-card-photo{
-	/* filter: hue-rotate(290deg); */
-	filter: grayscale(100%);
+	background-color: var(--theme-1);
 }
 
-.project-card-photo:hover{
-	filter: grayscale(0%);
+.project-card-photo img {
+	width: 100%;
+	height: 100%;
+}
+
+.project-card-photo img {
+	mix-blend-mode: luminosity;
+}
+
+.project-card-photo:hover img{
+	mix-blend-mode: normal;
 }
 
 .project-card-data {
@@ -23,7 +32,7 @@
 .project-card-title {
 	color: var(--gray-C);
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 1.5em;
 }
 
 .project-card-description {
@@ -37,10 +46,22 @@
 }
 
 .project-card-tools li {
-	padding-right: 1em;
+	padding: 0.1em 0.3em;
+	margin: 0 0.5em 0 0;
+	border-radius: 0.1em;
+	background-color: var(--gray-2);
+	color: var(--gray-5);
 }
 
 .project-card-github img,
 .project-card-website img {
 	width: 30px;
+}
+
+@media (max-width: 1050px){
+	.project-card{
+		width: 700px;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+	}
 }

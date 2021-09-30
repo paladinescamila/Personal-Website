@@ -6,8 +6,8 @@ import projectWebsite from "../img/project-website.svg";
 export default function ProjectCard({project}) {
 	return (
 		<div className='project-card'>
-			<a href={project.website}>
-				<img className="project-card-photo" src={project.photo} alt={project.title} />
+			<a href={project.website} className="project-card-photo">
+				<img src={project.photo} alt={project.title} />
 			</a>
 			<div className='project-card-data'>
 				<p className='project-card-title'>{project.title}</p>

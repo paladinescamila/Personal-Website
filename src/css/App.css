@@ -65,14 +65,16 @@ ul {
 	font-size: 1.1em;
 	cursor: pointer;
 	font-family: "Mulish", sans-serif;
+	height: 50px;
+	width: fit-content;
+	min-width: 150px;
+	max-width: 200px;
 }
 
 .solid-button {
 	border: 2px solid var(--theme-3);
 	background-color: var(--theme-3);
 	color: var(--white);
-	width: 170px;
-	height: 50px;
 }
 
 .solid-button:hover {
@@ -84,8 +86,6 @@ ul {
 	border: 2px solid var(--white);
 	background-color: var(--black);
 	color: var(--white);
-	width: 170px;
-	height: 50px;
 }
 
 .ghost-button:hover {

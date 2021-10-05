@@ -49,7 +49,7 @@ ul {
 
 /* Sections */
 
-.section-container{
+.section-container {
 	min-height: 100vh;
 	padding: 1em;
 	display: flex;
@@ -108,15 +108,14 @@ ul {
 	color: var(--white);
 	font-weight: bold;
 	font-size: 2.5em;
-	padding-bottom: 1.5em;
-	margin: 0;
+	margin-bottom: 1.5em;
+	border-bottom: 2px solid var(--theme-1);
 }
 
 .section-text {
-	color: var(--gray-A);
+	color: var(--gray-8);
 	margin: 0;
 }
-
 
 /* Scroll */
 

@@ -13,8 +13,8 @@ export default function Banner() {
 					<p>Frontend Web Developer</p>
 				</div>
 				<div className='banner-section-buttons'>
-					<Button value='Say hello' type='solid' />
-					<Button value='Download CV' type='ghost' />
+					<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
+					<Button value='Download CV' type='ghost' link='../data/CV-English.pdf' />
 				</div>
 			</div>
 			<img alt='Camila Paladines' src={profileImage}></img>

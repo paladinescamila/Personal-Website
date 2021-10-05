@@ -7,7 +7,7 @@ export default function Experience() {
 		<div className='section-container'>
 			<p className='section-title'>Experience</p>
 			<img src={searchingJob} alt='Searching job' />
-			<p className='section-text searching-experience'>I am currently looking for my first job.</p>
+			<p className='section-text searching-experience'>I am looking for my first job.</p>
 		</div>
 	);
 }

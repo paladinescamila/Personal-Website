@@ -42,7 +42,7 @@
 	font-size: 1.5em;
 }
 
-.banner-section-buttons button {
+.banner-section-buttons .button {
 	margin-right: 1em;
 }
 
@@ -51,42 +51,41 @@
 	border-bottom: 5px solid var(--theme-3);
 }
 
-@media (max-width: 1400px){
-	.banner-section-hi p:nth-of-type(1){
+@media (max-width: 1400px) {
+	.banner-section-hi p:nth-of-type(1) {
 		font-size: 1.5em;
 	}
 
-	.banner-section-hi p:nth-of-type(2){
+	.banner-section-hi p:nth-of-type(2) {
 		font-size: 3.5em;
 	}
 
-	.banner-section-hi p:nth-of-type(3){
+	.banner-section-hi p:nth-of-type(3) {
 		font-size: 1.3em;
 	}
 
-	.banner-section img{
+	.banner-section img {
 		width: 350px;
 	}
 }
 
-@media (max-width: 1200px){
-	.banner-section-hi p:nth-of-type(1){
+@media (max-width: 1200px) {
+	.banner-section-hi p:nth-of-type(1) {
 		font-size: 1.3em;
 	}
 
-	.banner-section-hi p:nth-of-type(2){
+	.banner-section-hi p:nth-of-type(2) {
 		font-size: 3.3em;
 	}
 
-	.banner-section-hi p:nth-of-type(3){
+	.banner-section-hi p:nth-of-type(3) {
 		font-size: 1.1em;
 	}
 
-	.banner-section img{
+	.banner-section img {
 		width: 330px;
 	}
 }
 
-@media (max-width: 1100px){
-
+@media (max-width: 1100px) {
 }

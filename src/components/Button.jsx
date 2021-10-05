@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function Button({value, type}) {
+export default function Button({value, type, link}) {
 	let style = `button ${type}-button`;
-	return <button className={style}>{value}</button>;
+	return (
+		<a href={link} alt={value} className={style}>
+			{value}
+		</a>
+	);
 }

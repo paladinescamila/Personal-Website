@@ -61,14 +61,14 @@ ul {
 /* Buttons */
 
 .button {
-	padding: 0.5em 1em;
+	padding: 0.7em 2em;
 	font-size: 1.1em;
 	cursor: pointer;
 	font-family: "Mulish", sans-serif;
-	height: 50px;
 	width: fit-content;
-	min-width: 150px;
-	max-width: 200px;
+	height: fit-content;
+	text-align: center;
+	text-decoration: none;
 }
 
 .solid-button {
@@ -129,7 +129,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background-color: var(--gray-2);
+	background-color: var(--gray-3);
 }
 
 /* Selected text */

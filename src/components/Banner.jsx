@@ -2,6 +2,7 @@ import React from "react";
 import "../css/Banner.css";
 import Button from "./Button";
 import profileImage from "../img/profile.png";
+import cvEnglish from "../data/CV-English.pdf";
 
 export default function Banner() {
 	return (
@@ -14,7 +15,7 @@ export default function Banner() {
 				</div>
 				<div className='banner-section-buttons'>
 					<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
-					<Button value='Download CV' type='ghost' link='../data/CV-English.pdf' />
+					<Button value='Download CV' type='ghost' link={cvEnglish} />
 				</div>
 			</div>
 			<img alt='Camila Paladines' src={profileImage}></img>

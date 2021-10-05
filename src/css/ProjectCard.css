@@ -6,9 +6,11 @@
 	grid-template-rows: 1fr;
 	grid-gap: 2em;
 	margin: 3em 0 5em 0;
+	padding: 0.5em;
+	background-color: #181818;
 }
 
-.project-card-photo{
+.project-card-photo {
 	background-color: var(--theme-1);
 }
 
@@ -21,7 +23,7 @@
 	mix-blend-mode: luminosity;
 }
 
-.project-card-photo:hover img{
+.project-card-photo:hover img {
 	mix-blend-mode: normal;
 }
 
@@ -37,6 +39,13 @@
 
 .project-card-description {
 	color: var(--gray-7);
+}
+
+.project-card-title,
+.project-card-description {
+	text-decoration: none;
+	display: block;
+	margin-bottom: 1.3em;
 }
 
 .project-card-tools {
@@ -55,11 +64,18 @@
 
 .project-card-github img,
 .project-card-website img {
-	width: 30px;
+	opacity: 0.7;
+	width: 35px;
+	margin-top: 0.5em;
 }
 
-@media (max-width: 1050px){
-	.project-card{
+.project-card-github img:hover,
+.project-card-website img:hover {
+	opacity: 1;
+}
+
+@media (max-width: 1050px) {
+	.project-card {
 		width: 700px;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 1fr);

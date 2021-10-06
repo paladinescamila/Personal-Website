@@ -1,5 +1,5 @@
 import purpleCalendarPhoto from "../img/purple-calendar.png";
-import tomatoTimePhoto from '../img/tomato-time.png';
+import tomatoTimePhoto from "../img/tomato-time.png";
 
 const projects = [
 	{
@@ -14,7 +14,7 @@ const projects = [
 		title: "Tomato Time",
 		description: "With this application you can track your concentration time, using the Pomodoro technique, which can be customized to your needs.",
 		tools: ["HTML", "CSS", "JavaScript"],
-		github: "hhttps://github.com/paladinescamila/Tomato-Time",
+		github: "https://github.com/paladinescamila/Tomato-Time",
 		website: "https://tomato-time.netlify.app/",
 		photo: tomatoTimePhoto,
 	},

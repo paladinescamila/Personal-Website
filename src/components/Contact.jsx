@@ -16,16 +16,16 @@ export default function Contact() {
 			</p>
 			<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
 			<div className='contact-social'>
-				<a href='https://github.com/paladinescamila'>
+				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='GitHub' src={socialGitHub}></img>
 				</a>
-				<a href='https://www.linkedin.com/in/paladinescamila'>
+				<a href='https://www.linkedin.com/in/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='LinkedIn' src={socialLinkedIn}></img>
 				</a>
-				<a href='https://codepen.io/paladinescamila'>
+				<a href='https://codepen.io/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='Codepen' src={socialCodepen}></img>
 				</a>
-				<a href='https://medium.com/@paladinescamila'>
+				<a href='https://medium.com/@paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='Medium' src={socialMedium}></img>
 				</a>
 			</div>

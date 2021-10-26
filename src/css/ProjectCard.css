@@ -1,11 +1,11 @@
 .project-card {
 	width: 1000px;
-	height: 250px;
+	height: fit-content;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: 1fr;
 	grid-gap: 2em;
-	margin: 3em 0 5em 0;
+	margin: 3em 0;
 	padding: 0.5em;
 	background-color: #181818;
 }
@@ -74,10 +74,16 @@
 	opacity: 1;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
+	.project-card {
+		width: 900px;
+	}
+}
+
+@media (max-width: 1000px) {
 	.project-card {
 		width: 700px;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(2, 1fr);
+		/* grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr); */
 	}
 }

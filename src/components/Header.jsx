@@ -11,10 +11,13 @@ export default function Header({language}) {
 				<li>EXPERIENCE</li>
 				<li>PROJECTS</li>
 				<li>CONTACT</li>
-				<select className='header-languages'>
-					<option selected={language === "EN" ? "selected" : ""}>EN</option>
-					<option selected={language === "ES" ? "selected" : ""}>ES</option>
-				</select>
+				<li>
+					<p>{language}</p>
+					<div className='select-languaje'>
+						<button>ENGLISH</button>
+						<button>SPANISH</button>
+					</div>
+				</li>
 			</ul>
 		</div>
 	);

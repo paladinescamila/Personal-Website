@@ -1,11 +1,5 @@
-/* .projects-container {
-	display: grid;
-	grid-gap: 3em;
-	grid-template-columns: repeat(3, 1fr);
+.projects-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
-
-@media (max-width: 1000px){
-	.projects-container{
-		grid-template-columns: repeat(2, 1fr);
-	}
-} */

@@ -30,8 +30,6 @@
 	--white: #fff;
 }
 
-/* !FALTA PONER LOS ESTILOS DE SCROLL, TEXTO SELECCIONADO Y OTROS */
-
 /* Main styles */
 
 body {
@@ -135,8 +133,8 @@ body::-webkit-scrollbar-thumb {
 /* Selected text */
 
 *::-moz-selection {
-	background-color: rgb(50, 50, 50);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 *::selection {
-	background-color: rgb(50, 50, 50);
+	background-color: rgba(255, 255, 255, 0.1);
 }

@@ -14,8 +14,8 @@ export default function About() {
 				developing web applications that are very useful for people.
 			</p>
 			<div className='about-skills'>
-				<SkillCard image={languagesImage} title='Languages' tools='HTML, CSS, Sass, JavaScript, Python' />
-				<SkillCard image={librariesImage} title='Libraries & Frameworks' tools='React.JS' />
+				<SkillCard image={languagesImage} title='Languages' tools='HTML, CSS, SCSS, JavaScript, Python' />
+				<SkillCard image={librariesImage} title='Libraries & Frameworks' tools='React JS' />
 				<SkillCard image={toolsImage} title='Tools & Platforms' tools='Git, Netlify, Firebase' />
 			</div>
 		</div>

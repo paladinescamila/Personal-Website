@@ -1,9 +1,11 @@
 import React from "react";
 import "../css/Contact.css";
 import Button from "./Button";
+import Footer from "./Footer";
 import socialGitHub from "../img/social-github.svg";
 import socialLinkedIn from "../img/social-linkedin.svg";
 import socialCodepen from "../img/social-codepen.svg";
+import socialFrontendMentor from "../img/social-frontendmentor.svg";
 import socialMedium from "../img/social-medium.svg";
 
 export default function Contact() {
@@ -25,10 +27,14 @@ export default function Contact() {
 				<a href='https://codepen.io/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='Codepen' src={socialCodepen}></img>
 				</a>
+				<a href='https://www.frontendmentor.io/profile/paladinescamila' target='_blank' rel='noreferrer'>
+					<img alt='Frontend Mentor' src={socialFrontendMentor}></img>
+				</a>
 				<a href='https://medium.com/@paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='Medium' src={socialMedium}></img>
 				</a>
 			</div>
+			<Footer />
 		</div>
 	);
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/Contact.css";
 import Button from "./Button";
 import Footer from "./Footer";
 import socialGitHub from "../img/social-github.svg";
@@ -12,12 +11,12 @@ export default function Contact() {
 	return (
 		<div className='section-container contact-section'>
 			<p className='section-title'>Contact</p>
-			<p className='section-text contact-text'>
+			<p className='section-text'>
 				I am looking for new opportunities to contribute to the industry and grow as a developer. If you have a project you want me to participate in or if you have any questions let me know!
 				I'll do my best to answer you.
 			</p>
 			<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
-			<div className='contact-social'>
+			<div>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='GitHub' src={socialGitHub}></img>
 				</a>

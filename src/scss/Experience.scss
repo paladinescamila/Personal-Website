@@ -1,0 +1,10 @@
+.experience-section {
+	img {
+		width: 500px;
+	}
+
+	p:nth-of-type(2) {
+		color: $gray-3;
+		font-size: 1.3em;
+	}
+}

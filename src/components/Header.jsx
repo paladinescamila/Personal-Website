@@ -1,11 +1,10 @@
 import React from "react";
-import "../css/Header.css";
 import favicon from "../img/logo.png";
 
 export default function Header({language}) {
 	return (
 		<div className='header'>
-			<img className='header-logo' src={favicon} alt='Logo'></img>
+			<img src={favicon} alt='Logo'></img>
 			<ul>
 				<li>ABOUT</li>
 				<li>EXPERIENCE</li>

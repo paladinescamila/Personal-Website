@@ -6,11 +6,11 @@ export default function Projects() {
 	return (
 		<div className='section-container'>
 			<h2 className='section-title'>Projects</h2>
-			<div className='projects-container'>
+			<ul className='projects-container'>
 				{projects.map((p) => (
 					<ProjectCard project={p} />
 				))}
-			</div>
+			</ul>
 		</div>
 	);
 }

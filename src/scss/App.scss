@@ -43,6 +43,7 @@ body {
 
 ul {
 	padding-left: 0;
+	list-style: none;
 }
 
 p {
@@ -114,7 +115,7 @@ p {
 	text-align: center;
 	color: $gray-8;
 	margin: 0;
-	width: 50%;
+	width: 700px;
 }
 
 /* SPECIAL EFFECTS */
@@ -153,3 +154,29 @@ body {
 @import "Experience.scss";
 @import "Projects.scss";
 @import "Contact.scss";
+
+/* RESPONSIVE */
+
+@media (max-width: 1500px) {
+	.header,
+	.banner-section,
+	.section-container {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.section-text {
+		width: 90%;
+	}
+}
+
+@media (max-width: 950px) {
+	.header,
+	.banner-section,
+	.section-container {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}

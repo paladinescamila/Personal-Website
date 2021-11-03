@@ -4,7 +4,7 @@ import projectWebsite from "../img/project-website.svg";
 
 export default function ProjectCard({project}) {
 	return (
-		<div className='project-card'>
+		<li className='project-card'>
 			<a href={project.website} target='_blank' rel='noreferrer' className='project-card-photo'>
 				<img src={project.photo} alt={project.title} />
 			</a>
@@ -27,6 +27,6 @@ export default function ProjectCard({project}) {
 					</a>
 				</div>
 			</div>
-		</div>
+		</li>
 	);
 }

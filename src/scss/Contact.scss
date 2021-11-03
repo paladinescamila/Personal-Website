@@ -1,5 +1,9 @@
 .contact-section {
 	position: relative;
+
+	& > a {
+		margin: 2em 0 7em 0;
+	}
 }
 
 .social-links {

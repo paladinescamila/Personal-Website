@@ -1,30 +1,36 @@
 .banner-section {
 	min-height: 80vh;
 	padding: 0 10em;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
 	img {
 		width: 450px;
-		border-bottom: 5px solid $theme-3;
+		border-radius: 50%;
+		// background-color: blue;
 	}
+
+	// background-color: coral;
 }
 
 .banner-left {
-	min-height: 40vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 
 	& > div:nth-of-type(2) a {
 		margin-right: 1em;
 	}
+
+	// background-color: cornflowerblue;
+}
+
+.banner-hi {
+	margin-bottom: 8em;
+	// background-color: cyan;
 }
 
 .banner-hi p {
-	margin: 0;
-	padding: 0.3em 0;
-
 	&:nth-of-type(1) {
 		color: $gray-7;
 		font-size: 2em;
@@ -32,12 +38,36 @@
 
 	&:nth-of-type(2) {
 		color: $white;
-		font-size: 4em;
+		font-size: 4.5em;
 		font-weight: bold;
+		margin: 0.1em 0 0.3em 0;
 	}
 
 	&:nth-of-type(3) {
-		color: $gray-A;
-		font-size: 1.5em;
+		color: $gray-8;
+		font-size: 1.7em;
+	}
+}
+
+@media (max-width: 1400px) {
+	.banner-section img {
+		width: 400px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.banner-section {
+		flex-direction: column;
+	}
+
+	.banner-left {
+		align-items: center;
+		margin: 5em 0;
+	}
+
+	.banner-hi {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }

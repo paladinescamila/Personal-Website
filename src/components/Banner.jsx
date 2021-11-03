@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import profileImage from "../img/profile.png";
+import profileImage from "../img/profile-sample.jpg";
 import cvEnglish from "../data/CV-English.pdf";
 
 export default function Banner() {

@@ -3,8 +3,9 @@
 		width: 500px;
 	}
 
-	p:nth-of-type(2) {
+	p {
 		color: $gray-5;
 		font-size: 1.3em;
+		margin: 1em;
 	}
 }

@@ -1,3 +1,7 @@
+.contact-section {
+	position: relative;
+}
+
 .social-links {
 	display: flex;
 	align-items: center;
@@ -18,6 +22,8 @@
 }
 
 footer {
+	position: absolute;
+	bottom: 0;
 	font-family: monospace;
 	color: $white;
 	opacity: 0.3;

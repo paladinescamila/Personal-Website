@@ -62,4 +62,9 @@
 
 .project-card-resources a img {
 	width: 40px;
+	opacity: 0.7;
+
+	&:hover {
+		opacity: 1;
+	}
 }

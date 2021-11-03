@@ -7,7 +7,7 @@ import toolsImage from "../img/skill-tools.svg";
 export default function About() {
 	return (
 		<div className='section-container'>
-			<p className='section-title'>About</p>
+			<h2 className='section-title'>About</h2>
 			<p className='section-text'>
 				My name is Camila Paladines, I am a Frontend Web Developer, Computer Science student at Pontificia Universidad Javeriana in Cali, Colombia. I am passionate about designing and
 				developing web applications that are very useful for people.

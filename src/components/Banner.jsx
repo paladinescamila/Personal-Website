@@ -6,8 +6,8 @@ import cvEnglish from "../data/CV-English.pdf";
 export default function Banner() {
 	return (
 		<div className='banner-section'>
-			<div>
-				<div>
+			<div className='banner-left'>
+				<div className='banner-hi'>
 					<p>Hi, I’m</p>
 					<p>Camila Paladines</p>
 					<p>Frontend Web Developer</p>

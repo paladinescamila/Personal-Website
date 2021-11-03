@@ -5,14 +5,14 @@ export default function Header({language}) {
 	return (
 		<div className='header'>
 			<img src={favicon} alt='Logo'></img>
-			<ul>
+			<ul className='header-sections'>
 				<li>ABOUT</li>
 				<li>EXPERIENCE</li>
 				<li>PROJECTS</li>
 				<li>CONTACT</li>
-				<li>
+				<li className='select-languaje'>
 					<p>{language}</p>
-					<div className='select-languaje'>
+					<div className='select-languaje-container'>
 						<button>ENGLISH</button>
 						<button>SPANISH</button>
 					</div>

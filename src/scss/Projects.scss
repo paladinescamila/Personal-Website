@@ -2,54 +2,64 @@
 	display: grid;
 	grid-gap: 2em;
 	grid-template-columns: repeat(3, 1fr);
-	width: 70%;
+	width: 100%;
 }
 
 .project-card {
 	background-color: $gray-2;
 	display: flex;
 	flex-direction: column;
+}
 
-	& > a > img {
+.project-card-photo {
+	background-color: $theme-1;
+
+	img {
 		width: 100%;
+		height: 100%;
+		mix-blend-mode: luminosity;
 	}
 
-	.project-card-data {
-		padding: 0 1em 1em 1em;
-		display: flex;
-		flex-direction: column;
+	&:hover img {
+		mix-blend-mode: normal;
+	}
+}
 
-		& > a {
-			text-decoration: none;
+.project-card-data {
+	padding: 0 1em 1em 1em;
+	display: flex;
+	flex-direction: column;
 
-			p:nth-of-type(1) {
-				color: $gray-C;
-				font-weight: bold;
-				font-size: 1.5em;
-			}
+	& > a {
+		text-decoration: none;
 
-			p:nth-of-type(2) {
-				color: $gray-7;
-			}
-
-			ul {
-				list-style: none;
-				display: flex;
-				align-items: center;
-
-				li {
-					background-color: $gray-3;
-					color: $gray-7;
-					border-radius: 0.3em;
-					padding: 0.1em 0.5em;
-					margin-right: 0.5em;
-					font-size: 0.9em;
-				}
-			}
+		p:nth-of-type(1) {
+			color: $gray-C;
+			font-weight: bold;
+			font-size: 1.5em;
 		}
 
-		& > div > a > img {
-			width: 40px;
+		p:nth-of-type(2) {
+			color: $gray-7;
 		}
 	}
+}
+
+.project-card-tools {
+	list-style: none;
+	display: flex;
+	align-items: center;
+
+	li {
+		background-color: $gray-3;
+		color: $gray-7;
+		border-radius: 0.3em;
+		padding: 0.1em 0.5em;
+		margin-right: 0.5em;
+		font-size: 0.9em;
+	}
+}
+
+.project-card-resources a img {
+	width: 40px;
 }

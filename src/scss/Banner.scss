@@ -4,40 +4,40 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 
-	& > div:nth-of-type(1) {
-		min-height: 40vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-
-		& > div:nth-of-type(1) > p {
-			margin: 0;
-			padding: 0.3em 0;
-
-			&:nth-of-type(1) {
-				color: $gray-7;
-				font-size: 2em;
-			}
-
-			&:nth-of-type(2) {
-				color: $white;
-				font-size: 4em;
-				font-weight: bold;
-			}
-
-			&:nth-of-type(3) {
-				color: $gray-A;
-				font-size: 1.5em;
-			}
-		}
-
-		& > div:nth-of-type(2) a {
-			margin-right: 1em;
-		}
-	}
-
 	img {
 		width: 450px;
 		border-bottom: 5px solid $theme-3;
+	}
+}
+
+.banner-left {
+	min-height: 40vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	& > div:nth-of-type(2) a {
+		margin-right: 1em;
+	}
+}
+
+.banner-hi p {
+	margin: 0;
+	padding: 0.3em 0;
+
+	&:nth-of-type(1) {
+		color: $gray-7;
+		font-size: 2em;
+	}
+
+	&:nth-of-type(2) {
+		color: $white;
+		font-size: 4em;
+		font-weight: bold;
+	}
+
+	&:nth-of-type(3) {
+		color: $gray-A;
+		font-size: 1.5em;
 	}
 }

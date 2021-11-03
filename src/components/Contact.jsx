@@ -9,14 +9,14 @@ import socialMedium from "../img/social-medium.svg";
 
 export default function Contact() {
 	return (
-		<div className='section-container contact-section'>
+		<div className='section-container'>
 			<p className='section-title'>Contact</p>
 			<p className='section-text'>
 				I am looking for new opportunities to contribute to the industry and grow as a developer. If you have a project you want me to participate in or if you have any questions let me know!
 				I'll do my best to answer you.
 			</p>
 			<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
-			<div>
+			<div className='social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='GitHub' src={socialGitHub}></img>
 				</a>

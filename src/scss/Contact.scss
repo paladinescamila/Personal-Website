@@ -1,21 +1,19 @@
-.contact-section {
-	& > div {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+.social-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-		a {
-			width: 60px;
-			opacity: 0.7;
+	a {
+		width: 60px;
+		opacity: 0.7;
 
-			&:hover {
-				opacity: 1;
-			}
+		&:hover {
+			opacity: 1;
 		}
+	}
 
-		img {
-			width: 100%;
-		}
+	img {
+		width: 100%;
 	}
 }
 

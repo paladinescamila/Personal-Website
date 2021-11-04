@@ -9,6 +9,7 @@
 	background-color: $gray-2;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .project-card-photo {
@@ -26,7 +27,7 @@
 }
 
 .project-card-data {
-	padding: 0 1em 1em 1em;
+	padding: 1em;
 	display: flex;
 	flex-direction: column;
 
@@ -37,10 +38,12 @@
 			color: $gray-C;
 			font-weight: bold;
 			font-size: 1.5em;
+			margin: 0 0 0.5em 0;
 		}
 
 		p:nth-of-type(2) {
 			color: $gray-7;
+			margin: 0 0 1em 0;
 		}
 	}
 }
@@ -58,6 +61,12 @@
 		margin-right: 0.5em;
 		font-size: 0.9em;
 	}
+}
+
+.project-card-resources {
+	position: absolute;
+	bottom: 0.5em;
+	right: 0.5em;
 }
 
 .project-card-resources a img {

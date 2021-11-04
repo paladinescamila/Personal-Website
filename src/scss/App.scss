@@ -66,16 +66,16 @@ p {
 
 /* Buttons */
 
-@mixin button($border, $bg, $color) {
+@mixin button($border, $background, $color) {
 	padding: 0.7em 2em;
 	font-size: 1.1em;
 	cursor: pointer;
-	width: fit-content;
+	width: Max(150px, fit-content);
 	height: fit-content;
 	text-align: center;
 	text-decoration: none;
 	border: 2px solid $border;
-	background-color: $bg;
+	background-color: $background;
 	color: $color;
 
 	&:hover {

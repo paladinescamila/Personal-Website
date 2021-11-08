@@ -5,11 +5,11 @@ import projectWebsite from "../img/project-website.svg";
 export default function ProjectCard({project}) {
 	return (
 		<li className='project-card'>
-			<a href={project.website} alt={project.title} className='project-card-photo'>
+			<a href={project.website} alt={project.title} className='project-card-photo' target='_blank' rel='noreferrer'>
 				<img src={project.photo} alt={project.title} />
 			</a>
 			<div className='project-card-data'>
-				<a href={project.website} alt={project.title}>
+				<a href={project.website} alt={project.title} target='_blank' rel='noreferrer'>
 					<p>{project.title}</p>
 					<p>{project.description}</p>
 					<ul className='project-card-tools'>

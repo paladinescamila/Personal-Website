@@ -1,19 +1,30 @@
 .projects-container {
-	display: grid;
-	grid-gap: 2em;
-	grid-template-columns: repeat(3, 1fr);
+	// display: grid;
+	// grid-gap: 2em;
+	// grid-template-columns: repeat(3, 1fr);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 100%;
 }
 
 .project-card {
-	background-color: $gray-2;
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	width: 80%;
+	height: 250px;
+	margin-bottom: 5em;
 }
 
 .project-card-photo {
 	background-color: $theme-1;
+	width: 50%;
+	height: 95%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
 
 	img {
 		width: 100%;
@@ -28,14 +39,20 @@
 
 .project-card-data {
 	padding: 1em;
+	background-color: $gray-2;
 	display: flex;
 	flex-direction: column;
+	padding-left: 3em;
+	width: 53%;
+	position: absolute;
+	top: 0;
+	right: 0;
 
 	& > a {
 		text-decoration: none;
 
 		p:nth-of-type(1) {
-			color: $gray-C;
+			color: $white;
 			font-weight: bold;
 			font-size: 1.5em;
 			margin: 0 0 0.5em 0;
@@ -52,6 +69,7 @@
 	list-style: none;
 	display: flex;
 	align-items: center;
+	margin-bottom: 1em;
 
 	li {
 		background-color: $gray-3;
@@ -61,12 +79,6 @@
 		margin-right: 0.5em;
 		font-size: 0.9em;
 	}
-}
-
-.project-card-resources {
-	position: absolute;
-	bottom: 0.5em;
-	right: 0.5em;
 }
 
 .project-card-resources a img {

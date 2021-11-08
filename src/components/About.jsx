@@ -9,8 +9,8 @@ export default function About() {
 		<div className='section-container'>
 			<h2 className='section-title'>About</h2>
 			<p className='section-text'>
-				My name is Camila Paladines, I am a Frontend Web Developer, Computer Science student at Pontificia Universidad Javeriana in Cali, Colombia. I am passionate about designing and
-				developing web applications that are very useful for people.
+				My name is Camila Paladines, I'm a Computer Science student at Pontificia Universidad Javeriana in Cali, Colombia. I'm a Frontend Web Development enthusiast and I'm passionate about
+				designing and developing web applications that are very useful for people.
 			</p>
 			<div className='about-skills'>
 				<SkillCard image={languagesImage} title='Languages' tools='HTML, CSS, SCSS, JavaScript, Python' />

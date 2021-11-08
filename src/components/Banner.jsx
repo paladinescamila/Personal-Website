@@ -13,7 +13,7 @@ export default function Banner() {
 					<p>Frontend Web Developer</p>
 				</div>
 				<div>
-					<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
+					<Button value='Contact me' type='solid' link='mailto:camilapaladines27@gmail.com' />
 					<Button value='Download CV' type='ghost' link={cvEnglish} />
 				</div>
 			</div>

@@ -12,7 +12,7 @@ const projects = [
 	},
 	{
 		title: "Tomato Time",
-		description: "With this application you can track your concentration time, using the Pomodoro technique, which can be customized to your needs.",
+		description: "With this application you can track your concentration time, using the Pomodoro technique.",
 		tools: ["HTML", "CSS", "JavaScript"],
 		github: "https://github.com/paladinescamila/Tomato-Time",
 		website: "https://tomato-time.netlify.app/",

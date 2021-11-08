@@ -5,15 +5,19 @@ import projectWebsite from "../img/project-website.svg";
 export default function ProjectCard({project}) {
 	return (
 		<li className='project-card'>
-			<img src={project.photo} alt={project.title} className='project-card-photo' />
+			<a href={project.website} alt={project.title} className='project-card-photo'>
+				<img src={project.photo} alt={project.title} />
+			</a>
 			<div className='project-card-data'>
-				<p>{project.title}</p>
-				<p>{project.description}</p>
-				<ul className='project-card-tools'>
-					{project.tools.map((t) => (
-						<li>{t}</li>
-					))}
-				</ul>
+				<a href={project.website} alt={project.title}>
+					<p>{project.title}</p>
+					<p>{project.description}</p>
+					<ul className='project-card-tools'>
+						{project.tools.map((t) => (
+							<li>{t}</li>
+						))}
+					</ul>
+				</a>
 				<div className='project-card-resources'>
 					<a href={project.website} target='_blank' rel='noreferrer'>
 						<img src={projectWebsite} alt='Website' />

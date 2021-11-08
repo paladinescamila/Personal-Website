@@ -5,25 +5,21 @@ import projectWebsite from "../img/project-website.svg";
 export default function ProjectCard({project}) {
 	return (
 		<li className='project-card'>
-			<a href={project.website} target='_blank' rel='noreferrer' className='project-card-photo'>
-				<img src={project.photo} alt={project.title} />
-			</a>
+			<img src={project.photo} alt={project.title} className='project-card-photo' />
 			<div className='project-card-data'>
-				<a href={project.website} alt={project.title} target='_blank' rel='noreferrer'>
-					<p>{project.title}</p>
-					<p>{project.description}</p>
-					<ul className='project-card-tools'>
-						{project.tools.map((t) => (
-							<li>{t}</li>
-						))}
-					</ul>
-				</a>
+				<p>{project.title}</p>
+				<p>{project.description}</p>
+				<ul className='project-card-tools'>
+					{project.tools.map((t) => (
+						<li>{t}</li>
+					))}
+				</ul>
 				<div className='project-card-resources'>
-					<a className='project-card-github' href={project.github} target='_blank' rel='noreferrer'>
-						<img src={projectGitHub} alt='GitHub' />
-					</a>
-					<a className='project-card-website' href={project.website} target='_blank' rel='noreferrer'>
+					<a href={project.website} target='_blank' rel='noreferrer'>
 						<img src={projectWebsite} alt='Website' />
+					</a>
+					<a href={project.github} target='_blank' rel='noreferrer'>
+						<img src={projectGitHub} alt='GitHub' />
 					</a>
 				</div>
 			</div>

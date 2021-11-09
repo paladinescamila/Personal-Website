@@ -48,3 +48,13 @@
 		padding-right: 2em;
 	}
 }
+
+@media (max-width: 500px) {
+	.section-title {
+		font-size: 8vw;
+	}
+
+	.section-text {
+		font-size: 3vw;
+	}
+}

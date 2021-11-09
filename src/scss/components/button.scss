@@ -1,5 +1,3 @@
-/* Button types */
-
 .solid-button {
 	@include button($theme-3, $theme-3, $white) {
 		border-color: $theme-4;

@@ -13,6 +13,10 @@
 
 	a {
 		width: 60px;
+
+		@media (max-width: 1000px) {
+			width: 50px;
+		}
 	}
 
 	img {

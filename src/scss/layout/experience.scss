@@ -8,3 +8,15 @@
 		font-size: 1.3em;
 	}
 }
+
+@media (max-width: 600px) {
+	.experience-section {
+		img {
+			width: 100%;
+		}
+
+		p {
+			font-size: 3.5vw;
+		}
+	}
+}

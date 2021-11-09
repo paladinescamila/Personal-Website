@@ -1,0 +1,74 @@
+/* RESET */
+
+body {
+	background-color: $gray-1;
+}
+
+* {
+	outline: none;
+	box-sizing: border-box;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* SPECIAL EFFECTS */
+
+/* Scroll */
+
+body {
+	&::-webkit-scrollbar-track {
+		background-color: $gray-1;
+	}
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $gray-3;
+	}
+}
+
+/* Selected text */
+
+* {
+	&::-moz-selection,
+	&::selection {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1500px) {
+	.header,
+	.banner-section,
+	.section-container {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+}
+
+@media (max-width: 1000px) {
+	.section-text {
+		width: 90%;
+	}
+}
+
+@media (max-width: 950px) {
+	.header,
+	.banner-section,
+	.section-container {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}

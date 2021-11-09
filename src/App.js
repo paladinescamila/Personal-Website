@@ -1,4 +1,4 @@
-import "./scss/App.scss";
+import "./scss/main.scss";
 
 // Components
 import Header from "./components/Header";

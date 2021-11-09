@@ -1,0 +1,39 @@
+.project-card {
+	background-color: $gray-2;
+}
+
+.project-card-photo {
+	background-color: $theme-3;
+
+	img {
+		mix-blend-mode: luminosity;
+
+		&:hover {
+			mix-blend-mode: normal;
+		}
+	}
+}
+
+.project-card-data > a {
+	p:nth-of-type(1) {
+		color: $white;
+	}
+
+	p:nth-of-type(2) {
+		color: $gray-9;
+	}
+}
+
+.project-card-tools li {
+	color: $gray-5;
+}
+
+.project-card-resources a {
+	opacity: 0.5;
+	background-color: rgba($gray-3, 0.5);
+	color: $white;
+
+	&:hover {
+		opacity: 1;
+	}
+}

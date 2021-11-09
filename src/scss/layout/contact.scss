@@ -13,11 +13,6 @@
 
 	a {
 		width: 60px;
-		opacity: 0.7;
-
-		&:hover {
-			opacity: 1;
-		}
 	}
 
 	img {
@@ -28,16 +23,12 @@
 footer {
 	position: absolute;
 	bottom: 0;
-	font-family: monospace;
-	color: $white;
-	opacity: 0.3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 1em 0;
 
 	a {
-		color: $white;
 		text-decoration: none;
 
 		&:hover {

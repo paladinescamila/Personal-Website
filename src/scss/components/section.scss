@@ -1,0 +1,26 @@
+/* Sections */
+
+.section-container {
+	min-height: 100vh;
+	padding: 0 10em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Title */
+
+.section-title {
+	color: $white;
+	font-weight: bold;
+	font-size: 2.5em;
+	border-bottom: 2px solid $theme-1;
+}
+
+.section-text {
+	text-align: center;
+	color: $gray-8;
+	margin: 0;
+	width: 700px;
+}

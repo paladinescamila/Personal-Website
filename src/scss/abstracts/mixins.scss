@@ -1,0 +1,18 @@
+/* Button */
+
+@mixin button($border, $background, $color) {
+	display: inline-block;
+	padding: 0.7em;
+	font-size: 1.1em;
+	cursor: pointer;
+	width: 170px;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid $border;
+	background-color: $background;
+	color: $color;
+
+	&:hover {
+		@content;
+	}
+}

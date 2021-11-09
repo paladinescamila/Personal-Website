@@ -46,29 +46,3 @@ body {
 		background-color: rgba(255, 255, 255, 0.1);
 	}
 }
-
-/* RESPONSIVE */
-
-@media (max-width: 1500px) {
-	.header,
-	.banner-section,
-	.section-container {
-		padding-left: 5em;
-		padding-right: 5em;
-	}
-}
-
-@media (max-width: 1000px) {
-	.section-text {
-		width: 90%;
-	}
-}
-
-@media (max-width: 950px) {
-	.header,
-	.banner-section,
-	.section-container {
-		padding-left: 2em;
-		padding-right: 2em;
-	}
-}

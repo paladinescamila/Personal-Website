@@ -18,6 +18,46 @@ const projects = [
 		website: "https://tomato-time.netlify.app/",
 		photo: tomatoTimePhoto,
 	},
+	{
+		title: "Tomato Time",
+		description: "With this application you can track your concentration time, using the Pomodoro technique.",
+		tools: ["HTML", "CSS", "JavaScript"],
+		github: "https://github.com/paladinescamila/Tomato-Time",
+		website: "https://tomato-time.netlify.app/",
+		photo: tomatoTimePhoto,
+	},
+	{
+		title: "Tomato Time",
+		description: "With this application you can track your concentration time, using the Pomodoro technique.",
+		tools: ["HTML", "CSS", "JavaScript"],
+		github: "https://github.com/paladinescamila/Tomato-Time",
+		website: "https://tomato-time.netlify.app/",
+		photo: tomatoTimePhoto,
+	},
+	{
+		title: "Tomato Time",
+		description: "With this application you can track your concentration time, using the Pomodoro technique.",
+		tools: ["HTML", "CSS", "JavaScript"],
+		github: "https://github.com/paladinescamila/Tomato-Time",
+		website: "https://tomato-time.netlify.app/",
+		photo: tomatoTimePhoto,
+	},
+	{
+		title: "Tomato Time",
+		description: "With this application you can track your concentration time, using the Pomodoro technique.",
+		tools: ["HTML", "CSS", "JavaScript"],
+		github: "https://github.com/paladinescamila/Tomato-Time",
+		website: "https://tomato-time.netlify.app/",
+		photo: tomatoTimePhoto,
+	},
+	{
+		title: "Tomato Time",
+		description: "With this application you can track your concentration time, using the Pomodoro technique.",
+		tools: ["HTML", "CSS", "JavaScript"],
+		github: "https://github.com/paladinescamila/Tomato-Time",
+		website: "https://tomato-time.netlify.app/",
+		photo: tomatoTimePhoto,
+	},
 ];
 
 export default projects;

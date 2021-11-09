@@ -9,7 +9,7 @@
 
 .ghost-button {
 	@include button($white, transparent, $white) {
-		background-color: rgba($white, 0.15);
+		background-color: $gray-2;
 	}
 }
 

@@ -7,7 +7,7 @@
 
 .project-card {
 	display: grid;
-	grid-template-rows: 180px 250px;
+	grid-template-rows: 180px 200px;
 }
 
 .project-card-photo {
@@ -40,6 +40,12 @@
 	}
 }
 
+.project-tools-and-resources {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .project-card-tools {
 	list-style: none;
 	display: flex;
@@ -55,16 +61,13 @@
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 50px;
 
 	a {
-		text-decoration: none;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 
 		img {
-			margin-right: 0.1em;
 			width: 30px;
 		}
 	}

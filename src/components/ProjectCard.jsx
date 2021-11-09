@@ -12,19 +12,21 @@ export default function ProjectCard({project}) {
 				<a href={project.website} alt={project.title} target='_blank' rel='noreferrer'>
 					<p>{project.title}</p>
 					<p>{project.description}</p>
+				</a>
+				<div className='project-tools-and-resources'>
 					<ul className='project-card-tools'>
 						{project.tools.map((t) => (
 							<li>{t}</li>
 						))}
 					</ul>
-				</a>
-				<div className='project-card-resources'>
-					<a href={project.website} target='_blank' rel='noreferrer'>
-						<img src={projectWebsite} alt='Website' />
-					</a>
-					<a href={project.github} target='_blank' rel='noreferrer'>
-						<img src={projectGitHub} alt='GitHub' />
-					</a>
+					<div className='project-card-resources'>
+						<a href={project.website} target='_blank' rel='noreferrer'>
+							<img src={projectWebsite} alt='Website' />
+						</a>
+						<a href={project.github} target='_blank' rel='noreferrer'>
+							<img src={projectGitHub} alt='GitHub' />
+						</a>
+					</div>
 				</div>
 			</div>
 		</li>

@@ -7,7 +7,6 @@
 
 	img {
 		width: 400px;
-		border-radius: 50%;
 	}
 }
 
@@ -37,28 +36,6 @@
 
 	&:nth-of-type(3) {
 		font-size: 1.7em;
-	}
-}
-
-@media (max-width: 1300px) {
-	.home-section {
-		flex-direction: column;
-	}
-
-	.home-left {
-		align-items: center;
-		margin: 5em 0;
-	}
-
-	.home-hi {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 5em;
-	}
-
-	.home-section img {
-		display: none;
 	}
 }
 

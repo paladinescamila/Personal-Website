@@ -1,24 +1,26 @@
 .header {
-	min-height: 15vh;
-	padding: 0.5em 10em;
+	height: 100vh;
+	width: 150px;
+	padding: 1em;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+}
 
-	& > img {
-		width: 70px;
-	}
+.logo {
+	width: 70px;
 }
 
 .header-sections {
 	list-style: none;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
 
 	li {
 		cursor: pointer;
-		margin-left: 3em;
+		margin-bottom: 2em;
 	}
 }
 

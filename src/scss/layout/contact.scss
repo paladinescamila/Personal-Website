@@ -6,22 +6,23 @@
 	}
 }
 
+.all-social-links,
 .social-links {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
-	a {
-		width: 60px;
-
-		@media (max-width: 1000px) {
-			width: 50px;
-		}
-	}
-
 	img {
 		width: 100%;
 	}
+}
+
+.all-social-links a {
+	width: 60px;
+}
+
+.social-links a {
+	width: 40px;
 }
 
 footer {

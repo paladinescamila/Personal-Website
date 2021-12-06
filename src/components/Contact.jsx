@@ -16,7 +16,7 @@ export default function Contact() {
 				I'll do my best to answer you.
 			</p>
 			<Button value='Say hello' type='solid' link='mailto:camilapaladines27@gmail.com' />
-			<div className='social-links'>
+			<div className='all-social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='GitHub' src={socialGitHub}></img>
 				</a>

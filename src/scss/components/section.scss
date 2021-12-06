@@ -2,11 +2,11 @@
 
 .section-container {
 	min-height: 100vh;
-	padding: 0 10em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 100%;
 }
 
 /* Title */
@@ -14,7 +14,7 @@
 .section-title {
 	color: $white;
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 3em;
 	border-bottom: 2px solid $theme-1;
 }
 
@@ -23,38 +23,4 @@
 	color: $gray-8;
 	margin: 0;
 	width: 700px;
-}
-
-@media (max-width: 1500px) {
-	.header,
-	.banner-section,
-	.section-container {
-		padding-left: 5em;
-		padding-right: 5em;
-	}
-}
-
-@media (max-width: 1000px) {
-	.section-text {
-		width: 90%;
-	}
-}
-
-@media (max-width: 950px) {
-	.header,
-	.banner-section,
-	.section-container {
-		padding-left: 2em;
-		padding-right: 2em;
-	}
-}
-
-@media (max-width: 500px) {
-	.section-title {
-		font-size: 8vw;
-	}
-
-	.section-text {
-		font-size: 3vw;
-	}
 }

@@ -5,8 +5,9 @@
 @import "base/typography.scss";
 
 @import "layout/header.scss";
-@import "layout/banner.scss";
+@import "layout/home.scss";
 @import "layout/about.scss";
+@import "layout/skills.scss";
 @import "layout/experience.scss";
 @import "layout/projects.scss";
 @import "layout/contact.scss";
@@ -15,8 +16,9 @@
 @import "components/section.scss";
 
 @import "themes/header.scss";
-@import "themes/banner.scss";
+@import "themes/home.scss";
 @import "themes/about.scss";
+@import "themes/skills.scss";
 @import "themes/experience.scss";
 @import "themes/projects.scss";
 @import "themes/contact.scss";

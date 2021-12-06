@@ -1,23 +1,26 @@
 import "./scss/main.scss";
 
-// Components
 import Header from "./components/Header";
-import Banner from "./components/Banner";
+import Home from "./components/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
 	return (
-		<div>
+		<>
 			<Header language='EN' />
-			<Banner />
-			<About />
-			<Experience />
-			<Projects />
-			<Contact />
-		</div>
+			<div className='sections'>
+				<Home />
+				<About />
+				<Skills />
+				<Experience />
+				<Projects />
+				<Contact />
+			</div>
+		</>
 	);
 }
 

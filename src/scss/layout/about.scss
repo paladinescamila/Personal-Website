@@ -14,6 +14,13 @@
 	p {
 		text-align: left;
 		width: 500px;
+	}
+
+	p:nth-of-type(1) {
+		margin-bottom: 1em;
+	}
+
+	p:nth-of-type(2) {
 		margin-bottom: 3em;
 	}
 

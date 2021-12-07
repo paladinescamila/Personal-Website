@@ -10,8 +10,8 @@ export default function About() {
 			<div className='about-content'>
 				<div>
 					<p className='section-text'>
-						My name is Camila Paladines, I'm a Computer Science student at Pontificia Universidad Javeriana in Cali, Colombia. I'm a Frontend Web Development enthusiast and I'm passionate
-						about designing and developing web applications that are very useful for people.
+						My name is Camila Paladines, I'm a <p>Computer Science student</p> at Pontificia Universidad Javeriana in Cali, Colombia. I'm a <p>Frontend Web Development enthusiast</p> and
+						I'm passionate about designing and developing web applications that are very useful for people.
 					</p>
 					<Button value='Download CV' type='ghost' link={cvEnglish} />
 				</div>

@@ -15,7 +15,7 @@ export default function Home() {
 					<Button value='Contact me' type='solid' link='mailto:camilapaladines27@gmail.com' />
 				</div>
 			</div>
-			<img className='home-img' src={dev} alt='Frontend Web Development'></img>
+			<img src={dev} alt='Frontend Web Development'></img>
 		</div>
 	);
 }

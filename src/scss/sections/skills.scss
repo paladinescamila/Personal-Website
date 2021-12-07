@@ -3,7 +3,6 @@
 	display: grid;
 	grid-gap: 1em;
 	grid-template-columns: repeat(3, 1fr);
-	margin-top: 5em;
 }
 
 .skill-card {
@@ -12,6 +11,7 @@
 	flex-direction: column;
 	align-items: center;
 	background-color: $gray-2;
+	border-top: 3px solid $theme-1;
 
 	img {
 		width: 40px;
@@ -25,49 +25,17 @@
 }
 
 .tools-list {
-	display: grid;
-	grid-gap: 0.3em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 
-	& > li {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		color: $gray-7;
+	li {
+		background-color: $gray-2;
+		margin: 0.5em;
 
-		/* Item arrow */
-		&::before {
-			content: "";
-			margin-right: 0.5em;
-			width: 0;
-			height: 0;
-			border-left: 10px solid $gray-7;
-			border-top: 5px solid transparent;
-			border-bottom: 5px solid transparent;
-		}
-
-		& > ul {
-			display: flex;
-
-			& > li {
-				padding: 0.1em 0.3em;
-				border-radius: 0.5em;
-				color: $white;
-
-				/* Basic */
-				&:nth-of-type(1) {
-					background-color: $theme-2;
-				}
-
-				/* Intermediate */
-				&:nth-of-type(2) {
-					background-color: $theme-3;
-				}
-
-				/* Advanced */
-				&:nth-of-type(3) {
-					background-color: $theme-1;
-				}
-			}
+		img {
+			mix-blend-mode: luminosity;
 		}
 	}
 }

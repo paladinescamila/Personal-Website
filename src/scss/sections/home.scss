@@ -4,9 +4,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 
 	img {
 		width: 400px;
+		opacity: 0.1;
 	}
 }
 
@@ -40,10 +42,6 @@
 		font-size: 1.7em;
 		color: $gray-8;
 	}
-}
-
-.home-img {
-	opacity: 0.1;
 }
 
 @media (max-width: 700px) {

@@ -12,6 +12,14 @@
 	align-items: center;
 	justify-content: space-between;
 
+	a {
+		opacity: 0.5;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
 	img {
 		width: 100%;
 	}
@@ -32,8 +40,12 @@ footer {
 	justify-content: center;
 	align-items: center;
 	padding: 1em 0;
+	font-family: monospace;
+	color: $white;
+	opacity: 0.3;
 
 	a {
+		color: $white;
 		text-decoration: none;
 
 		&:hover {

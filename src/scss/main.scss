@@ -1,24 +1,12 @@
-@import "abstracts/variables.scss";
-@import "abstracts/mixins.scss";
-
+@import "base/variables.scss";
 @import "base/reset.scss";
-@import "base/typography.scss";
+@import "base/section.scss";
+@import "base/button.scss";
 
-@import "layout/header.scss";
-@import "layout/home.scss";
-@import "layout/about.scss";
-@import "layout/skills.scss";
-@import "layout/experience.scss";
-@import "layout/projects.scss";
-@import "layout/contact.scss";
-
-@import "components/button.scss";
-@import "components/section.scss";
-
-@import "themes/header.scss";
-@import "themes/home.scss";
-@import "themes/about.scss";
-@import "themes/skills.scss";
-@import "themes/experience.scss";
-@import "themes/projects.scss";
-@import "themes/contact.scss";
+@import "sections/header.scss";
+@import "sections/home.scss";
+@import "sections/about.scss";
+@import "sections/skills.scss";
+@import "sections/experience.scss";
+@import "sections/projects.scss";
+@import "sections/contact.scss";

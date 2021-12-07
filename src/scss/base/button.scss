@@ -1,5 +1,3 @@
-/* Button */
-
 @mixin button($border, $background, $color) {
 	display: inline-block;
 	padding: 0.7em;
@@ -19,5 +17,24 @@
 	@media (max-width: 1000px) {
 		font-size: 0.9em;
 		width: 120px;
+	}
+}
+
+.solid-button {
+	@include button($theme-3, $theme-3, $white) {
+		border-color: $theme-4;
+		background-color: $theme-4;
+	}
+}
+
+.ghost-button {
+	@include button($white, transparent, $white) {
+		background-color: $gray-2;
+	}
+}
+
+.empty-button {
+	@include button(transparent, transparent, $white) {
+		text-decoration: underline;
 	}
 }

@@ -1,3 +1,11 @@
+/* TYPOGRAPHY */
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+body {
+	font-family: "Mulish", sans-serif;
+}
+
 /* RESET */
 
 body,
@@ -14,17 +22,6 @@ p {
 ul {
 	padding-left: 0;
 	list-style: none;
-}
-
-#root {
-	display: flex;
-}
-
-.sections {
-	width: 100%;
-	height: 100vh;
-	overflow-y: scroll;
-	background-color: $gray-1;
 }
 
 /* SPECIAL EFFECTS */

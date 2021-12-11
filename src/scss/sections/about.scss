@@ -1,6 +1,6 @@
 .about-content {
 	display: grid;
-	grid-gap: 1em;
+	grid-gap: 3em;
 	grid-template-columns: 500px 300px;
 	align-items: center;
 	justify-content: center;
@@ -14,16 +14,17 @@
 		& > p {
 			text-align: left;
 			width: 500px;
+			margin-bottom: 1em;
 
 			p {
-				color: $theme-4;
+				color: lighten($theme-4, 5);
 				display: inline;
 			}
 		}
 	}
 
 	a {
-		margin-top: 3em;
+		margin-top: 2em;
 	}
 
 	img {

@@ -1,3 +1,4 @@
+import React, {useState, useRef} from "react";
 import "./scss/main.scss";
 
 import Header from "./components/Header";
@@ -9,12 +10,22 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
+	// Language
+	let navLanguage = navigator.language.slice(0, 2);
+	let [language, setLanguage] = useState(navLanguage === "en" ? "en" : "es");
+	console.log(language, setLanguage);
+
+	// Navigation
+	const aboutRef = useRef(null);
+	const references = {about: aboutRef};
+	console.log(aboutRef);
+
 	return (
 		<>
-			<Header language='EN' />
+			<Header references={references} />
 			<div className='sections'>
 				<Home />
-				<About />
+				<About language={language} reference={aboutRef} />
 				<Skills />
 				<Experience />
 				<Projects />

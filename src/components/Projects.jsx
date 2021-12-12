@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import projects from "../data/projects";
-import socialFrontendMentor from "../img/social-frontendmentor.svg";
+import socialFrontendMentor from "../img/social/frontendmentor.svg";
 
 export default function Projects() {
 	return (
@@ -11,7 +11,7 @@ export default function Projects() {
 				{projects.map((p) => (
 					<ProjectCard project={p} />
 				))}
-				<a href='https://www.frontendmentor.io/profile/paladinescamila' alt='More projects on Frontend Mentor' target='_blank' rel='noreferrer'>
+				<a href='https://www.frontendmentor.io/profile/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='Frontend Mentor' src={socialFrontendMentor}></img>
 					More on Frontend Mentor
 				</a>

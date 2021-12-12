@@ -1,7 +1,7 @@
 import React from "react";
 import favicon from "../img/logo.png";
-import socialGitHub from "../img/social-github.svg";
-import socialLinkedIn from "../img/social-linkedin.svg";
+import socialGitHub from "../img/social/github.svg";
+import socialLinkedIn from "../img/social/linkedin.svg";
 import usaFlag from "../img/usa.png";
 import spainFlag from "../img/spain.png";
 

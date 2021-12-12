@@ -1,7 +1,4 @@
 /*
-    SKILLS
-    [file, name, type, level]
-
     Type
     0 -> Languages
     1 -> Libraries & Frameworks
@@ -25,16 +22,16 @@ import firebase from "../img/skills/firebase.png";
 import figma from "../img/skills/figma.png";
 
 const skills = [
-	[html, "HTML", 0, 1],
-	[css, "CSS", 0, 1],
-	[scss, "SCSS", 0, 0],
-	[js, "JavaScript", 0, 1],
-	[python, "Python", 0, 1],
-	[react, "React JS", 1, 0],
-	[git, "Git", 2, 0],
-	[netlify, "Netlify", 2, 0],
-	[firebase, "Firebase", 2, 0],
-	[figma, "Figma", 2, 0],
+	{name: "HTML", img: html, type: 0, level: 1},
+	{name: "CSS", img: css, type: 0, level: 1},
+	{name: "SCSS", img: scss, type: 0, level: 0},
+	{name: "JavaScript", img: js, type: 0, level: 1},
+	{name: "Python", img: python, type: 0, level: 1},
+	{name: "React JS", img: react, type: 1, level: 0},
+	{name: "Git", img: git, type: 2, level: 0},
+	{name: "Netlify", img: netlify, type: 2, level: 0},
+	{name: "Firebase", img: firebase, type: 2, level: 0},
+	{name: "Figma", img: figma, type: 2, level: 0},
 ];
 
 export default skills;

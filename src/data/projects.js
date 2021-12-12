@@ -3,20 +3,20 @@ import tomatoTimePhoto from "../img/projects/tomato-time.png";
 
 const projects = [
 	{
-		title: "Purple Calendar",
+		name: "Purple Calendar",
 		description: "This is a simple monthly calendar that allows you to navigate between months. Here you can also go to a specific month and year.",
 		tools: ["HTML", "CSS", "JavaScript"],
-		github: "https://github.com/paladinescamila/Purple-Calendar",
 		website: "https://purple-calendar.netlify.app/",
-		photo: purpleCalendarPhoto,
+		github: "https://github.com/paladinescamila/Purple-Calendar",
+		img: purpleCalendarPhoto,
 	},
 	{
-		title: "Tomato Time",
+		name: "Tomato Time",
 		description: "With this application you can track your concentration time, using the Pomodoro technique, which can be customized to your needs.",
 		tools: ["HTML", "CSS", "JavaScript"],
-		github: "https://github.com/paladinescamila/Tomato-Time",
 		website: "https://tomato-time.netlify.app/",
-		photo: tomatoTimePhoto,
+		github: "https://github.com/paladinescamila/Tomato-Time",
+		img: tomatoTimePhoto,
 	},
 ];
 

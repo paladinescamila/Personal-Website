@@ -18,21 +18,18 @@
 	position: absolute;
 	top: 20px;
 	right: 20px;
-	width: 50px;
-	height: 45px;
+	width: 40px;
+	height: 40px;
 	border: none;
 	padding: 0.5em;
 	border-radius: 0.5em;
 	z-index: 1000;
+	opacity: 0.7;
 	background-color: rgba($color: $black, $alpha: 0.5);
 	cursor: pointer;
 
 	img {
 		width: 100%;
-	}
-
-	@media (max-width: 1000px) {
-		display: flex;
 	}
 }
 
@@ -45,10 +42,6 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-
-	@media (max-width: 500px) {
-		padding: 1em !important;
-	}
 }
 
 /* Title */
@@ -59,4 +52,20 @@
 	font-size: 3em;
 	border-bottom: 3px solid $theme-3;
 	margin: 0 0 1em 0;
+}
+
+@media (max-width: 1000px) {
+	.burger-close {
+		display: flex;
+	}
+
+	.section-title {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 500px) {
+	.section-container {
+		padding: 1em !important;
+	}
 }

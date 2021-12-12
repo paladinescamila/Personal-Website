@@ -10,10 +10,6 @@
 	text-align: center;
 	color: $gray-9;
 	width: 700px;
-
-	@media (max-width: 800px) {
-		width: 100%;
-	}
 }
 
 .all-social-links,
@@ -35,8 +31,10 @@
 	}
 }
 
-.all-social-links a {
-	width: 60px;
+.all-social-links {
+	a {
+		width: 60px;
+	}
 }
 
 .social-links a {
@@ -61,5 +59,17 @@ footer {
 		&:hover {
 			text-decoration: underline;
 		}
+	}
+}
+
+@media (max-width: 800px) {
+	.contact-text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 350px) {
+	.all-social-links a {
+		width: 50px;
 	}
 }

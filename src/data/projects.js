@@ -1,5 +1,5 @@
-import purpleCalendarPhoto from "../img/purple-calendar.png";
-import tomatoTimePhoto from "../img/tomato-time.png";
+import purpleCalendarPhoto from "../img/projects/purple-calendar.png";
+import tomatoTimePhoto from "../img/projects/tomato-time.png";
 
 const projects = [
 	{

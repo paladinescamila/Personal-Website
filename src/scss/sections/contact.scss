@@ -6,6 +6,16 @@
 	}
 }
 
+.contact-text {
+	text-align: center;
+	color: $gray-9;
+	width: 700px;
+
+	@media (max-width: 800px) {
+		width: 100%;
+	}
+}
+
 .all-social-links,
 .social-links {
 	display: flex;

@@ -9,6 +9,7 @@ body {
 /* RESET */
 
 body,
+h2,
 p,
 ul {
 	margin: 0;
@@ -45,7 +46,9 @@ ul {
 
 /* Selected text */
 
-* {
+h2,
+p,
+button {
 	&::-moz-selection,
 	&::selection {
 		background-color: rgba(255, 255, 255, 0.1);

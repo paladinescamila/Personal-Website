@@ -12,11 +12,11 @@ export default function About({language, reference}) {
 			</h2>
 			<div className='about-content'>
 				<div>
-					<p className='section-text'>
+					<p className='about-text'>
 						My name is Camila Paladines, I'm a <p>Computer Science student</p> at Pontificia Universidad Javeriana in Cali, Colombia. I'm a <p>Frontend Development enthusiast</p> and I'm
 						passionate about designing and developing web applications that are very useful for people.
 					</p>
-					<p className='section-text'>
+					<p className='about-text'>
 						My goal is to cooperate with the creation of tools that contribute to the development of a person, a company, or a nation. That's why I like to learn new technologies, and use
 						them with the mission to improve the world a little bit, one step at a time.
 					</p>

@@ -11,7 +11,7 @@ export default function Contact() {
 	return (
 		<div className='section-container contact-section'>
 			<h2 className='section-title'>Contact</h2>
-			<p className='section-text'>
+			<p className='contact-text'>
 				I am looking for new opportunities to contribute to the industry and grow as a developer. If you have a project you want me to participate in or if you have any questions let me know!
 				I'll do my best to answer you.
 			</p>

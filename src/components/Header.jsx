@@ -5,14 +5,14 @@ import socialLinkedIn from "../img/social-linkedin.svg";
 import usaFlag from "../img/usa.png";
 import spainFlag from "../img/spain.png";
 
-export default function Header({references}) {
+export default function Header({references, showHeader}) {
 	let navLanguage = navigator.language.slice(0, 2);
-	// ! FALTA GO TO HOME
+	// ! NO OLVIDAR GO TO HOME EN EL LOGO
 
 	// const goToSection = (ref) => window.scrollTo(0, ref.current.offsetTop)};
 
 	return (
-		<header className='header'>
+		<header className='header' style={{display: showHeader ? "flex" : "none"}}>
 			<img src={favicon} alt='Logo' className='logo'></img>
 			<ul className='header-sections'>
 				<li>About</li>

@@ -12,6 +12,7 @@
 
 .logo {
 	width: 70px;
+	cursor: pointer;
 }
 
 .header-sections {
@@ -73,6 +74,13 @@
 
 @media (max-width: 1000px) {
 	.header {
-		display: none;
+		width: 100vw;
+		z-index: 1000;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.burger-close {
+		display: flex;
 	}
 }

@@ -1,26 +1,15 @@
 .about-content {
+	width: 800px;
 	display: grid;
 	grid-gap: 3em;
-	grid-template-columns: 500px 300px;
+	grid-template-columns: 1fr 300px;
 	align-items: center;
 	justify-content: center;
 
 	& > div {
-		height: 300px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-
-		& > p {
-			text-align: left;
-			width: 500px;
-			margin-bottom: 1em;
-
-			p {
-				color: lighten($theme-4, 5);
-				display: inline;
-			}
-		}
 	}
 
 	a {
@@ -30,5 +19,19 @@
 	img {
 		width: 300px;
 		border-radius: 50%;
+	}
+
+	@media (max-width: 900px) {
+		width: 100%;
+	}
+}
+
+.about-text {
+	color: $gray-9;
+	margin-bottom: 1em;
+
+	p {
+		color: lighten($theme-4, 5);
+		display: inline;
 	}
 }

@@ -4,7 +4,7 @@ import launch from "../img/launch.svg";
 
 export default function Home({language}) {
 	return (
-		<div className='home-section'>
+		<div className='home-section home-padding'>
 			<div className='home-left'>
 				<div className='home-hi'>
 					<p>{language.hi}</p>

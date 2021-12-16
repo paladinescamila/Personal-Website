@@ -65,7 +65,7 @@ function App() {
 					<Route path='*' element={<NotFound />}></Route>
 				</Routes>
 			</div>
-			<div className='mobile-header'>
+			<div className='mobile-header home-padding'>
 				<Link to='/' onClick={closeHeader}>
 					<img src={favicon} alt='Logo' className='logo'></img>
 				</Link>

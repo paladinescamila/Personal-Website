@@ -1,6 +1,5 @@
 .home-section {
 	min-height: 100vh;
-	padding: 0 10em;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -38,6 +37,10 @@
 	}
 }
 
+.home-padding {
+	padding: 0 10em;
+}
+
 @media (max-width: 1400px) {
 	.home-section {
 		padding: 0 5em;
@@ -53,6 +56,9 @@
 @media (max-width: 1000px) {
 	.home-left {
 		width: 100%;
+	}
+	.home-padding {
+		padding: 0 5em;
 	}
 }
 
@@ -77,7 +83,7 @@
 }
 
 @media (max-width: 620px) {
-	.home-section {
+	.home-padding {
 		padding: 0 3em;
 	}
 }
@@ -87,7 +93,7 @@
 }
 
 @media (max-width: 490px) {
-	.home-section {
+	.home-padding {
 		padding: 0 2em;
 	}
 	@include home-size(2.5em);

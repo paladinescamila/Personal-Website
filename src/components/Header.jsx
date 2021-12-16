@@ -10,6 +10,7 @@ export default function Header({language, setLanguage, displayHeader, closeHeade
 	const changeLanguage = (e) => {
 		if (e.target.value === "es") setLanguage(spanishJSON);
 		else setLanguage(englishJSON);
+		closeHeader();
 	};
 
 	return (

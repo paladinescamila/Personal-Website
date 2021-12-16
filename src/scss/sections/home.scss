@@ -24,16 +24,19 @@
 .home-hi p {
 	&:nth-of-type(1) {
 		color: $gray-7;
+		font-size: 2em;
 	}
 
 	&:nth-of-type(2) {
 		font-weight: bold;
 		margin: 0.1em 0 0.3em 0;
 		color: $white;
+		font-size: 4.5em;
 	}
 
 	&:nth-of-type(3) {
 		color: $gray-8;
+		font-size: 1.8em;
 	}
 }
 
@@ -62,43 +65,30 @@
 	}
 }
 
-@mixin home-size($size) {
-	.home-hi p:nth-of-type(1) {
-		font-size: $size * 0.5;
-	}
+@media (max-width: 740px) {
+	.home-hi p {
+		&:nth-of-type(1) {
+			font-size: 5vw;
+		}
 
-	.home-hi p:nth-of-type(2) {
-		font-size: $size;
-	}
+		&:nth-of-type(2) {
+			font-size: 9vw;
+		}
 
-	.home-hi p:nth-of-type(3) {
-		font-size: $size * 0.4;
+		&:nth-of-type(3) {
+			font-size: 4vw;
+		}
 	}
 }
 
-@include home-size(4.5em);
-
-@media (max-width: 750px) {
-	@include home-size(3.5em);
-}
-
-@media (max-width: 620px) {
+@media (max-width: 740px) {
 	.home-padding {
 		padding: 0 3em;
 	}
 }
 
-@media (max-width: 560px) {
-	@include home-size(3em);
-}
-
-@media (max-width: 490px) {
+@media (max-width: 500px) {
 	.home-padding {
 		padding: 0 2em;
 	}
-	@include home-size(2.5em);
-}
-
-@media (max-width: 400px) {
-	@include home-size(2em);
 }

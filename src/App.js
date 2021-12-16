@@ -57,7 +57,7 @@ function App() {
 					<Route path='/experience' element={<Experience />}></Route>
 					<Route path='/projects' element={<Projects />}></Route>
 					<Route path='/contact' element={<Contact />}></Route>
-					<Route path='*' element={<NotFound />}></Route>
+					<Route path='not-found' element={<NotFound />}></Route>
 				</Routes>
 			</div>
 			<button className='burger-close' onClick={showHideMenu}>

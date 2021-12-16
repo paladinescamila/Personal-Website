@@ -1,30 +1,15 @@
-import React, {useState} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import favicon from "../img/logo.png";
 import socialGitHub from "../img/social/github.svg";
 import socialLinkedIn from "../img/social/linkedin.svg";
 import englishJSON from "../data/english";
 import spanishJSON from "../data/spanish";
-import usaFlag from "../img/usa.png";
-import spainFlag from "../img/spain.png";
 
 export default function Header({language, setLanguage, displayHeader, closeHeader}) {
-	const [displaySelector, setDisplaySelector] = useState("none");
-
-	const showSelector = () => {
-		setDisplaySelector("flex");
-	};
-
-	const setEnglish = () => {
-		setLanguage(englishJSON);
-		setDisplaySelector("none");
-		closeHeader();
-	};
-
-	const setSpanish = () => {
-		setLanguage(spanishJSON);
-		setDisplaySelector("none");
-		closeHeader();
+	const changeLanguage = (e) => {
+		if (e.target.value === "es") setLanguage(spanishJSON);
+		else setLanguage(englishJSON);
 	};
 
 	return (
@@ -48,19 +33,10 @@ export default function Header({language, setLanguage, displayHeader, closeHeade
 				<Link to='/contact' onClick={closeHeader}>
 					{language.contact}
 				</Link>
-				<div className='select-languaje'>
-					<p onClick={showSelector}>
-						<img src={language.flag} alt='English'></img> {language.language}
-					</p>
-					<div className='select-languaje-container' style={{display: displaySelector}}>
-						<button onClick={setEnglish}>
-							<img src={usaFlag} alt='English'></img> English
-						</button>
-						<button onClick={setSpanish}>
-							<img src={spainFlag} alt='Español'></img> Español
-						</button>
-					</div>
-				</div>
+				<select className='language-selector' onChange={changeLanguage}>
+					<option value='en'>English</option>
+					<option value='es'>Español</option>
+				</select>
 			</div>
 			<div className='social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>

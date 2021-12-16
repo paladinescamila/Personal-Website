@@ -16,7 +16,9 @@ ul {
 	padding: 0;
 }
 
-* {
+*,
+*::before,
+*::after {
 	outline: none;
 	box-sizing: border-box;
 }

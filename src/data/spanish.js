@@ -37,6 +37,7 @@ const spanishJSON = {
 	},
 	projects: {
 		title: "Proyectos",
+		language: "es",
 		frontendMentor: "Ver más en Frontend Mentor",
 	},
 	contact: {

@@ -7,54 +7,92 @@
 	position: relative;
 
 	img {
-		width: 300px;
+		width: 250px;
 	}
 }
 
 .home-left {
 	display: flex;
 	flex-direction: column;
-
-	.solid-button {
-		margin-right: 1em;
-	}
 }
 
 .home-hi {
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 5em;
 }
 
 .home-hi p {
 	&:nth-of-type(1) {
-		font-size: 2em;
 		color: $gray-7;
 	}
 
 	&:nth-of-type(2) {
-		font-size: 4.5em;
 		font-weight: bold;
 		margin: 0.1em 0 0.3em 0;
 		color: $white;
 	}
 
 	&:nth-of-type(3) {
-		font-size: 1.7em;
 		color: $gray-8;
 	}
 }
 
-@media (max-width: 700px) {
-	.home-hi p {
-		&:nth-of-type(1) {
-			font-size: 5vw;
-		}
-
-		&:nth-of-type(2) {
-			font-size: 9vw;
-		}
-
-		&:nth-of-type(3) {
-			font-size: 4vw;
-		}
+@media (max-width: 1400px) {
+	.home-section {
+		padding: 0 5em;
 	}
+}
+
+@media (max-width: 1200px) {
+	.home-section img {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.home-left {
+		width: 100%;
+	}
+}
+
+@mixin home-size($size) {
+	.home-hi p:nth-of-type(1) {
+		font-size: $size * 0.5;
+	}
+
+	.home-hi p:nth-of-type(2) {
+		font-size: $size;
+	}
+
+	.home-hi p:nth-of-type(3) {
+		font-size: $size * 0.4;
+	}
+}
+
+@include home-size(4.5em);
+
+@media (max-width: 750px) {
+	@include home-size(3.5em);
+}
+
+@media (max-width: 620px) {
+	.home-section {
+		padding: 0 3em;
+	}
+}
+
+@media (max-width: 560px) {
+	@include home-size(3em);
+}
+
+@media (max-width: 490px) {
+	.home-section {
+		padding: 0 2em;
+	}
+	@include home-size(2.5em);
+}
+
+@media (max-width: 400px) {
+	@include home-size(3em);
 }

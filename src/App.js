@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./scss/main.scss";
 
 import Header from "./components/Header";
@@ -28,6 +28,12 @@ function App() {
 		setShowHeader(showBurger);
 	};
 
+	// Close the header
+	const closeHeader = () => {
+		setShowHeader(window.innerWidth > 1000);
+		setShowBurger(window.innerWidth <= 1000);
+	};
+
 	// Sections content
 	const sections = (
 		<>
@@ -42,7 +48,7 @@ function App() {
 
 	return (
 		<Router>
-			<Header showHeader={showHeader} />
+			<Header showHeader={showHeader} closeHeader={closeHeader} />
 			<div className='sections'>
 				<Routes>
 					<Route path='/' exact element={sections}></Route>

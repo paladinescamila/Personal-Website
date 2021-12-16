@@ -1,5 +1,5 @@
 .about-content {
-	width: 800px;
+	width: 900px;
 	display: grid;
 	grid-gap: 3em;
 	grid-template-columns: 1fr 300px;
@@ -7,7 +7,6 @@
 	& > div {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 	}
 
 	a {
@@ -31,7 +30,7 @@
 	}
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
 	.about-content {
 		width: 100%;
 	}

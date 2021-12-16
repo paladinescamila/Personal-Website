@@ -20,6 +20,7 @@ import git from "../img/skills/git.png";
 import netlify from "../img/skills/netlify.png";
 import firebase from "../img/skills/firebase.png";
 import figma from "../img/skills/figma.png";
+import scrum from "../img/skills/scrum.png";
 
 const skills = [
 	{name: "HTML", img: html, type: 0, level: 1},
@@ -32,6 +33,7 @@ const skills = [
 	{name: "Netlify", img: netlify, type: 2, level: 0},
 	{name: "Firebase", img: firebase, type: 2, level: 0},
 	{name: "Figma", img: figma, type: 2, level: 0},
+	{name: "Scrum", img: scrum, type: 2, level: 1},
 ];
 
 export default skills;

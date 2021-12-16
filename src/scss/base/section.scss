@@ -36,14 +36,11 @@
 /* Sections */
 
 .section-container {
-	min-height: 100vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	// ! FALTA SOLUCIONAR QUE LAS SECCIONES SE PEGAN EN CIERTO PUNTO
-	// padding-bottom: 5em;
 }
 
 /* Title */

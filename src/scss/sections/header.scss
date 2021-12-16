@@ -7,7 +7,6 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: $gray-2;
-	z-index: 1000;
 }
 
 .header-logo {
@@ -33,7 +32,6 @@
 }
 
 .select-languaje {
-	display: none;
 	position: relative;
 
 	p {
@@ -56,15 +54,16 @@
 }
 
 .select-languaje-container {
-	display: none;
 	flex-direction: column;
 	position: absolute;
 	top: 50px;
-	padding: 0.5em;
+	left: -20px;
 	background-color: $gray-3;
+	border: 1px solid $gray-4;
 
 	button {
-		padding: 1em 2em;
+		padding: 0.5em 1em;
+		display: flex;
 		cursor: pointer;
 		background-color: transparent;
 		color: $white;
@@ -72,6 +71,11 @@
 
 		&:hover {
 			background-color: $gray-4;
+		}
+
+		img {
+			width: 15px;
+			margin-right: 0.5em;
 		}
 	}
 }
@@ -84,6 +88,11 @@
 		top: 0;
 		left: 0;
 	}
+
+	.header-logo {
+		display: none;
+	}
+
 	.burger-close {
 		display: flex;
 	}

@@ -16,11 +16,13 @@ import favicon from "./img/logo.png";
 import burgerIcon from "./img/burger.svg";
 import closeIcon from "./img/x.svg";
 
+import englishJSON from "./data/english";
+import spanishJSON from "./data/spanish";
+
 function App() {
 	// Language
 	const navLanguage = navigator.language.slice(0, 2);
-	const [language, setLanguage] = useState(navLanguage === "es" ? "es" : "en");
-	console.log(language, setLanguage);
+	const [language, setLanguage] = useState(navLanguage === "es" ? spanishJSON : englishJSON);
 
 	// Show or hide the menu
 	const [showBurger, setShowBurger] = useState(true);
@@ -39,32 +41,32 @@ function App() {
 	// Sections content
 	const sections = (
 		<>
-			<Home />
-			<About language={language} />
-			<Skills />
-			<Experience />
-			<Projects />
-			<Contact />
+			<Home language={language.home} />
+			<About language={language.about} />
+			<Skills language={language.skills} />
+			<Experience language={language.experience} />
+			<Projects language={language.projects} />
+			<Contact language={language.contact} />
 			<Footer />
 		</>
 	);
 
 	return (
 		<Router>
-			<Header language={language} showHeader={showHeader} closeHeader={closeHeader} />
+			<Header language={language.header} showHeader={showHeader} closeHeader={closeHeader} setLanguage={setLanguage} />
 			<div className='sections'>
 				<Routes>
 					<Route path='/' exact element={sections}></Route>
-					<Route path='/about' element={<About language={language} />}></Route>
-					<Route path='/skills' element={<Skills />}></Route>
-					<Route path='/experience' element={<Experience />}></Route>
-					<Route path='/projects' element={<Projects />}></Route>
-					<Route path='/contact' element={<Contact />}></Route>
+					<Route path='/about' element={<About language={language.about} />}></Route>
+					<Route path='/skills' element={<Skills language={language.skills} />}></Route>
+					<Route path='/experience' element={<Experience language={language.experience} />}></Route>
+					<Route path='/projects' element={<Projects language={language.projects} />}></Route>
+					<Route path='/contact' element={<Contact language={language.contact} />}></Route>
 					<Route path='*' element={<NotFound />}></Route>
 				</Routes>
 			</div>
 			<div className='mobile-header'>
-				<Link to='/'>
+				<Link to='/' onClick={closeHeader}>
 					<img src={favicon} alt='Logo' className='logo'></img>
 				</Link>
 				<button className='burger-close' onClick={showHideMenu}>

@@ -1,12 +1,12 @@
 import React from "react";
 import searchingJob from "../img/searching-job.svg";
 
-export default function Experience() {
+export default function Experience({language}) {
 	return (
 		<div className='section-container experience-section'>
-			<h2 className='section-title'>Experience</h2>
+			<h2 className='section-title'>{language.title}</h2>
 			<img src={searchingJob} alt='Searching job' />
-			<p>I am looking for my first job.</p>
+			<p>{language.message}</p>
 		</div>
 	);
 }

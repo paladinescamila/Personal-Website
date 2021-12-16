@@ -2,20 +2,20 @@ import React from "react";
 import Button from "./Button";
 import launch from "../img/launch.svg";
 
-export default function Home() {
+export default function Home({language}) {
 	return (
 		<div className='home-section'>
 			<div className='home-left'>
 				<div className='home-hi'>
-					<p>Hi, I’m</p>
+					<p>{language.hi}</p>
 					<p>Camila Paladines</p>
-					<p>Frontend Developer</p>
+					<p>{language.job}</p>
 				</div>
 				<div>
-					<Button value='Contact me' type='solid' link='mailto:camilapaladines27@gmail.com' />
+					<Button value={language.button} type='solid' link='mailto:camilapaladines27@gmail.com' />
 				</div>
 			</div>
-			<img src={launch} alt='Frontend Web Development'></img>
+			<img src={launch} alt='Frontend'></img>
 		</div>
 	);
 }

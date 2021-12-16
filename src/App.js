@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import "./scss/main.scss";
 
 import Header from "./components/Header";
@@ -9,8 +9,10 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 
+import favicon from "./img/logo.png";
 import burgerIcon from "./img/burger.svg";
 import closeIcon from "./img/x.svg";
 
@@ -43,12 +45,13 @@ function App() {
 			<Experience />
 			<Projects />
 			<Contact />
+			<Footer />
 		</>
 	);
 
 	return (
 		<Router>
-			<Header showHeader={showHeader} closeHeader={closeHeader} />
+			<Header language={language} showHeader={showHeader} closeHeader={closeHeader} />
 			<div className='sections'>
 				<Routes>
 					<Route path='/' exact element={sections}></Route>
@@ -60,9 +63,14 @@ function App() {
 					<Route path='*' element={<NotFound />}></Route>
 				</Routes>
 			</div>
-			<button className='burger-close' onClick={showHideMenu}>
-				{showBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
-			</button>
+			<div className='mobile-header'>
+				<Link to='/'>
+					<img src={favicon} alt='Logo' className='logo'></img>
+				</Link>
+				<button className='burger-close' onClick={showHideMenu}>
+					{showBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
+				</button>
+			</div>
 		</Router>
 	);
 }

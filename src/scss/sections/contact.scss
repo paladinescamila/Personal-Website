@@ -1,6 +1,4 @@
 .contact-section {
-	position: relative;
-
 	& > a {
 		margin: 2em 0 7em 0;
 	}
@@ -42,8 +40,6 @@
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;

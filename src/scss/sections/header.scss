@@ -7,9 +7,10 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: $gray-2;
+	z-index: 1000;
 }
 
-.logo {
+.header-logo {
 	width: 70px;
 }
 

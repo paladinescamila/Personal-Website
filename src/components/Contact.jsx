@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-import Footer from "./Footer";
 import social from "../data/social";
 
 export default function Contact() {
@@ -19,7 +18,6 @@ export default function Contact() {
 					</a>
 				))}
 			</div>
-			<Footer />
 		</div>
 	);
 }

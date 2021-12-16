@@ -6,13 +6,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	color: $gray-C;
 	background-color: $gray-2;
 }
 
 .logo {
 	width: 70px;
-	cursor: pointer;
 }
 
 .header-sections {
@@ -21,9 +19,10 @@
 	flex-direction: column;
 	align-items: center;
 
-	li {
-		cursor: pointer;
+	a {
 		margin-bottom: 2em;
+		color: $gray-C;
+		text-decoration: none;
 		opacity: 0.5;
 
 		&:hover {
@@ -33,9 +32,13 @@
 }
 
 .select-languaje {
+	// display: none;
 	position: relative;
 
 	p {
+		cursor: pointer;
+		color: $gray-C;
+		opacity: 0.5;
 		display: flex;
 		align-items: center;
 		padding: 0.3em 0.5em;

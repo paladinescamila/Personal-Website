@@ -4,12 +4,10 @@ import cvEnglish from "../data/CV-English.pdf";
 import cvSpanish from "../data/CV-Spanish.pdf";
 import photo from "../img/profile.png";
 
-export default function About({language, reference}) {
+export default function About({language}) {
 	return (
 		<div className='section-container'>
-			<h2 className='section-title' ref={reference}>
-				About
-			</h2>
+			<h2 className='section-title'>About</h2>
 			<div className='about-content'>
 				<div>
 					<p className='about-text'>

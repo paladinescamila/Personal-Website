@@ -3,8 +3,6 @@
 	display: grid;
 	grid-gap: 3em;
 	grid-template-columns: 1fr 300px;
-	align-items: center;
-	justify-content: center;
 
 	& > div {
 		display: flex;
@@ -13,12 +11,13 @@
 	}
 
 	a {
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 
 	img {
 		width: 300px;
-		border-radius: 50%;
+		border: 3px solid $theme-1;
+		box-shadow: 7px 7px 0 0 $theme-3;
 	}
 }
 
@@ -34,6 +33,28 @@
 
 @media (max-width: 900px) {
 	.about-content {
+		width: 100%;
+	}
+}
+
+@media (max-width: 850px) {
+	.about-content {
+		grid-template-columns: 1fr;
+
+		& > div {
+			text-align: center;
+			align-items: center;
+		}
+
+		img {
+			width: 250px;
+			justify-self: center;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.about-content > div {
 		width: 100%;
 	}
 }

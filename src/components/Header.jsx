@@ -8,7 +8,7 @@ import spanishJSON from "../data/spanish";
 import usaFlag from "../img/usa.png";
 import spainFlag from "../img/spain.png";
 
-export default function Header({language, showHeader, closeHeader, setLanguage}) {
+export default function Header({language, setLanguage, displayHeader, closeHeader}) {
 	const [displaySelector, setDisplaySelector] = useState("none");
 
 	const showSelector = () => {
@@ -28,7 +28,7 @@ export default function Header({language, showHeader, closeHeader, setLanguage})
 	};
 
 	return (
-		<header className='header' style={{display: showHeader ? "flex" : "none"}}>
+		<header className='header' style={{display: displayHeader ? "flex" : "none"}}>
 			<Link to='/' onClick={closeHeader}>
 				<img src={favicon} alt='Logo' className='header-logo'></img>
 			</Link>

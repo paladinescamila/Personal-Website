@@ -25,17 +25,17 @@ function App() {
 	const [language, setLanguage] = useState(navLanguage === "es" ? spanishJSON : englishJSON);
 
 	// Show or hide the menu
-	const [showBurger, setShowBurger] = useState(true);
-	const [showHeader, setShowHeader] = useState(window.innerWidth > 1000);
+	const [displayBurger, setDisplayBurger] = useState(true);
+	const [displayHeader, setDisplayHeader] = useState(window.innerWidth > 1000);
 	const showHideMenu = () => {
-		setShowBurger(!showBurger);
-		setShowHeader(showBurger);
+		setDisplayBurger(!displayBurger);
+		setDisplayHeader(displayBurger);
 	};
 
 	// Close the header
 	const closeHeader = () => {
-		setShowHeader(window.innerWidth > 1000);
-		setShowBurger(window.innerWidth <= 1000);
+		setDisplayHeader(window.innerWidth > 1000);
+		setDisplayBurger(window.innerWidth <= 1000);
 	};
 
 	// Sections content
@@ -53,7 +53,7 @@ function App() {
 
 	return (
 		<Router>
-			<Header language={language.header} showHeader={showHeader} closeHeader={closeHeader} setLanguage={setLanguage} />
+			<Header language={language.header} setLanguage={setLanguage} displayHeader={displayHeader} closeHeader={closeHeader} />
 			<div className='sections'>
 				<Routes>
 					<Route path='/' exact element={sections}></Route>
@@ -70,7 +70,7 @@ function App() {
 					<img src={favicon} alt='Logo' className='logo'></img>
 				</Link>
 				<button className='burger-close' onClick={showHideMenu}>
-					{showBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
+					{displayBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
 				</button>
 			</div>
 		</Router>

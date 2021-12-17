@@ -21,7 +21,7 @@
 }
 
 .about-text {
-	color: $gray-9;
+	color: $gray-C;
 	margin-bottom: 1em;
 
 	p {
@@ -42,6 +42,7 @@
 
 		& > div {
 			align-items: center;
+			text-align: center;
 		}
 
 		img {

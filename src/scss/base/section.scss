@@ -18,7 +18,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 7em 0;
+	padding: 7em 5em;
 }
 
 /* Title */
@@ -32,10 +32,6 @@
 }
 
 @media (max-width: 1000px) {
-	.section-container {
-		margin-bottom: 3em;
-	}
-
 	.section-title {
 		font-size: 2.5em;
 	}
@@ -43,6 +39,12 @@
 
 @media (max-width: 500px) {
 	.section-container {
-		padding: 1em !important;
+		padding: 7em 3em;
+	}
+}
+
+@media (max-width: 350px) {
+	.section-container {
+		padding: 7em 1em;
 	}
 }

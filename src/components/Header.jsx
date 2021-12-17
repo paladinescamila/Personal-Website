@@ -16,7 +16,7 @@ export default function Header({content, setContent, displayHeader, closeHeader}
 	return (
 		<header className='header' style={{display: displayHeader ? "flex" : "none"}}>
 			<Link to='/' onClick={closeHeader}>
-				<img src={favicon} alt='Logo' className='header-logo'></img>
+				<img className='header-logo' src={favicon} alt='Logo'></img>
 			</Link>
 			<div className='header-sections'>
 				<Link to='/about' onClick={closeHeader}>

@@ -33,14 +33,19 @@
 
 .language-selector {
 	appearance: none;
-	border: 1px solid transparent;
+	border: none;
 	background-color: $gray-3;
-	padding: 0.5em 1em;
-	color: $gray-A;
+	padding: 0.7em 1.5em;
+	color: $gray-C;
+	opacity: 0.8;
 	cursor: pointer;
 
 	&::-ms-expand {
 		display: none;
+	}
+
+	&:hover {
+		opacity: 1;
 	}
 }
 

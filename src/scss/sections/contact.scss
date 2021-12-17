@@ -1,6 +1,6 @@
 .contact-section {
 	& > a {
-		margin: 2em 0 7em 0;
+		margin-bottom: 5em;
 	}
 }
 
@@ -8,6 +8,11 @@
 	text-align: center;
 	color: $gray-9;
 	width: 700px;
+}
+
+.mail {
+	margin: 1em 0;
+	color: $gray-5;
 }
 
 .all-social-links,

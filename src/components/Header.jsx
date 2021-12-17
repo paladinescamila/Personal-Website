@@ -6,10 +6,10 @@ import socialLinkedIn from "../img/social/linkedin.svg";
 import englishJSON from "../data/english";
 import spanishJSON from "../data/spanish";
 
-export default function Header({language, setLanguage, displayHeader, closeHeader}) {
+export default function Header({content, setContent, displayHeader, closeHeader}) {
 	const changeLanguage = (e) => {
-		if (e.target.value === "es") setLanguage(spanishJSON);
-		else setLanguage(englishJSON);
+		if (e.target.value === "es") setContent(spanishJSON);
+		else setContent(englishJSON);
 		closeHeader();
 	};
 
@@ -20,19 +20,19 @@ export default function Header({language, setLanguage, displayHeader, closeHeade
 			</Link>
 			<div className='header-sections'>
 				<Link to='/about' onClick={closeHeader}>
-					{language.about}
+					{content.about}
 				</Link>
 				<Link to='/skills' onClick={closeHeader}>
-					{language.skills}
+					{content.skills}
 				</Link>
 				<Link to='/experience' onClick={closeHeader}>
-					{language.experience}
+					{content.experience}
 				</Link>
 				<Link to='/projects' onClick={closeHeader}>
-					{language.projects}
+					{content.projects}
 				</Link>
 				<Link to='/contact' onClick={closeHeader}>
-					{language.contact}
+					{content.contact}
 				</Link>
 				<select className='language-selector' onChange={changeLanguage}>
 					<option value='en'>English</option>

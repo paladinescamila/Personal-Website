@@ -10,7 +10,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
 
 import favicon from "./img/logo.png";
 import burgerIcon from "./img/burger.svg";
@@ -21,8 +20,8 @@ import spanishJSON from "./data/spanish";
 
 function App() {
 	// Language
-	const navLanguage = navigator.language.slice(0, 2);
-	const [language, setLanguage] = useState(navLanguage === "es" ? spanishJSON : englishJSON);
+	const language = navigator.language.slice(0, 2);
+	const [content, setContent] = useState(language === "es" ? spanishJSON : englishJSON);
 
 	// Show or hide the menu
 	const [displayBurger, setDisplayBurger] = useState(true);
@@ -41,28 +40,27 @@ function App() {
 	// Sections content
 	const sections = (
 		<>
-			<Home language={language.home} />
-			<About language={language.about} />
-			<Skills language={language.skills} />
-			<Experience language={language.experience} />
-			<Projects language={language.projects} />
-			<Contact language={language.contact} />
+			<Home content={content.home} />
+			<About content={content.about} />
+			<Skills content={content.skills} />
+			<Experience content={content.experience} />
+			<Projects content={content.projects} />
+			<Contact content={content.contact} />
 			<Footer />
 		</>
 	);
 
 	return (
 		<Router>
-			<Header language={language.header} setLanguage={setLanguage} displayHeader={displayHeader} closeHeader={closeHeader} />
+			<Header content={content.header} setContent={setContent} displayHeader={displayHeader} closeHeader={closeHeader} />
 			<div className='sections'>
 				<Routes>
 					<Route path='/' exact element={sections}></Route>
-					<Route path='/about' element={<About language={language.about} />}></Route>
-					<Route path='/skills' element={<Skills language={language.skills} />}></Route>
-					<Route path='/experience' element={<Experience language={language.experience} />}></Route>
-					<Route path='/projects' element={<Projects language={language.projects} />}></Route>
-					<Route path='/contact' element={<Contact language={language.contact} />}></Route>
-					<Route path='*' element={<NotFound />}></Route>
+					<Route path='/about' element={<About content={content.about} />}></Route>
+					<Route path='/skills' element={<Skills content={content.skills} />}></Route>
+					<Route path='/experience' element={<Experience content={content.experience} />}></Route>
+					<Route path='/projects' element={<Projects content={content.projects} />}></Route>
+					<Route path='/contact' element={<Contact content={content.contact} />}></Route>
 				</Routes>
 			</div>
 			<div className='mobile-header home-padding'>

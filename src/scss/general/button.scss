@@ -28,8 +28,8 @@
 }
 
 .ghost-button {
-	@include button($white, transparent, $white) {
-		background-color: rgba($white, 0.1);
+	@include button($gray-C, transparent, $gray-C) {
+		background-color: rgba($gray-C, 0.1);
 	}
 }
 

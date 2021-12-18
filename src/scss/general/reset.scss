@@ -6,7 +6,12 @@ body {
 	font-family: "Mulish", sans-serif;
 }
 
+
 /* RESET */
+
+html {
+	scroll-behavior: smooth;
+}
 
 body,
 h2,

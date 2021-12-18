@@ -1,16 +1,12 @@
 .projects-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
 }
 
 .project-card {
 	display: grid;
-	width: 365px;
-	height: 390px;
-	margin: 1em;
 	background-color: $gray-2;
 
 	&:hover {
@@ -49,7 +45,7 @@
 		}
 
 		p:nth-of-type(2) {
-			margin: 1em 0;
+			margin: 1em 0 0 0;
 			color: $gray-9;
 		}
 	}
@@ -57,13 +53,14 @@
 
 .project-tools-and-resources {
 	width: 100%;
-	display: grid;
-	grid-gap: 0.5em;
-	grid-template-columns: 1fr 80px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .project-card-tools {
-	list-style: none;
+	margin-top: 1em;
 	display: flex;
 	align-items: center;
 
@@ -71,14 +68,11 @@
 		margin-right: 1.5em;
 		font-size: 0.9em;
 		color: $gray-5;
-
-		&:last-of-type {
-			margin-right: 0;
-		}
 	}
 }
 
 .project-card-resources {
+	margin-top: 1em;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -109,10 +103,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 365px;
-	height: 390px;
-	margin: 1em;
-	outline: 3px dashed $gray-5;
+	border: 3px dashed $gray-5;
 	background-color: $gray-2;
 	opacity: 0.7;
 	text-decoration: none;
@@ -123,56 +114,22 @@
 	}
 }
 
+@media (max-width: 1300px) {
+	.projects-container {
+		grid-gap: 1.5em;
+	}
+}
+
 @media (max-width: 1200px) {
-	.projects-section {
-		padding: 1em !important;
+	.projects-container {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 	}
 }
 
-@media (max-width: 460px) {
-	.project-card,
-	.projects-container > a {
-		height: 400px;
-	}
-
-	.project-card-data > a {
-		p:nth-of-type(1) {
-			font-size: 1.1em;
-		}
-
-		p:nth-of-type(2) {
-			font-size: 0.95em;
-		}
-	}
-
-	.project-tools-and-resources {
+@media (max-width: 750px) {
+	.projects-container {
 		grid-template-columns: 1fr;
-
-		img {
-			width: 20px;
-		}
-	}
-
-	.project-card-tools {
-		justify-content: flex-start;
-		font-size: 0.9em;
-	}
-
-	.project-card-resources {
-		justify-content: flex-start;
-	}
-}
-
-@media (max-width: 450px) {
-	.project-card,
-	.projects-container > a {
-		width: 80vw;
-	}
-}
-
-@media (max-width: 350px) {
-	.project-card,
-	.projects-container > a {
-		height: 370px;
+		grid-template-rows: repeat(3, 1fr);
 	}
 }

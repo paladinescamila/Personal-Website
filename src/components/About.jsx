@@ -12,7 +12,9 @@ export default function About({content}) {
 					<p className='about-text'>{content.paragraph2}</p>
 					<Button value={content.cvTitle} type='ghost' link={content.cvFile} />
 				</div>
-				<img src={photo} alt='Camila Paladines'></img>
+				<div className='about-photo'>
+					<img src={photo} alt='Camila Paladines'></img>
+				</div>
 			</div>
 		</div>
 	);

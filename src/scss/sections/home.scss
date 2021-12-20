@@ -1,5 +1,5 @@
 .home-section {
-	height: 90vh;
+	height: 95vh;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -45,7 +45,7 @@
 }
 
 .scroll-down {
-	height: 10vh;
+	height: 5vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -53,7 +53,7 @@
 	animation: scroll-animation 3s ease-in-out infinite;
 
 	img {
-		width: 70px;
+		width: 50px;
 	}
 }
 
@@ -117,7 +117,7 @@
 	}
 
 	.scroll-down img {
-		width: 10%;
+		width: 7%;
 	}
 }
 

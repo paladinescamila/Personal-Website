@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import React, {useState, useRef} from "react";
 import "./scss/main.scss";
 
 import Header from "./components/Header";
@@ -24,54 +23,54 @@ function App() {
 	const [content, setContent] = useState(language === "es" ? spanishJSON : englishJSON);
 
 	// Show or hide the menu
-	const [displayBurger, setDisplayBurger] = useState(true);
-	const [displayHeader, setDisplayHeader] = useState(window.innerWidth > 1000);
+	const [showBurger, setShowBurger] = useState(true);
+	const [showHeader, setShowHeader] = useState(window.innerWidth > 1000);
+
 	const showHideMenu = () => {
-		setDisplayBurger(!displayBurger);
-		setDisplayHeader(displayBurger);
+		setShowBurger(!showBurger);
+		setShowHeader(showBurger);
 	};
 
 	// Close the header
 	const closeHeader = () => {
-		setDisplayHeader(window.innerWidth > 1000);
-		setDisplayBurger(window.innerWidth <= 1000);
+		setShowHeader(window.innerWidth > 1000);
+		setShowBurger(window.innerWidth <= 1000);
 	};
 
-	// Sections content
-	const sections = (
-		<>
-			<Home content={content.home} />
-			<About content={content.about} />
-			<Skills content={content.skills} />
-			<Experience content={content.experience} />
-			<Projects content={content.projects} />
-			<Contact content={content.contact} />
-			<Footer />
-		</>
-	);
+	// Section references
+	const references = {
+		home: useRef(null),
+		about: useRef(null),
+		skills: useRef(null),
+		experience: useRef(null),
+		projects: useRef(null),
+		contact: useRef(null),
+	};
+
+	const goTo = (reference) => {
+		reference.current.scrollIntoView();
+		closeHeader();
+	};
 
 	return (
-		<Router>
-			<Header content={content.header} setContent={setContent} displayHeader={displayHeader} closeHeader={closeHeader} />
+		<>
+			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} references={references} />
 			<div className='sections'>
-				<Routes>
-					<Route path='/' exact element={sections}></Route>
-					<Route path='/about' element={<About content={content.about} />}></Route>
-					<Route path='/skills' element={<Skills content={content.skills} />}></Route>
-					<Route path='/experience' element={<Experience content={content.experience} />}></Route>
-					<Route path='/projects' element={<Projects content={content.projects} />}></Route>
-					<Route path='/contact' element={<Contact content={content.contact} />}></Route>
-				</Routes>
+				<Home content={content.home} refProperty={references.home} />
+				<About content={content.about} refProperty={references.about} />
+				<Skills content={content.skills} refProperty={references.skills} />
+				<Experience content={content.experience} refProperty={references.experience} />
+				<Projects content={content.projects} refProperty={references.projects} />
+				<Contact content={content.contact} refProperty={references.contact} />
+				<Footer />
 			</div>
 			<div className='mobile-header home-padding'>
-				<Link to='/' onClick={closeHeader}>
-					<img src={favicon} alt='Logo' className='logo'></img>
-				</Link>
+				<img src={favicon} alt='Logo' className='logo' onClick={() => goTo(references.home)}></img>
 				<button className='burger-close' onClick={showHideMenu}>
-					{displayBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
+					{showBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
 				</button>
 			</div>
-		</Router>
+		</>
 	);
 }
 

@@ -28,7 +28,7 @@ const skills = [
 	{name: "SCSS", img: scss, type: 0, level: 0},
 	{name: "JavaScript", img: js, type: 0, level: 1},
 	{name: "Python", img: python, type: 0, level: 1},
-	{name: "React JS", img: react, type: 1, level: 0},
+	{name: "React.js", img: react, type: 1, level: 0},
 	{name: "Git", img: git, type: 2, level: 0},
 	{name: "Netlify", img: netlify, type: 2, level: 0},
 	{name: "Firebase", img: firebase, type: 2, level: 0},

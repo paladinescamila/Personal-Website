@@ -5,9 +5,9 @@ import librariesImage from "../img/skill-libraries.svg";
 import toolsImage from "../img/skill-tools.svg";
 import skills from "../data/skills";
 
-export default function Skills({content}) {
+export default function Skills({content, refProperty}) {
 	return (
-		<div className='section-container'>
+		<div className='section-container' ref={refProperty}>
 			<h2 className='section-title'>{content.title}</h2>
 			<div className='about-skills'>
 				<SkillCard image={languagesImage} title={content.languages} skills={skills.filter((s) => s.type === 0)} />

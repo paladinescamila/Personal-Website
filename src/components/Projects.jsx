@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 import projects from "../data/projects";
 import socialFrontendMentor from "../img/social/frontendmentor.svg";
 
-export default function Projects({content}) {
+export default function Projects({content, refProperty}) {
 	return (
-		<div className='section-container projects-section'>
+		<div className='section-container projects-section' ref={refProperty}>
 			<h2 className='section-title'>{content.title}</h2>
 			<ul className='projects-container'>
 				{projects.map((p) => (

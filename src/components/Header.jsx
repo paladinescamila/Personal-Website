@@ -1,12 +1,11 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import favicon from "../img/logo.png";
 import socialGitHub from "../img/social/github.svg";
 import socialLinkedIn from "../img/social/linkedin.svg";
 import englishJSON from "../data/english";
 import spanishJSON from "../data/spanish";
 
-export default function Header({content, setContent, displayHeader, closeHeader}) {
+export default function Header({content, setContent, showHeader, closeHeader, goTo, references}) {
 	const changeLanguage = (e) => {
 		if (e.target.value === "es") setContent(spanishJSON);
 		else setContent(englishJSON);
@@ -14,26 +13,14 @@ export default function Header({content, setContent, displayHeader, closeHeader}
 	};
 
 	return (
-		<header className='header' style={{display: displayHeader ? "flex" : "none"}}>
-			<Link to='/' onClick={closeHeader}>
-				<img className='header-logo' src={favicon} alt='Logo'></img>
-			</Link>
+		<header className='header' style={{display: showHeader ? "flex" : "none"}}>
+			<img className='header-logo' src={favicon} alt='Logo' onClick={() => goTo(references.home)}></img>
 			<div className='header-sections'>
-				<Link to='/about' onClick={closeHeader}>
-					{content.about}
-				</Link>
-				<Link to='/skills' onClick={closeHeader}>
-					{content.skills}
-				</Link>
-				<Link to='/experience' onClick={closeHeader}>
-					{content.experience}
-				</Link>
-				<Link to='/projects' onClick={closeHeader}>
-					{content.projects}
-				</Link>
-				<Link to='/contact' onClick={closeHeader}>
-					{content.contact}
-				</Link>
+				<p onClick={() => goTo(references.about)}>{content.about}</p>
+				<p onClick={() => goTo(references.skills)}>{content.skills}</p>
+				<p onClick={() => goTo(references.experience)}>{content.experience}</p>
+				<p onClick={() => goTo(references.projects)}>{content.projects}</p>
+				<p onClick={() => goTo(references.contact)}>{content.contact}</p>
 				<select className='language-selector' onChange={changeLanguage}>
 					<option value='en'>English</option>
 					<option value='es'>Español</option>

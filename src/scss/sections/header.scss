@@ -2,7 +2,7 @@
 	height: 100vh;
 	width: 150px;
 	padding: 1em;
-	display: flex;
+	display: var(--display-header);
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -11,6 +11,7 @@
 
 .header-logo {
 	width: 70px;
+	cursor: pointer;
 }
 
 .header-sections {
@@ -19,7 +20,8 @@
 	flex-direction: column;
 	align-items: center;
 
-	a {
+	p {
+		cursor: pointer;
 		margin-bottom: 2em;
 		color: $gray-C;
 		text-decoration: none;
@@ -35,7 +37,7 @@
 	appearance: none;
 	border: none;
 	background-color: $gray-3;
-	padding: 0.7em 1.5em;
+	padding: 1em 1.5em;
 	color: $gray-C;
 	opacity: 0.8;
 	cursor: pointer;
@@ -60,10 +62,6 @@
 	}
 
 	.header-logo {
-		display: none;
-	}
-
-	.burger-close {
-		display: flex;
+		opacity: 0;
 	}
 }

@@ -2,9 +2,9 @@ import React from "react";
 import Button from "./Button";
 import social from "../data/social";
 
-export default function Contact({content}) {
+export default function Contact({content, refProperty}) {
 	return (
-		<div className='section-container contact-section'>
+		<div className='section-container contact-section' ref={refProperty}>
 			<h2 className='section-title'>{content.title}</h2>
 			<p className='contact-text'>{content.paragraph}</p>
 			<p className='mail'>camilapaladines27@gmail.com</p>

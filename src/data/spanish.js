@@ -1,4 +1,5 @@
 import cvSpanish from "./CV-Spanish.pdf";
+import spainFlag from "../img/spain.png";
 
 const spanishJSON = {
 	header: {
@@ -7,6 +8,8 @@ const spanishJSON = {
 		experience: "Experiencia",
 		projects: "Proyectos",
 		contact: "Contacto",
+		flag: spainFlag,
+		language: "Español",
 	},
 	home: {
 		hi: "Hola, soy",

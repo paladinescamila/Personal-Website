@@ -18,7 +18,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 7em 5em;
+	padding: 4em 5em 10em 5em;
 }
 
 /* Title */
@@ -39,12 +39,12 @@
 
 @media (max-width: 500px) {
 	.section-container {
-		padding: 7em 3em;
+		padding: 4em 3em 10em 3em;
 	}
 }
 
 @media (max-width: 400px) {
 	.section-container {
-		padding: 7em 1em;
+		padding: 4em 1em 10em 1em;
 	}
 }

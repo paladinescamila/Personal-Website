@@ -1,4 +1,5 @@
 import cvEnglish from "./CV-English.pdf";
+import usaFlag from "../img/usa.png";
 
 const englishJSON = {
 	header: {
@@ -7,6 +8,8 @@ const englishJSON = {
 		experience: "Experience",
 		projects: "Projects",
 		contact: "Contact",
+		flag: usaFlag,
+		language: "English",
 	},
 	home: {
 		hi: "Hi, I'm",

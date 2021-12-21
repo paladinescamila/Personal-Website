@@ -16,6 +16,7 @@
 
 .about-photo {
 	width: 300px;
+	height: 300px;
 	border: 3px solid $theme-1;
 	box-shadow: 7px 7px 0 0 $theme-3;
 	background-color: $black;
@@ -28,7 +29,7 @@
 }
 
 .about-text {
-	color: $gray-C;
+	color: $gray-D;
 	margin-bottom: 1em;
 
 	p {
@@ -54,6 +55,7 @@
 
 		.about-photo {
 			width: 250px;
+			height: 250px;
 			justify-self: center;
 		}
 	}

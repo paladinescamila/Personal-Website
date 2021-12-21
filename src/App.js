@@ -18,11 +18,11 @@ import englishJSON from "./data/english";
 import spanishJSON from "./data/spanish";
 
 function App() {
-	// Language
+	// Set content language
 	const language = navigator.language.slice(0, 2);
 	const [content, setContent] = useState(language === "es" ? spanishJSON : englishJSON);
 
-	// Show or hide the menu
+	// Show or hide the menu and the header
 	const [showBurger, setShowBurger] = useState(true);
 	const [showHeader, setShowHeader] = useState(window.innerWidth > 1000);
 
@@ -31,13 +31,12 @@ function App() {
 		setShowHeader(showBurger);
 	};
 
-	// Close the header
 	const closeHeader = () => {
 		setShowHeader(window.innerWidth > 1000);
 		setShowBurger(window.innerWidth <= 1000);
 	};
 
-	// Section references
+	// Sections references
 	const references = {
 		home: useRef(null),
 		about: useRef(null),
@@ -47,14 +46,14 @@ function App() {
 		contact: useRef(null),
 	};
 
-	const goTo = (reference) => {
-		reference.current.scrollIntoView();
+	const goTo = (section) => {
+		references[section].current.scrollIntoView();
 		closeHeader();
 	};
 
 	return (
 		<>
-			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} references={references} />
+			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} />
 			<div className='sections'>
 				<Home content={content.home} refProperty={references.home} />
 				<About content={content.about} refProperty={references.about} />
@@ -66,9 +65,7 @@ function App() {
 			</div>
 			<div className='mobile-header home-padding'>
 				<img src={favicon} alt='Logo' className='logo' onClick={() => goTo(references.home)}></img>
-				<button className='burger-close' onClick={showHideMenu}>
-					{showBurger ? <img src={burgerIcon} alt='Burger menu'></img> : <img src={closeIcon} alt='Close menu'></img>}
-				</button>
+				<img src={showBurger ? burgerIcon : closeIcon} alt='Menu' className='burger-close' onClick={showHideMenu}></img>
 			</div>
 		</>
 	);

@@ -64,7 +64,7 @@ function App() {
 				<Footer />
 			</div>
 			<div className='mobile-header home-padding'>
-				<img src={favicon} alt='Logo' className='logo' onClick={() => goTo(references.home)}></img>
+				<img src={favicon} alt='Logo' className='logo' onClick={() => goTo("home")}></img>
 				<img src={showBurger ? burgerIcon : closeIcon} alt='Menu' className='burger-close' onClick={showHideMenu}></img>
 			</div>
 		</>

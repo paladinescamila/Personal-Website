@@ -47,7 +47,7 @@ function App() {
 	};
 
 	const goTo = (section) => {
-		references[section].current.scrollIntoView();
+		references[section].current.scrollIntoView({behavior: "smooth"});
 		closeHeader();
 	};
 

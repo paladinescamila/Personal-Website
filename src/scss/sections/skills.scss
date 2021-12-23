@@ -16,7 +16,7 @@
 		width: 40px;
 	}
 
-	p {
+	& > p {
 		font-weight: bold;
 		margin: 1em 0 2em 0;
 		color: $gray-D;
@@ -32,9 +32,18 @@
 	li {
 		background-color: $gray-2;
 		margin: 0.5em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		img {
 			mix-blend-mode: luminosity;
+		}
+
+		p {
+			font-size: 0.7em;
+			padding: 0.5em 0 0 0;
+			color: $gray-7;
 		}
 	}
 }

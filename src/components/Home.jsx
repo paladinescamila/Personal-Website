@@ -6,7 +6,7 @@ import scroll from "../img/scroll-down.svg";
 export default function Home({content, refProperty}) {
 	return (
 		<>
-			<div className='home-section home-padding' ref={refProperty}>
+			<div className='home-section' ref={refProperty}>
 				<div className='home-left'>
 					<div className='home-hi'>
 						<p>{content.hi}</p>

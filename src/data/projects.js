@@ -5,7 +5,7 @@ const projects = [
 	{
 		name: "Purple Calendar",
 		descriptionEN: "This is a simple monthly calendar that allows you to navigate between months. Here you can also go to a specific month and year.",
-		descriptionES: "Este es un simple calendario mensual que le permite navegar entre los meses. Aquí también se puede ir a un mes y año específico.",
+		descriptionES: "Este es un simple calendario mensual que te permite navegar entre los meses. Aquí también puedes ir a un mes y año específico.",
 		tools: ["HTML", "CSS", "JavaScript"],
 		website: "https://purple-calendar.netlify.app/",
 		github: "https://github.com/paladinescamila/Purple-Calendar",

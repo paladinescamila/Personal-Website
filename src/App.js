@@ -63,7 +63,7 @@ function App() {
 				<Contact content={content.contact} refProperty={references.contact} />
 				<Footer />
 			</div>
-			<div className='mobile-header home-padding'>
+			<div className='mobile-header'>
 				<img src={favicon} alt='Logo' className='logo' onClick={() => goTo("home")}></img>
 				<img src={showBurger ? burgerIcon : closeIcon} alt='Menu' className='burger-close' onClick={showHideMenu}></img>
 			</div>

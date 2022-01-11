@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
+	padding: 0 10em;
 
 	img {
 		width: 250px;
@@ -39,10 +40,6 @@
 		color: $gray-8;
 		font-size: 1.8em;
 	}
-}
-
-.home-padding {
-	padding: 0 10em;
 }
 
 .scroll-down {
@@ -97,7 +94,7 @@
 		align-items: center;
 	}
 
-	.home-padding {
+	.home-section {
 		padding: 0 3em;
 	}
 }
@@ -133,7 +130,7 @@
 		}
 	}
 
-	.home-padding {
+	.home-section {
 		padding: 0 1em;
 	}
 }

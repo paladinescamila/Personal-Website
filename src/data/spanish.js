@@ -18,8 +18,12 @@ const spanishJSON = {
 	},
 	about: {
 		title: "Sobre mí",
-		paragraph1:
-			"Mi nombre es Camila Paladines, soy estudiante de Ingeniería de Sistemas y Computación en la Pontificia Universidad Javeriana en Cali, Colombia. Soy una entusiasta del Desarrollo Frontend y me apasiona diseñar y desarrollar aplicaciones web que sean muy útiles para las personas.",
+		paragraph1: (
+			<>
+				Mi nombre es Camila Paladines, soy <p>estudiante de Ingeniería de Sistemas y Computación</p> en la Pontificia Universidad Javeriana en Cali, Colombia. Soy una{" "}
+				<p>entusiasta del Desarrollo Frontend</p> y me apasiona diseñar y desarrollar aplicaciones web que sean muy útiles para las personas.
+			</>
+		),
 		paragraph2:
 			"Mi objetivo es colaborar con la creación de herramientas que contribuyan al desarrollo de una persona, una empresa o una nación. Por eso me gusta aprender nuevas tecnologías, y utilizarlas con la misión de mejorar el mundo un poco, un paso a la vez.",
 		cvTitle: "Descargar CV",

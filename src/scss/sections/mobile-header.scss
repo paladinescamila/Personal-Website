@@ -32,3 +32,9 @@
 		display: flex;
 	}
 }
+
+@media (max-width: 500px) {
+	.mobile-header {
+		padding: 0 1em;
+	}
+}

@@ -18,8 +18,12 @@ const englishJSON = {
 	},
 	about: {
 		title: "About",
-		paragraph1:
-			"My name is Camila Paladines, I'm a Computer Science student at Pontificia Universidad Javeriana in Cali, Colombia. I'm a Frontend Development enthusiast and I'm passionate about designing and developing web applications that are very useful for people.",
+		paragraph1: (
+			<>
+				My name is Camila Paladines, I'm a <p>Computer Science student</p> at Pontificia Universidad Javeriana in Cali, Colombia. I'm a <p>Frontend Development enthusiast</p> and I'm
+				passionate about designing and developing web applications that are very useful for people.
+			</>
+		),
 		paragraph2:
 			"My goal is to cooperate with the creation of tools that contribute to the development of a person, a company, or a nation. That's why I like to learn new technologies, and use them with the mission to improve the world a little bit, one step at a time.",
 		cvTitle: "Download CV",

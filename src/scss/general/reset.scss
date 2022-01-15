@@ -35,7 +35,7 @@ ul {
 
 /* Scroll */
 
-.sections {
+* {
 	&::-webkit-scrollbar-track {
 		background-color: $gray-1;
 	}

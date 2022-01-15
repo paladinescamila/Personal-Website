@@ -2,6 +2,9 @@
 	height: 100vh;
 	width: 150px;
 	padding: 1em;
+	position: fixed;
+	top: 0;
+	left: 0;
 	display: var(--display-header);
 	flex-direction: column;
 	align-items: center;
@@ -87,9 +90,6 @@
 		background-color: $gray-1;
 		width: 100vw;
 		z-index: 1000;
-		position: absolute;
-		top: 0;
-		left: 0;
 	}
 
 	.header-logo {

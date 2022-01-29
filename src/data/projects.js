@@ -27,7 +27,7 @@ const projects = [
 		descriptionES: "Esta aplicación puede ayudarte a hacer un seguimiento de tu peso, IMC, porcentaje de masa muscular y porcentaje de agua.",
 		tools: ["HTML", "CSS", "JavaScript", "Firebase"],
 		website: "https://my-fit-app.netlify.app/",
-		github: "hhttps://github.com/paladinescamila/FitApp",
+		github: "https://github.com/paladinescamila/FitApp",
 		img: fitappPhoto,
 	},
 ];

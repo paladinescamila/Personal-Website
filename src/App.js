@@ -51,6 +51,14 @@ function App() {
 		closeHeader();
 	};
 
+	// Update showHeader and showBurger when the page is resized.
+	const resize = () => {
+		setShowHeader(window.innerWidth > 1000);
+		setShowBurger(window.innerWidth <= 1000);
+	};
+
+	window.onresize = resize;
+
 	return (
 		<>
 			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} />

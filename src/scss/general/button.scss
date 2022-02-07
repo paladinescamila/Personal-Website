@@ -22,8 +22,8 @@
 
 .solid-button {
 	@include button($theme-3, $theme-3, $white) {
-		border-color: $theme-4;
-		background-color: $theme-4;
+		border-color: lighten($theme-3, 3);
+		background-color: lighten($theme-3, 3);
 	}
 }
 

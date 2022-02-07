@@ -7,7 +7,8 @@
 }
 
 .project-card {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	background-color: $gray-2;
 
 	&:hover {
@@ -35,6 +36,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 1.3em;
+	height: 100%;
 
 	& > a {
 		text-decoration: none;

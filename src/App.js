@@ -1,6 +1,7 @@
 import React, {useState, useRef} from "react";
 import "./scss/main.scss";
 
+// Sections
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -10,10 +11,12 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Icons
 import favicon from "./img/logo.png";
 import burgerIcon from "./img/burger.svg";
 import closeIcon from "./img/x.svg";
 
+// Language data
 import englishJSON from "./data/english";
 import spanishJSON from "./data/spanish";
 
@@ -52,12 +55,10 @@ function App() {
 	};
 
 	// Update showHeader and showBurger when the page is resized.
-	const resize = () => {
+	window.onresize = () => {
 		setShowHeader(window.innerWidth > 1000);
 		setShowBurger(window.innerWidth <= 1000);
 	};
-
-	window.onresize = resize;
 
 	return (
 		<>

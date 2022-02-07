@@ -4,18 +4,18 @@ This is my personal website or portfolio, that can be found at [camilapaladines.
 
 ## How to run
 
-1. Una vez hayas descargado el proyecto y te encuentres en la carpeta principal, ejecuta el siguiente comando:
+1. Once you have downloaded the project and are in the main folder, run the following command:
 
     ```sh
     npm install
 
     ```
 
-2. Luego, corres el proyecto con
+2. Then, run the project with
 
     ```sh
     npm start
 
     ```
 
-    Esto abrirá tu navegador en https://localhost:3000, donde puedes ver la interfaz gráfica.
+    This will open your browser at https://localhost:3000, where you can see the graphical interface.

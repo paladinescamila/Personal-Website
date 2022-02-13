@@ -1,4 +1,4 @@
-import cvSpanish from "./CV-Spanish.pdf";
+import cvSpanish from "./CV-Camila-Paladines-(Spanish).pdf";
 import spainFlag from "../img/spain.png";
 
 const spanishJSON = {

@@ -13,7 +13,7 @@ export default function About({content, refProperty}) {
 					<Button value={content.cvTitle} type='solid' link={content.cvFile} />
 				</div>
 				<div className='about-photo'>
-					<img src={photo} alt='Camila Paladines'></img>
+					<img src={photo} alt='Camila Paladines photography'></img>
 				</div>
 			</div>
 		</section>

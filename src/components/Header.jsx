@@ -26,7 +26,7 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 
 	return (
 		<header className='header' style={{display: showHeader ? "flex" : "none"}}>
-			<img className='header-logo' src={favicon} alt='Logo' onClick={() => goTo("home")}></img>
+			<img className='header-logo' src={favicon} alt='Planet logo' onClick={() => goTo("home")}></img>
 			<nav className='header-sections'>
 				<p onClick={() => goTo("about")}>{content.about}</p>
 				<p onClick={() => goTo("skills")}>{content.skills}</p>
@@ -40,11 +40,11 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 					</button>
 					<div className='language-selector' style={{display: displaySelector}}>
 						<button onClick={() => setLanguage(englishJSON)}>
-							<img src={usaFlag} alt='English'></img>
+							<img src={usaFlag} alt='USA flag'></img>
 							<p>English</p>
 						</button>
 						<button onClick={() => setLanguage(spanishJSON)}>
-							<img src={spainFlag} alt='Spanish'></img>
+							<img src={spainFlag} alt='Spain flag'></img>
 							<p>Español</p>
 						</button>
 					</div>
@@ -52,10 +52,10 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 			</nav>
 			<nav className='social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
-					<img alt='GitHub' src={socialGitHub}></img>
+					<img alt='Link to GitHub profile' src={socialGitHub}></img>
 				</a>
 				<a href='https://www.linkedin.com/in/paladinescamila' target='_blank' rel='noreferrer'>
-					<img alt='LinkedIn' src={socialLinkedIn}></img>
+					<img alt='Link to LinkedIn profile' src={socialLinkedIn}></img>
 				</a>
 			</nav>
 		</header>

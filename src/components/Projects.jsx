@@ -12,7 +12,7 @@ export default function Projects({content, refProperty}) {
 					<ProjectCard name={p.name} description={content.language === "es" ? p.descriptionES : p.descriptionEN} tools={p.tools} website={p.website} github={p.github} img={p.img} />
 				))}
 				<a href='https://www.frontendmentor.io/profile/paladinescamila' target='_blank' rel='noreferrer'>
-					<img alt='Frontend Mentor' src={socialFrontendMentor}></img>
+					<img alt='Link to Frontend Mentor profile' src={socialFrontendMentor}></img>
 					{content.frontendMentor}
 				</a>
 			</ul>

@@ -17,7 +17,7 @@ export default function Home({content, refProperty}) {
 						<Button value={content.button} type='solid' link='mailto:camilapaladines27@gmail.com' />
 					</div>
 				</div>
-				<img src={launch} alt='Frontend'></img>
+				<img src={launch} alt='Spaceship'></img>
 			</section>
 			<div className='scroll-down'>
 				<img src={scroll} alt='Scroll down'></img>

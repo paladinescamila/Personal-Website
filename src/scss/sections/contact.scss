@@ -44,25 +44,6 @@
 	width: 40px;
 }
 
-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1em 0;
-	font-family: monospace;
-	color: $white;
-	opacity: 0.3;
-
-	a {
-		color: $white;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
-
 @media (max-width: 800px) {
 	.contact-text {
 		width: 100%;

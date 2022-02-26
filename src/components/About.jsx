@@ -4,7 +4,7 @@ import photo from "../img/profile.png";
 
 export default function About({content, refProperty}) {
 	return (
-		<div className='section-container' ref={refProperty}>
+		<section className='section-container' ref={refProperty}>
 			<h2 className='section-title'>{content.title}</h2>
 			<div className='about-content'>
 				<div>
@@ -16,6 +16,6 @@ export default function About({content, refProperty}) {
 					<img src={photo} alt='Camila Paladines'></img>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

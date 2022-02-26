@@ -27,7 +27,7 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 	return (
 		<header className='header' style={{display: showHeader ? "flex" : "none"}}>
 			<img className='header-logo' src={favicon} alt='Logo' onClick={() => goTo("home")}></img>
-			<div className='header-sections'>
+			<nav className='header-sections'>
 				<p onClick={() => goTo("about")}>{content.about}</p>
 				<p onClick={() => goTo("skills")}>{content.skills}</p>
 				<p onClick={() => goTo("experience")}>{content.experience}</p>
@@ -49,15 +49,15 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 						</button>
 					</div>
 				</div>
-			</div>
-			<div className='social-links'>
+			</nav>
+			<nav className='social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='GitHub' src={socialGitHub}></img>
 				</a>
 				<a href='https://www.linkedin.com/in/paladinescamila' target='_blank' rel='noreferrer'>
 					<img alt='LinkedIn' src={socialLinkedIn}></img>
 				</a>
-			</div>
+			</nav>
 		</header>
 	);
 }

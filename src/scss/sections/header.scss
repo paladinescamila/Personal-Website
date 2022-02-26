@@ -30,7 +30,7 @@
 
 	& > p {
 		margin-bottom: 2em;
-		color: $gray-C;
+		color: $gray-E;
 		text-decoration: none;
 		opacity: 0.5;
 		cursor: pointer;
@@ -51,7 +51,7 @@
 		width: 100px;
 		height: 40px;
 		border: none;
-		color: $gray-C;
+		color: $gray-E;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -65,7 +65,7 @@
 	}
 
 	& > button {
-		background-color: rgba($white, 0.05);
+		background-color: rgba($white, 0.07);
 		border: 1px solid transparent;
 	}
 

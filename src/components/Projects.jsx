@@ -5,7 +5,7 @@ import socialFrontendMentor from "../img/social/frontendmentor.svg";
 
 export default function Projects({content, refProperty}) {
 	return (
-		<div className='section-container projects-section' ref={refProperty}>
+		<section className='section-container projects-section' ref={refProperty}>
 			<h2 className='section-title'>{content.title}</h2>
 			<ul className='projects-container'>
 				{projects.map((p) => (
@@ -16,6 +16,6 @@ export default function Projects({content, refProperty}) {
 					{content.frontendMentor}
 				</a>
 			</ul>
-		</div>
+		</section>
 	);
 }

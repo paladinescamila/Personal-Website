@@ -45,17 +45,26 @@ ul {
 
 	&::-webkit-scrollbar-thumb {
 		border-radius: 10px;
-		background-color: $gray-3;
+		background-color: $gray-5;
 	}
 }
 
 /* Selected text */
 
-h2,
-p,
-button {
-	&::-moz-selection,
-	&::selection {
-		background-color: rgba(255, 255, 255, 0.1);
-	}
+h1::-moz-selection,
+h2::-moz-selection,
+p::-moz-selection,
+a::-moz-selection,
+li::-moz-selection,
+img::-moz-selection {
+	background-color: rgba($theme-4, 0.5);
+}
+
+h1::selection,
+h2::selection,
+p::selection,
+a::selection,
+li::selection,
+img::selection {
+	background-color: rgba($theme-4, 0.5);
 }

@@ -10,7 +10,7 @@ export default function Home({content, refProperty}) {
 				<div className='home-left'>
 					<div className='home-hi'>
 						<p>{content.hi}</p>
-						<p>Camila Paladines</p>
+						<h1>Camila Paladines</h1>
 						<p>{content.job}</p>
 					</div>
 					<div>

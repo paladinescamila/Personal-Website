@@ -1,0 +1,41 @@
+.loading-container {
+	background-color: $gray-1;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	& > div {
+		width: 300px;
+		height: 30px;
+		outline: 2px solid $theme-5;
+
+		& > div {
+			height: 100%;
+			width: 0%;
+			background-color: $theme-5;
+			animation: loading 1.7s;
+		}
+	}
+}
+
+@keyframes loading {
+	0% {
+		width: 0%;
+	}
+
+	50% {
+		width: 50%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.loading-container > div {
+		width: 50%;
+	}
+}

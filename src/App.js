@@ -20,6 +20,9 @@ import closeIcon from "./img/x.svg";
 import englishJSON from "./data/english";
 import spanishJSON from "./data/spanish";
 
+// Loader
+import Loader from "./components/Loader";
+
 function App() {
 	// Set content language
 	const language = navigator.language.slice(0, 2);
@@ -60,7 +63,18 @@ function App() {
 		setShowBurger(window.innerWidth <= 1000);
 	};
 
-	return (
+	// Set page loader
+	const [loading, setLoading] = useState(true);
+
+	window.onload = () => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 1000);
+	};
+
+	return loading ? (
+		<Loader />
+	) : (
 		<>
 			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} />
 			<div className='sections'>

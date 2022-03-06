@@ -1,11 +1,10 @@
 import React from "react";
+import Loading from "../img/loading.svg";
 
 export default function Loader() {
 	return (
 		<div className='loading-container'>
-			<div>
-				<div></div>
-			</div>
+			<img src={Loading} alt='Loading web page'></img>
 		</div>
 	);
 }

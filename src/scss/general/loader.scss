@@ -6,36 +6,22 @@
 	justify-content: center;
 	align-items: center;
 
-	& > div {
-		width: 300px;
-		height: 30px;
-		outline: 2px solid $theme-5;
-
-		& > div {
-			height: 100%;
-			width: 0%;
-			background-color: $theme-5;
-			animation: loading 1.7s;
-		}
+	img {
+		width: 50px;
+		animation: loading 1s ease-out infinite;
 	}
 }
 
 @keyframes loading {
-	0% {
-		width: 0%;
+	25% {
+		transform: rotate(30deg);
 	}
 
 	50% {
-		width: 50%;
+		transform: rotate(180deg);
 	}
 
 	100% {
-		width: 100%;
-	}
-}
-
-@media (max-width: 500px) {
-	.loading-container > div {
-		width: 50%;
+		transform: rotate(360deg);
 	}
 }

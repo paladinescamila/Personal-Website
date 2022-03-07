@@ -17,7 +17,7 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 	};
 
 	const setLanguage = (JSON) => {
-		showLoader();
+		showLoader(500);
 		setContent(JSON);
 		hideSelector();
 		closeHeader();

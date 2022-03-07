@@ -66,17 +66,20 @@ function App() {
 	// Set page loader
 	const [loading, setLoading] = useState(true);
 
-	window.onload = () => {
+	const showLoader = () => {
+		setLoading(true);
 		setTimeout(() => {
 			setLoading(false);
 		}, 1000);
 	};
 
+	window.onload = () => showLoader();
+
 	return loading ? (
 		<Loader />
 	) : (
 		<>
-			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} />
+			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} showLoader={showLoader} />
 			<div className='sections'>
 				<Home content={content.home} refProperty={references.home} />
 				<About content={content.about} refProperty={references.about} />

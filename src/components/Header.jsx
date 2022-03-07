@@ -4,10 +4,8 @@ import socialGitHub from "../img/social/github.svg";
 import socialLinkedIn from "../img/social/linkedin.svg";
 import englishJSON from "../data/english";
 import spanishJSON from "../data/spanish";
-import usaFlag from "../img/usa.png";
-import spainFlag from "../img/spain.png";
 
-export default function Header({content, setContent, showHeader, closeHeader, goTo}) {
+export default function Header({content, setContent, showHeader, closeHeader, goTo, showLoader}) {
 	const [displaySelector, setDisplaySelector] = useState("none");
 
 	const showSelector = () => {
@@ -19,6 +17,7 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 	};
 
 	const setLanguage = (JSON) => {
+		showLoader();
 		setContent(JSON);
 		hideSelector();
 		closeHeader();
@@ -35,16 +34,13 @@ export default function Header({content, setContent, showHeader, closeHeader, go
 				<p onClick={() => goTo("contact")}>{content.contact}</p>
 				<div className='choose-language' onMouseEnter={showSelector} onMouseLeave={hideSelector}>
 					<button>
-						<img src={content.flag} alt='Language'></img>
 						<p>{content.language}</p>
 					</button>
 					<div className='language-selector' style={{display: displaySelector}}>
 						<button onClick={() => setLanguage(englishJSON)}>
-							<img src={usaFlag} alt='USA flag'></img>
 							<p>English</p>
 						</button>
 						<button onClick={() => setLanguage(spanishJSON)}>
-							<img src={spainFlag} alt='Spain flag'></img>
 							<p>Español</p>
 						</button>
 					</div>

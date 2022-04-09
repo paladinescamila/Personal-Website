@@ -7,7 +7,7 @@ const jobs = [
 		positionES: "DESARROLLADORA FRONTEND",
 		tasksEN: [
 			"Web design and implementation of client interaction functionalities using the React.js library.",
-			"Consumption of REST APIs to obtain information from the Backend",
+			"Consumption of REST APIs to obtain information from the Backend.",
 			"Debugging and testing of the developed functionalities.",
 		],
 		tasksES: [

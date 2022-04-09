@@ -1,14 +1,17 @@
 .home-section {
 	height: 95vh;
+	width: 100%;
+	max-width: 1200px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	position: relative;
-	padding: 0 10em;
+	padding: 4em 5em 10em 5em;
+	margin: 0 auto;
 
 	img {
-		width: 250px;
-		opacity: 0.7;
+		width: 220px;
+		opacity: 0.5;
 	}
 }
 
@@ -68,12 +71,6 @@
 	100% {
 		transform: translate(0, 20px);
 		opacity: 0;
-	}
-}
-
-@media (max-width: 1400px) {
-	.home-section {
-		padding: 0 5em;
 	}
 }
 

@@ -4,6 +4,7 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	width: 100%;
+	max-width: 1200px;
 }
 
 .project-card {
@@ -63,11 +64,12 @@
 }
 
 .project-card-tools {
-	margin-top: 1em;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 
 	li {
+		margin-top: 1em;
 		margin-right: 1.3em;
 		font-size: 0.9em;
 		color: $gray-5;
@@ -134,5 +136,16 @@
 	.projects-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+@media (max-width: 340px) {
+	.projects-container {
+		justify-items: center;
+	}
+
+	.project-card,
+	.projects-container > a {
+		width: 260px;
 	}
 }

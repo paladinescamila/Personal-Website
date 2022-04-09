@@ -35,6 +35,7 @@ const spanishJSON = {
 	},
 	experience: {
 		title: "Experiencia",
+		language: "es",
 		message: "Estoy buscando mi primer empleo.",
 	},
 	projects: {

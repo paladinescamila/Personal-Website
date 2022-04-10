@@ -1,6 +1,5 @@
 .jobs-container {
 	position: relative;
-	margin-top: 5em;
 	width: 100%;
 	max-width: 900px;
 	display: flex;
@@ -9,10 +8,10 @@
 }
 
 .job-item {
-	margin-bottom: 3em;
+	// margin-bottom: 3em;
 	width: 100%;
 	display: grid;
-	grid-gap: 10px 20px;
+	grid-gap: 25px 20px;
 	grid-template-columns: 1fr 30px 1fr;
 	grid-template-rows: 30px 1fr;
 	grid-template-areas:
@@ -118,6 +117,7 @@
 	}
 
 	.job-item {
+		grid-gap: 5px 20px;
 		grid-template-columns: 50px 1fr;
 		grid-template-rows: repeat(3, 30px) 1fr;
 		grid-template-areas:

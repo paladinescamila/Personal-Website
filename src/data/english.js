@@ -18,8 +18,8 @@ const englishJSON = {
 		title: "About",
 		paragraph1: (
 			<>
-				My name is Camila Paladines, I'm a <p>Computer Science student</p> at Pontificia Universidad Javeriana in Cali, Colombia. I'm a <p>Frontend Development enthusiast</p> and I'm
-				passionate about designing and developing web applications that are very useful for people.
+				My name is Camila Paladines, I'm a <p>Frontend Developer</p> at Ninus and a <p>Computer Science student</p> at Pontificia Universidad Javeriana in Cali, Colombia. I'm passionate about
+				designing and developing web applications that are very useful for people.
 			</>
 		),
 		paragraph2:
@@ -36,7 +36,6 @@ const englishJSON = {
 	experience: {
 		title: "Experience",
 		language: "en",
-		message: "I'm looking for my first job.",
 	},
 	projects: {
 		title: "Projects",

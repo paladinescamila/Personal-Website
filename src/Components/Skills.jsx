@@ -1,9 +1,9 @@
 import React from "react";
 import SkillCard from "./SkillCard";
-import languagesImage from "../img/skill-languages.svg";
-import librariesImage from "../img/skill-libraries.svg";
-import toolsImage from "../img/skill-tools.svg";
-import skills from "../data/skills";
+import languagesImage from "../Assets/Images/skill-languages.svg";
+import librariesImage from "../Assets/Images/skill-libraries.svg";
+import toolsImage from "../Assets/Images/skill-tools.svg";
+import skills from "../Services/Constants/skills";
 
 export default function Skills({content, refProperty}) {
 	return (

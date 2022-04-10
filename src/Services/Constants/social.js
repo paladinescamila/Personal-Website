@@ -1,8 +1,8 @@
-import GitHub from "../img/social/github.svg";
-import LinkedIn from "../img/social/linkedin.svg";
-import CodePen from "../img/social/codepen.svg";
-import FrontendMentor from "../img/social/frontendmentor.svg";
-import Medium from "../img/social/medium.svg";
+import GitHub from "../../Assets/Images/social/github.svg";
+import LinkedIn from "../../Assets/Images/social/linkedin.svg";
+import CodePen from "../../Assets/Images/social/codepen.svg";
+import FrontendMentor from "../../Assets/Images/social/frontendmentor.svg";
+import Medium from "../../Assets/Images/social/medium.svg";
 
 const social = [
 	{

@@ -1,27 +1,27 @@
 import React, {useState, useRef} from "react";
-import "./scss/main.scss";
+import "./Assets/Styles/main.scss";
 
 // Sections
-import Header from "./components/Header";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Header from "./Layouts/Header";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
+import Footer from "./Layouts/Footer";
 
 // Icons
-import favicon from "./img/logo.png";
-import burgerIcon from "./img/burger.svg";
-import closeIcon from "./img/x.svg";
+import favicon from "./Assets/Images/logo.png";
+import burgerIcon from "./Assets/Images/burger.svg";
+import closeIcon from "./Assets/Images/x.svg";
 
 // Language data
-import englishJSON from "./data/english";
-import spanishJSON from "./data/spanish";
+import englishJSON from "./Services/Constants/english";
+import spanishJSON from "./Services/Constants/spanish";
 
 // Loader
-import Loader from "./components/Loader";
+import Loader from "./Components/Loader";
 
 function App() {
 	// Set content language

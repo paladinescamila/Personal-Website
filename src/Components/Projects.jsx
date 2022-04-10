@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import projects from "../data/projects";
-import socialFrontendMentor from "../img/social/frontendmentor.svg";
+import projects from "../Services/Constants/projects";
+import socialFrontendMentor from "../Assets/Images/social/frontendmentor.svg";
 
 export default function Projects({content, refProperty}) {
 	return (

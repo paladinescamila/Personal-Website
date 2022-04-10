@@ -1,9 +1,9 @@
 import React, {useState} from "react";
-import favicon from "../img/logo.png";
-import socialGitHub from "../img/social/github.svg";
-import socialLinkedIn from "../img/social/linkedin.svg";
-import englishJSON from "../data/english";
-import spanishJSON from "../data/spanish";
+import favicon from "../Assets/Images/logo.png";
+import socialGitHub from "../Assets/Images/social/github.svg";
+import socialLinkedIn from "../Assets/Images/social/linkedin.svg";
+import englishJSON from "../Services/Constants/english";
+import spanishJSON from "../Services/Constants/spanish";
 
 export default function Header({content, setContent, showHeader, closeHeader, goTo, showLoader}) {
 	const [displaySelector, setDisplaySelector] = useState("none");

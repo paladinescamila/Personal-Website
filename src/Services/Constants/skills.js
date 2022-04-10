@@ -10,16 +10,16 @@
     2 -> Advanced
 */
 
-import html from "../img/skills/html.png";
-import css from "../img/skills/css.png";
-import scss from "../img/skills/scss.png";
-import js from "../img/skills/js.png";
-import python from "../img/skills/python.png";
-import react from "../img/skills/react.png";
-import git from "../img/skills/git.png";
-import firebase from "../img/skills/firebase.png";
-import figma from "../img/skills/figma.png";
-import scrum from "../img/skills/scrum.png";
+import html from "../../Assets/Images/skills/html.png";
+import css from "../../Assets/Images/skills/css.png";
+import scss from "../../Assets/Images/skills/scss.png";
+import js from "../../Assets/Images/skills/js.png";
+import python from "../../Assets/Images/skills/python.png";
+import react from "../../Assets/Images/skills/react.png";
+import git from "../../Assets/Images/skills/git.png";
+import firebase from "../../Assets/Images/skills/firebase.png";
+import figma from "../../Assets/Images/skills/figma.png";
+import scrum from "../../Assets/Images/skills/scrum.png";
 
 const skills = [
 	{name: "HTML", img: html, type: 0, level: 1},

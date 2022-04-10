@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
-import launch from "../img/launch.svg";
-import scroll from "../img/scroll-down.svg";
+import launch from "../Assets/Images/launch.svg";
+import scroll from "../Assets/Images/scroll-down.svg";
 
 export default function Home({content, refProperty}) {
 	return (

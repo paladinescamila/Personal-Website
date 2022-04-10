@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import photo from "../img/profile.png";
+import photo from "../Assets/Images/profile.png";
 
 export default function About({content, refProperty}) {
 	return (

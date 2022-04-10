@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import social from "../data/social";
+import social from "../Services/Constants/social";
 
 export default function Contact({content, refProperty}) {
 	return (

@@ -1,6 +1,6 @@
-import purpleCalendarPhoto from "../img/projects/purple-calendar.png";
-import tomatoTimePhoto from "../img/projects/tomato-time.png";
-import fitappPhoto from "../img/projects/fitapp.png";
+import purpleCalendarPhoto from "../../Assets/Images/projects/purple-calendar.png";
+import tomatoTimePhoto from "../../Assets/Images/projects/tomato-time.png";
+import fitappPhoto from "../../Assets/Images/projects/fitapp.png";
 
 const projects = [
 	{

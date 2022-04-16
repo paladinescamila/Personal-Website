@@ -75,24 +75,29 @@ function App() {
 
 	window.onload = () => showLoader(1000);
 
-	return loading ? (
-		<Loader />
-	) : (
+	return (
 		<>
-			<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} showLoader={showLoader} />
-			<div className='sections'>
-				<Home content={content.home} refProperty={references.home} />
-				<About content={content.about} refProperty={references.about} />
-				<Skills content={content.skills} refProperty={references.skills} />
-				<Experience content={content.experience} refProperty={references.experience} />
-				<Projects content={content.projects} refProperty={references.projects} />
-				<Contact content={content.contact} refProperty={references.contact} />
-				<Footer />
-			</div>
-			<div className='mobile-header'>
-				<img src={favicon} alt='Logo' className='logo' onClick={() => goTo("home")}></img>
-				<img src={showBurger ? burgerIcon : closeIcon} alt='Menu' className='burger-close' onClick={showHideMenu}></img>
-			</div>
+			{loading ? <Loader /> : <></>}
+			{!loading ? (
+				<>
+					<Header content={content.header} setContent={setContent} showHeader={showHeader} closeHeader={closeHeader} goTo={goTo} showLoader={showLoader} />
+					<div className='sections'>
+						<Home content={content.home} refProperty={references.home} />
+						<About content={content.about} refProperty={references.about} />
+						<Skills content={content.skills} refProperty={references.skills} />
+						<Experience content={content.experience} refProperty={references.experience} />
+						<Projects content={content.projects} refProperty={references.projects} />
+						<Contact content={content.contact} refProperty={references.contact} />
+						<Footer />
+					</div>
+					<div className='mobile-header'>
+						<img src={favicon} alt='Logo' className='logo' onClick={() => goTo("home")}></img>
+						<img src={showBurger ? burgerIcon : closeIcon} alt='Menu' className='burger-close' onClick={showHideMenu}></img>
+					</div>
+				</>
+			) : (
+				<></>
+			)}
 		</>
 	);
 }

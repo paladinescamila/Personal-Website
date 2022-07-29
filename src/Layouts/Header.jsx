@@ -8,14 +8,17 @@ import spanishJSON from "../Services/Constants/spanish";
 export default function Header({content, setContent, showHeader, closeHeader, goTo, showLoader}) {
 	const [displaySelector, setDisplaySelector] = useState("none");
 
+	// Displays the language selector
 	const showSelector = () => {
 		setDisplaySelector("flex");
 	};
 
+	// Hides the language selector
 	const hideSelector = () => {
 		setDisplaySelector("none");
 	};
 
+	// Changes the language
 	const setLanguage = (JSON) => {
 		showLoader(500);
 		setContent(JSON);

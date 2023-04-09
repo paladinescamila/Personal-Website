@@ -18,8 +18,7 @@ const spanishJSON = {
 		title: "Sobre mí",
 		paragraph1: (
 			<>
-				Mi nombre es Camila Paladines, soy <p>Desarrolladora Frontend</p> en Ninus y <p>estudiante de Ingeniería de Sistemas y Computación</p> en la Pontificia Universidad Javeriana en Cali,
-				Colombia. Me apasiona diseñar y desarrollar aplicaciones web que sean muy útiles para las personas.
+				Mi nombre es Camila Paladines, soy <p>Desarrolladora Frontend</p> en Ninus en Cali, Colombia. Me encanta diseñar y desarrollar aplicaciones que sean muy útiles para las personas.
 			</>
 		),
 		paragraph2:

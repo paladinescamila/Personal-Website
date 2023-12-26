@@ -24,7 +24,7 @@
 	margin-top: 4em;
 	height: 100%;
 	border: none;
-	border-left: 4px solid darken($theme, 35);
+	border-left: 4px solid lighten($black, 7);
 	position: absolute;
 	top: -3em;
 	left: 50%;
@@ -35,10 +35,11 @@
 	width: 20px;
 	height: 20px;
 	transform: rotate(45deg);
-	background-color: darken($theme, 35);
+	background-color: $theme;
 	grid-area: circle;
 	z-index: 900;
 	margin-top: 7px;
+	border-radius: 1.5px;
 }
 
 .job-item:first-of-type .job-circle {

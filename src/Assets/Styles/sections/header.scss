@@ -9,7 +9,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	background-color: rgba($white, 0.05);
+	background-color: rgba($white, 0.07);
 }
 
 .header-logo {
@@ -30,7 +30,7 @@
 
 	& > p {
 		margin-bottom: 2em;
-		color: rgba($white, 0.9);
+		color: $white;
 		text-decoration: none;
 		opacity: 0.5;
 		cursor: pointer;

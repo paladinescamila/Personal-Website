@@ -98,9 +98,9 @@
 	}
 }
 
-@media (max-width: 715px) {
+@media (max-width: 680px) {
 	.home-hi h1 {
-		font-size: 8.5vw;
+		font-size: 10vw;
 	}
 
 	.home-hi p {
@@ -118,7 +118,7 @@
 	}
 }
 
-@media (max-width: 535px) {
+@media (max-width: 530px) {
 	.home-hi p {
 		&:nth-of-type(1) {
 			font-size: 7vw;

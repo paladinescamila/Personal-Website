@@ -1,11 +1,12 @@
-.header {
+.showed-header,
+.hidden-header {
 	height: 100vh;
 	width: 150px;
 	padding: 1em;
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: var(--display-header);
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
@@ -91,10 +92,18 @@
 }
 
 @media (max-width: 1000px) {
-	.header {
+	.showed-header,
+	.hidden-header {
 		background-color: $black;
 		width: 100vw;
 		z-index: 1000;
+		right: -100vw;
+		left: auto;
+		transition: right 0.3s ease-in-out;
+	}
+
+	.showed-header {
+		right: 0;
 	}
 
 	.header-logo {

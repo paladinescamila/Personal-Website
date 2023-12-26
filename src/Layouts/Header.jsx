@@ -29,7 +29,7 @@ export default function Header() {
 	const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
 
 	return (
-		<header className='header' style={{display: showHeader ? 'flex' : 'none'}}>
+		<header className={showHeader ? 'showed-header' : 'hidden-header'}>
 			<img
 				className='header-logo'
 				src={favicon}

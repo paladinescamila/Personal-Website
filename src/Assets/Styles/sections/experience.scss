@@ -13,39 +13,32 @@
 	width: 100%;
 	display: grid;
 	grid-gap: 25px 20px;
-	grid-template-columns: 1fr 30px 1fr;
+	grid-template-columns: 1fr 20px 1fr;
 	grid-template-rows: 30px 1fr;
 	grid-template-areas:
 		'company circle position'
 		'date empty tasks';
 }
 
+* {
+	// outline: 1px solid red;
+}
+
 .time-line {
 	margin-top: 4em;
 	height: 100%;
 	border: none;
-	border-left: 4px dashed darken($theme, 35);
+	border-left: 4px solid darken($theme, 35);
 	position: absolute;
 	top: -3em;
 	left: 50%;
 	margin-left: -2px;
-
-	&::after {
-		content: '';
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: darken($theme, 35);
-		position: absolute;
-		left: -12px;
-		bottom: 0;
-	}
 }
 
 .job-circle {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
 	background-color: darken($theme, 35);
 	grid-area: circle;
 	z-index: 900;
@@ -62,7 +55,6 @@
 	& > div {
 		width: 70%;
 		height: 70%;
-		border-radius: 50%;
 		background-color: $theme;
 	}
 }
@@ -73,7 +65,7 @@
 }
 
 .job-company {
-	padding-top: 10px;
+	padding-top: 5px;
 	text-decoration: none;
 	font-size: 20px;
 	font-weight: bold;
@@ -91,7 +83,7 @@
 	font-size: 20px;
 	font-weight: bold;
 	color: $theme;
-	padding-top: 10px;
+	padding-top: 5px;
 	margin-bottom: 20px;
 	grid-area: position;
 }
@@ -114,12 +106,12 @@
 	}
 
 	.time-line {
-		left: 15px;
+		left: 10px;
 	}
 
 	.job-item {
 		grid-gap: 5px 20px;
-		grid-template-columns: 50px 1fr;
+		grid-template-columns: 20px 1fr;
 		grid-template-rows: repeat(3, 30px) 1fr;
 		grid-template-areas:
 			'circle position'
@@ -147,25 +139,6 @@
 	.jobs-container {
 		width: 100%;
 		margin-top: 3em;
-	}
-
-	.time-line {
-		left: 16px;
-
-		&::after {
-			width: 15px;
-			height: 15px;
-			left: -9px;
-		}
-	}
-
-	.job-item {
-		grid-template-columns: 30px 1fr;
-	}
-
-	.job-circle {
-		width: 30px;
-		height: 30px;
 	}
 }
 

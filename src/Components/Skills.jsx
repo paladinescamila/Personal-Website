@@ -5,12 +5,14 @@ import librariesImage from '../Assets/Images/skill-libraries.svg';
 import toolsImage from '../Assets/Images/skill-tools.svg';
 import skills from '../Services/Constants/skills';
 import {useLanguage} from '../Context/Language';
+import {useNavigation} from '../Context/Navigation';
 
 export default function Skills({refProperty}) {
 	const {content} = useLanguage();
+	const {references} = useNavigation();
 
 	return (
-		<section className='section-container' ref={refProperty}>
+		<section className='section-container' ref={references.skills}>
 			<h2 className='section-title'>{content.skills.title}</h2>
 			<div className='about-skills'>
 				<SkillCard

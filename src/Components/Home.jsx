@@ -3,13 +3,15 @@ import Button from './Button';
 import launch from '../Assets/Images/launch.svg';
 import scroll from '../Assets/Images/scroll-down.svg';
 import {useLanguage} from '../Context/Language';
+import {useNavigation} from '../Context/Navigation';
 
-export default function Home({refProperty}) {
+export default function Home() {
 	const {content} = useLanguage();
+	const {references} = useNavigation();
 
 	return (
 		<>
-			<section className='home-section' ref={refProperty}>
+			<section className='home-section' ref={references.home}>
 				<div className='home-left'>
 					<div className='home-hi'>
 						<p>{content.home.hi}</p>

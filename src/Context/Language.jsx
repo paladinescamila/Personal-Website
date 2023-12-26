@@ -4,7 +4,6 @@ import spanishJSON from '../Services/Constants/spanish';
 
 const LanguageContext = createContext({});
 
-// Provider
 export function LanguageProvider({children}) {
 	const LANGUAGE = navigator.language.slice(0, 2);
 

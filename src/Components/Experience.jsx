@@ -3,9 +3,12 @@ import Job from './Job';
 import jobs from '../Services/Constants/jobs';
 import dateFormat from '../Services/Utils/dateFormat';
 import {useLanguage} from '../Context/Language';
+import {useNavigation} from '../Context/Navigation';
 
 export default function Experience({refProperty}) {
 	const {content} = useLanguage();
+	const {references} = useNavigation();
+
 	const {language} = content.experience;
 
 	const dateRangeFormat = (start, end) => {
@@ -16,7 +19,7 @@ export default function Experience({refProperty}) {
 	};
 
 	return (
-		<section className='section-container experience-section' ref={refProperty}>
+		<section className='section-container experience-section' ref={references.experience}>
 			<h2 className='section-title'>{content.experience.title}</h2>
 			<div className='jobs-container'>
 				{jobs.map((j) => (

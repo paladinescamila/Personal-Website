@@ -3,13 +3,16 @@ import ProjectCard from './ProjectCard';
 import projects from '../Services/Constants/projects';
 import socialFrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
 import {useLanguage} from '../Context/Language';
+import {useNavigation} from '../Context/Navigation';
 
 export default function Projects({refProperty}) {
 	const {content} = useLanguage();
+	const {references} = useNavigation();
+
 	const {language} = content.projects;
 
 	return (
-		<section className='section-container projects-section' ref={refProperty}>
+		<section className='section-container projects-section' ref={references.projects}>
 			<h2 className='section-title'>{content.projects.title}</h2>
 			<ul className='projects-container'>
 				{projects.map((p) => (

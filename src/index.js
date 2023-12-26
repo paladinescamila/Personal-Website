@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {LanguageProvider} from './Context/Language';
+import {NavigationProvider} from './Context/Navigation';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<LanguageProvider>
-			<App />
-		</LanguageProvider>
+		<NavigationProvider>
+			<LanguageProvider>
+				<App />
+			</LanguageProvider>
+		</NavigationProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 );

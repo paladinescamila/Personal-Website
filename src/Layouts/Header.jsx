@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import favicon from '../Assets/Images/logo.png';
 import socialGitHub from '../Assets/Images/social/github.svg';
 import socialLinkedIn from '../Assets/Images/social/linkedin.svg';
 import {useLanguage} from '../Context/Language';
+import {useNavigation} from '../Context/Navigation';
 
-export default function Header({showHeader, closeHeader, goTo, showLoader}) {
+export default function Header() {
 	const [displaySelector, setDisplaySelector] = useState('none');
 	const {content, switchToSpanish, switchToEnglish} = useLanguage();
+	const {section, showHeader, closeHeader, goTo, showLoader} = useNavigation();
 
 	// Displays the language selector
 	const showSelector = () => setDisplaySelector('flex');
@@ -24,6 +26,8 @@ export default function Header({showHeader, closeHeader, goTo, showLoader}) {
 		else switchToEnglish();
 	};
 
+	const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
+
 	return (
 		<header className='header' style={{display: showHeader ? 'flex' : 'none'}}>
 			<img
@@ -33,11 +37,11 @@ export default function Header({showHeader, closeHeader, goTo, showLoader}) {
 				onClick={() => goTo('home')}
 			/>
 			<nav className='header-sections'>
-				<p onClick={() => goTo('about')}>{content.header.about}</p>
-				<p onClick={() => goTo('skills')}>{content.header.skills}</p>
-				<p onClick={() => goTo('experience')}>{content.header.experience}</p>
-				<p onClick={() => goTo('projects')}>{content.header.projects}</p>
-				<p onClick={() => goTo('contact')}>{content.header.contact}</p>
+				{sections.map((sectionName) => (
+					<p key={sectionName} onClick={() => goTo(sectionName)}>
+						{content.header[sectionName]}
+					</p>
+				))}
 				<div
 					className='choose-language'
 					onMouseEnter={showSelector}

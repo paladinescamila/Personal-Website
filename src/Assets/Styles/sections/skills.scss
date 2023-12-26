@@ -30,15 +30,11 @@
 	align-items: center;
 
 	li {
-		background-color: $gray-2;
 		margin: 0.5em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		img {
-			mix-blend-mode: luminosity;
-		}
+		filter: grayscale(100%);
 
 		p {
 			font-size: 0.7em;

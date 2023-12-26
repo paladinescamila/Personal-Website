@@ -18,7 +18,7 @@ const englishJSON = {
 		title: "About",
 		paragraph1: (
 			<>
-				My name is Camila Paladines, I'm a <p>Frontend Developer</p> at Ninus in Cali, Colombia. I love designing and developing applications that are very useful for people.
+				My name is Camila Paladines, I'm a <p>Frontend Developer</p> at Piyion in Cali, Colombia. I love designing and developing applications that are very useful for people.
 			</>
 		),
 		paragraph2:

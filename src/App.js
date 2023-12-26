@@ -1,33 +1,25 @@
-import React, {useState, useRef} from "react";
-import "./Assets/Styles/main.scss";
+import React, {useState, useRef} from 'react';
+import './Assets/Styles/main.scss';
 
 // Sections
-import Header from "./Layouts/Header";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Experience from "./Components/Experience";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
-import Footer from "./Layouts/Footer";
+import Header from './Layouts/Header';
+import Home from './Components/Home';
+import About from './Components/About';
+import Skills from './Components/Skills';
+import Experience from './Components/Experience';
+import Projects from './Components/Projects';
+import Contact from './Components/Contact';
+import Footer from './Layouts/Footer';
 
 // Icons
-import favicon from "./Assets/Images/logo.png";
-import burgerIcon from "./Assets/Images/burger.svg";
-import closeIcon from "./Assets/Images/x.svg";
-
-// Language data
-import englishJSON from "./Services/Constants/english";
-import spanishJSON from "./Services/Constants/spanish";
+import favicon from './Assets/Images/logo.png';
+import burgerIcon from './Assets/Images/burger.svg';
+import closeIcon from './Assets/Images/x.svg';
 
 // Loader
-import Loader from "./Components/Loader";
+import Loader from './Components/Loader';
 
 function App() {
-	// Set content language
-	const language = navigator.language.slice(0, 2);
-	const [content, setContent] = useState(language === "es" ? spanishJSON : englishJSON);
-
 	// Show or hide the menu and the header
 	const [showBurger, setShowBurger] = useState(true);
 	const [showHeader, setShowHeader] = useState(window.innerWidth > 1000);
@@ -53,7 +45,7 @@ function App() {
 	};
 
 	const goTo = (section) => {
-		references[section].current.scrollIntoView({behavior: "smooth"});
+		references[section].current.scrollIntoView({behavior: 'smooth'});
 		closeHeader();
 	};
 
@@ -82,23 +74,18 @@ function App() {
 			) : (
 				<>
 					<Header
-						content={content.header}
-						setContent={setContent}
 						showHeader={showHeader}
 						closeHeader={closeHeader}
 						goTo={goTo}
 						showLoader={showLoader}
 					/>
 					<div className='sections'>
-						<Home content={content.home} refProperty={references.home} />
-						<About content={content.about} refProperty={references.about} />
-						<Skills content={content.skills} refProperty={references.skills} />
-						<Experience
-							content={content.experience}
-							refProperty={references.experience}
-						/>
-						<Projects content={content.projects} refProperty={references.projects} />
-						<Contact content={content.contact} refProperty={references.contact} />
+						<Home refProperty={references.home} />
+						<About refProperty={references.about} />
+						<Skills refProperty={references.skills} />
+						<Experience refProperty={references.experience} />
+						<Projects refProperty={references.projects} />
+						<Contact refProperty={references.contact} />
 						<Footer />
 					</div>
 					<div className='mobile-header'>
@@ -106,12 +93,14 @@ function App() {
 							src={favicon}
 							alt='Logo'
 							className='logo'
-							onClick={() => goTo('home')} />
+							onClick={() => goTo('home')}
+						/>
 						<img
 							src={showBurger ? burgerIcon : closeIcon}
 							alt='Menu'
 							className='burger-close'
-							onClick={showHideMenu} />
+							onClick={showHideMenu}
+						/>
 					</div>
 				</>
 			)}

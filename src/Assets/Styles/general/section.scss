@@ -27,7 +27,7 @@
 	font-size: 3em;
 	border-bottom: 3px solid $theme;
 	margin: 0 0 1em 0;
-	font-family: 'Poppins', sans-serif;
+	font-family: $title-font;
 }
 
 @media (max-width: 1000px) {

@@ -1,6 +1,6 @@
-import React from "react";
-import projectGitHub from "../Assets/Images/project-github.svg";
-import projectWebsite from "../Assets/Images/project-website.svg";
+import React from 'react';
+import projectGitHub from '../Assets/Images/project-github.svg';
+import projectWebsite from '../Assets/Images/project-website.svg';
 
 export default function ProjectCard({name, description, tools, website, github, img}) {
 	return (

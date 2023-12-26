@@ -4,7 +4,7 @@ This is my personal website or portfolio, that can be found at [camilapaladines.
 
 ## How to run
 
-1. This project was built with React.js, so to run it you need to have npm installed.
+1. This project was built with React, so to run it you need to have npm installed.
 2. Once you have downloaded the project and are in the main folder, run the following command:
 
     ```sh

@@ -30,7 +30,8 @@ export default function Header({showHeader, closeHeader, goTo, showLoader}) {
 				className='header-logo'
 				src={favicon}
 				alt='Planet logo'
-				onClick={() => goTo('home')}></img>
+				onClick={() => goTo('home')}
+			/>
 			<nav className='header-sections'>
 				<p onClick={() => goTo('about')}>{content.header.about}</p>
 				<p onClick={() => goTo('skills')}>{content.header.skills}</p>
@@ -56,13 +57,13 @@ export default function Header({showHeader, closeHeader, goTo, showLoader}) {
 			</nav>
 			<nav className='social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
-					<img alt='Link to GitHub profile' src={socialGitHub}></img>
+					<img alt='Link to GitHub profile' src={socialGitHub} />
 				</a>
 				<a
 					href='https://www.linkedin.com/in/paladinescamila'
 					target='_blank'
 					rel='noreferrer'>
-					<img alt='Link to LinkedIn profile' src={socialLinkedIn}></img>
+					<img alt='Link to LinkedIn profile' src={socialLinkedIn} />
 				</a>
 			</nav>
 		</header>

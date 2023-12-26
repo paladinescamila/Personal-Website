@@ -20,7 +20,7 @@ export default function About({refProperty}) {
 					/>
 				</div>
 				<div className='about-photo'>
-					<img src={photo} alt='Camila Paladines photography'></img>
+					<img src={photo} alt='Camila Paladines photography' />
 				</div>
 			</div>
 		</section>

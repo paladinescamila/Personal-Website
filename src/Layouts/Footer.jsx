@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export default function Footer() {
 	return (
 		<footer>
 			<p>
-				Made with ❤ by{" "}
+				Made with ❤ by{' '}
 				<a target='_blanck' href='https://github.com/paladinescamila'>
 					Camila Paladines
 				</a>

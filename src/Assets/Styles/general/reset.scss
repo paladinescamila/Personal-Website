@@ -1,9 +1,7 @@
 /* TYPOGRAPHY */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap');
-
 body {
-	font-family: "Open Sans", sans-serif;
+	font-family: $paragraph-font;
 	background-color: $black;
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function SkillCard({image, title, skills}) {
 	return (
@@ -8,7 +8,9 @@ export default function SkillCard({image, title, skills}) {
 			<ul className='tools-list'>
 				{skills.map((s) => (
 					<li key={s.name}>
-						<img src={s.img} alt={s.name}></img>
+						<div>
+							<img src={s.img} alt={s.name} />
+						</div>
 						<p>{s.name}</p>
 					</li>
 				))}

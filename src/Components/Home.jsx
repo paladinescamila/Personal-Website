@@ -24,10 +24,10 @@ export default function Home({refProperty}) {
 						/>
 					</div>
 				</div>
-				<img src={launch} alt='Spaceship'></img>
+				<img src={launch} alt='Spaceship' />
 			</section>
 			<div className='scroll-down'>
-				<img src={scroll} alt='Scroll down'></img>
+				<img src={scroll} alt='Scroll down' />
 			</div>
 		</>
 	);

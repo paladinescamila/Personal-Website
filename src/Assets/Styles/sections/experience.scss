@@ -16,26 +16,26 @@
 	grid-template-columns: 1fr 30px 1fr;
 	grid-template-rows: 30px 1fr;
 	grid-template-areas:
-		"company circle position"
-		"date empty tasks";
+		'company circle position'
+		'date empty tasks';
 }
 
 .time-line {
 	margin-top: 4em;
 	height: 100%;
 	border: none;
-	border-left: 4px dashed darken($theme, 40);
+	border-left: 4px dashed darken($theme, 35);
 	position: absolute;
 	top: -3em;
 	left: 50%;
 	margin-left: -2px;
 
 	&::after {
-		content: "";
+		content: '';
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color: darken($theme, 40);
+		background-color: darken($theme, 35);
 		position: absolute;
 		left: -12px;
 		bottom: 0;
@@ -46,7 +46,7 @@
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
-	background-color: darken($theme, 40);
+	background-color: darken($theme, 35);
 	grid-area: circle;
 	z-index: 900;
 	margin-top: 7px;
@@ -122,10 +122,10 @@
 		grid-template-columns: 50px 1fr;
 		grid-template-rows: repeat(3, 30px) 1fr;
 		grid-template-areas:
-			"circle position"
-			"empty company"
-			"empty date"
-			"empty tasks";
+			'circle position'
+			'empty company'
+			'empty date'
+			'empty tasks';
 	}
 
 	.job-position,

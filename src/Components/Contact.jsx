@@ -19,7 +19,7 @@ export default function Contact({refProperty}) {
 			<div className='all-social-links'>
 				{social.map((s) => (
 					<a href={s.link} target='_blank' rel='noreferrer' key={s.name}>
-						<img alt={s.name} src={s.img}></img>
+						<img alt={s.name} src={s.img} />
 					</a>
 				))}
 			</div>

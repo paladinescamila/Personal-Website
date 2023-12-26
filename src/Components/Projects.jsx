@@ -27,7 +27,7 @@ export default function Projects({refProperty}) {
 					href='https://www.frontendmentor.io/profile/paladinescamila/solutions'
 					target='_blank'
 					rel='noreferrer'>
-					<img alt='Link to Frontend Mentor profile' src={socialFrontendMentor}></img>
+					<img alt='Link to Frontend Mentor profile' src={socialFrontendMentor} />
 					{content.projects.frontendMentor}
 				</a>
 			</ul>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Job({companyName, companyLink, date, position, tasks}) {
 	return (
@@ -10,7 +10,7 @@ export default function Job({companyName, companyLink, date, position, tasks}) {
 			<p className='job-date'>{date}</p>
 
 			<div className='job-circle'>
-				<div></div>
+				<div />
 			</div>
 			<ul className='job-tasks'>
 				{tasks.map((t) => (

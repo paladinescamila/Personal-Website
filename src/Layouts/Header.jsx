@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import favicon from '../Assets/Images/logo.png';
 import socialGitHub from '../Assets/Images/social/github.svg';
 import socialLinkedIn from '../Assets/Images/social/linkedin.svg';
@@ -8,7 +8,7 @@ import {useNavigation} from '../Context/Navigation';
 export default function Header() {
 	const [displaySelector, setDisplaySelector] = useState('none');
 	const {content, switchToSpanish, switchToEnglish} = useLanguage();
-	const {section, showHeader, closeHeader, goTo, showLoader} = useNavigation();
+	const {showHeader, closeHeader, goTo, showLoader} = useNavigation();
 
 	// Displays the language selector
 	const showSelector = () => setDisplaySelector('flex');

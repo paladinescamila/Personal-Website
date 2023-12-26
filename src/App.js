@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React from 'react';
 import {useNavigation} from './Context/Navigation';
 import './Assets/Styles/main.scss';
 
@@ -21,22 +21,7 @@ import closeIcon from './Assets/Images/x.svg';
 import Loader from './Components/Loader';
 
 function App() {
-	const {
-		// Navigation between sections
-		section,
-		references,
-		goTo,
-
-		// Show or hide the menu and the header
-		showBurger,
-		showHeader,
-		showHideMenu,
-		closeHeader,
-
-		// Set page loader
-		loading,
-		showLoader,
-	} = useNavigation();
+	const {goTo, showBurger, showHideMenu, loading} = useNavigation();
 
 	if (loading) return <Loader />;
 

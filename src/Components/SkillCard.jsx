@@ -7,7 +7,7 @@ export default function SkillCard({image, title, skills}) {
 			<p>{title}</p>
 			<ul className='tools-list'>
 				{skills.map((s) => (
-					<li>
+					<li key={s.name}>
 						<img src={s.img} alt={s.name}></img>
 						<p>{s.name}</p>
 					</li>

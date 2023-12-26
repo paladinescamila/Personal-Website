@@ -18,7 +18,7 @@ const spanishJSON = {
 		title: "Sobre mí",
 		paragraph1: (
 			<>
-				Mi nombre es Camila Paladines, soy <p>Desarrolladora Frontend</p> en Piyion en Cali, Colombia. Me encanta diseñar y desarrollar aplicaciones que sean muy útiles para las personas.
+				Mi nombre es Camila Paladines, soy Desarrolladora Frontend en Piyion en Cali, Colombia. Me encanta diseñar y desarrollar aplicaciones que sean muy útiles para las personas.
 			</>
 		),
 		paragraph2:

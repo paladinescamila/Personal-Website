@@ -10,7 +10,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $gray-2;
+	background-color: rgba($white, 0.05);
 
 	img {
 		width: 40px;
@@ -19,7 +19,7 @@
 	& > p {
 		font-weight: bold;
 		margin: 1em 0 2em 0;
-		color: $gray-D;
+		color: rgba($white, 0.8);
 	}
 }
 
@@ -39,7 +39,7 @@
 		p {
 			font-size: 0.7em;
 			padding: 0.5em 0 0 0;
-			color: $gray-7;
+			color: rgba($white, 0.3);
 		}
 	}
 }

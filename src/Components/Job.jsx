@@ -14,7 +14,7 @@ export default function Job({companyName, companyLink, date, position, tasks}) {
 			</div>
 			<ul className='job-tasks'>
 				{tasks.map((t) => (
-					<li>{t}</li>
+					<li key={t}>{t}</li>
 				))}
 			</ul>
 		</div>

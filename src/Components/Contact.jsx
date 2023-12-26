@@ -11,7 +11,7 @@ export default function Contact({content, refProperty}) {
 			<Button value={content.button} type='solid' link='mailto:camilapaladines27@gmail.com' />
 			<div className='all-social-links'>
 				{social.map((s) => (
-					<a href={s.link} target='_blank' rel='noreferrer'>
+					<a href={s.link} target='_blank' rel='noreferrer' key={s.name}>
 						<img alt={s.name} src={s.img}></img>
 					</a>
 				))}

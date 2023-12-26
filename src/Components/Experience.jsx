@@ -10,6 +10,7 @@ export default function Experience({content, refProperty}) {
 			<div className='jobs-container'>
 				{jobs.map((j) => (
 					<Job
+						key={j.companyName}
 						companyName={j.companyName}
 						companyLink={j.companyLink}
 						date={`${dateFormat(j.date[0], content.language)} - ${dateFormat(j.date[1], content.language)}`}

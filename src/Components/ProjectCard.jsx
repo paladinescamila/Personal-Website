@@ -16,7 +16,7 @@ export default function ProjectCard({name, description, tools, website, github, 
 				<div className='project-tools-and-resources'>
 					<ul className='project-card-tools'>
 						{tools.map((t) => (
-							<li>{t}</li>
+							<li key={t}>{t}</li>
 						))}
 					</ul>
 					<div className='project-card-resources'>

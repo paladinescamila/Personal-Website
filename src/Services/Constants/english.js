@@ -18,13 +18,25 @@ const englishJSON = {
 		title: 'About',
 		paragraph1: (
 			<>
-				My name is Camila Paladines, I'm a <p>Frontend Developer</p> at Piyion in Cali,
-				Colombia. I love designing and developing applications that are very useful for
-				people.
+				Hi! I'm Camila, a Frontend Developer at{' '}
+				<a href='https://piyion.com' className='link' target='_blank' rel='noreferrer'>
+					Piyion
+				</a>
+				, with a solid background in Computer Science and Engineering. With{' '}
+				<p className='hightlight'>1+ years of experience</p> in the field, I have excelled
+				in developing innovative and functional projects.
 			</>
 		),
-		paragraph2:
-			"My goal is to cooperate with the creation of tools that contribute to the development of a person, a company, or a nation. That's why I like to learn new technologies, and use them with the mission to improve the world a little bit, one step at a time.",
+		paragraph2: (
+			<>
+				My approach is based on the constant search for challenges that drive my{' '}
+				<p className='hightlight'>professional growth</p> and the delivery of solutions that
+				combine efficiency and elegance. I am committed to{' '}
+				<p className='hightlight'>continuous improvement</p>, effective collaboration and
+				creating digital experiences that are useful to people. I am excited to continue to
+				expand my skills and contribute to the world of web development.
+			</>
+		),
 		cvTitle: 'Download CV',
 		cvFile: cvEnglish,
 	},

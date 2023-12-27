@@ -68,6 +68,10 @@
 	font-weight: 700;
 	color: rgba($white, 0.7);
 	grid-area: company;
+
+	&:hover {
+		color: rgba($white, 0.9);
+	}
 }
 
 .job-date {

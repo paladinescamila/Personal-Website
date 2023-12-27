@@ -34,8 +34,22 @@
 	margin-bottom: 1em;
 
 	p {
-		color: lighten($theme, 10);
 		display: inline;
+	}
+
+	.hightlight {
+		color: lighten($theme, 10);
+		font-weight: 700;
+	}
+
+	.link {
+		color: rgba($white, 0.7);
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			color: rgba($white, 0.9);
+		}
 	}
 }
 

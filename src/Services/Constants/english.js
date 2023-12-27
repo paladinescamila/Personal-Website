@@ -22,9 +22,8 @@ const englishJSON = {
 				<a href='https://piyion.com' className='link' target='_blank' rel='noreferrer'>
 					Piyion
 				</a>
-				, with a solid background in Computer Science and Engineering. With{' '}
-				<p className='hightlight'>1+ years of experience</p> in the field, I have excelled
-				in developing innovative and functional projects.
+				. With <p className='hightlight'>1+ years of experience</p> in the field, I have
+				excelled in developing innovative and functional projects.
 			</>
 		),
 		paragraph2: (

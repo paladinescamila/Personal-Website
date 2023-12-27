@@ -1,0 +1,51 @@
+.burger-button {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transform: scaleX(-1);
+}
+
+.burger-button line {
+	stroke: $white;
+	stroke-dasharray: 100%;
+	stroke-dashoffset: 0%;
+	transition: transform 0.3s, stroke-dashoffset 0.4s;
+	transform-origin: center;
+	stroke-width: 3px;
+}
+
+.burger-button .top {
+	transform: translateY(-35%);
+}
+
+.burger-button .middle {
+	transform: scaleX(1);
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.burger-button .bottom {
+	transform: translateY(33%);
+	stroke-dasharray: 100%;
+	stroke-dashoffset: 9px;
+}
+
+.burger-button:hover .bottom {
+	stroke-dashoffset: 0%;
+}
+
+.burger-button.menu-open .top {
+	transform: rotate(45deg);
+}
+
+.burger-button.menu-open .middle {
+	transform: scaleX(0.1);
+	opacity: 0;
+}
+
+.burger-button.menu-open line.bottom {
+	transform: rotate(-45deg);
+}
+
+.burger-button.menu-open .bottom {
+	stroke-dashoffset: 0%;
+}

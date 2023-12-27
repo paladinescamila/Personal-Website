@@ -25,14 +25,12 @@
 
 .header-sections {
 	list-style: none;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-gap: 2em;
+	justify-items: center;
 
 	& > p {
-		margin-bottom: 2em;
 		color: $white;
-		text-decoration: none;
 		opacity: 0.5;
 		cursor: pointer;
 

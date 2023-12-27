@@ -26,7 +26,7 @@ export default function Header() {
 		else switchToEnglish();
 	};
 
-	const sections = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
+	const sections = ['about', 'skills', 'experience', 'projects', 'contact'];
 
 	return (
 		<header className={showHeader ? 'showed-header' : 'hidden-header'}>

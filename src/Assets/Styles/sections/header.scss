@@ -97,9 +97,8 @@
 		background-color: $black;
 		width: 100vw;
 		z-index: 1000;
-		right: -100vw;
 		left: auto;
-		transition: right 0.3s ease-in-out;
+		right: -100vw;
 	}
 
 	.showed-header {

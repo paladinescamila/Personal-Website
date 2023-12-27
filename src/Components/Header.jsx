@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import favicon from '../Assets/Images/logo.png';
-import socialGitHub from '../Assets/Images/social/github.svg';
-import socialLinkedIn from '../Assets/Images/social/linkedin.svg';
+import Favicon from '../Assets/Images/logo.png';
+import SocialGitHub from '../Assets/Images/social/github.svg';
+import SocialLinkedIn from '../Assets/Images/social/linkedin.svg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
@@ -32,7 +32,7 @@ export default function Header() {
 		<header className={showHeader ? 'showed-header' : 'hidden-header'}>
 			<img
 				className='header-logo'
-				src={favicon}
+				src={Favicon}
 				alt='Planet logo'
 				onClick={() => goTo('home')}
 			/>
@@ -61,13 +61,13 @@ export default function Header() {
 			</nav>
 			<nav className='social-links'>
 				<a href='https://github.com/paladinescamila' target='_blank' rel='noreferrer'>
-					<img alt='Link to GitHub profile' src={socialGitHub} />
+					<img alt='Link to GitHub profile' src={SocialGitHub} />
 				</a>
 				<a
 					href='https://www.linkedin.com/in/paladinescamila'
 					target='_blank'
 					rel='noreferrer'>
-					<img alt='Link to LinkedIn profile' src={socialLinkedIn} />
+					<img alt='Link to LinkedIn profile' src={SocialLinkedIn} />
 				</a>
 			</nav>
 		</header>

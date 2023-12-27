@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import photo from '../Assets/Images/profile.png';
+import Photo from '../Assets/Images/profile.png';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
@@ -22,7 +22,7 @@ export default function About({refProperty}) {
 					/>
 				</div>
 				<div className='about-photo'>
-					<img src={photo} alt='Camila Paladines photography' />
+					<img src={Photo} alt='Camila Paladines photography' />
 				</div>
 			</div>
 		</section>

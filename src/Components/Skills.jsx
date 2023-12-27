@@ -1,8 +1,8 @@
 import React from 'react';
 import SkillCard from './SkillCard';
-import languagesImage from '../Assets/Images/skill-languages.svg';
-import librariesImage from '../Assets/Images/skill-libraries.svg';
-import toolsImage from '../Assets/Images/skill-tools.svg';
+import LanguagesImage from '../Assets/Images/skill-languages.svg';
+import LibrariesImage from '../Assets/Images/skill-libraries.svg';
+import ToolsImage from '../Assets/Images/skill-tools.svg';
 import skills from '../Services/Constants/skills';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
@@ -16,20 +16,16 @@ export default function Skills({refProperty}) {
 			<h2 className='section-title'>{content.skills.title}</h2>
 			<div className='about-skills'>
 				<SkillCard
-					image={languagesImage}
+					image={LanguagesImage}
 					title={content.skills.languages}
-					skills={skills.filter((s) => s.type === 0)}
+					skills={skills.languages}
 				/>
 				<SkillCard
-					image={librariesImage}
+					image={LibrariesImage}
 					title={content.skills.libraries}
-					skills={skills.filter((s) => s.type === 1)}
+					skills={skills.libraries}
 				/>
-				<SkillCard
-					image={toolsImage}
-					title={content.skills.tools}
-					skills={skills.filter((s) => s.type === 2)}
-				/>
+				<SkillCard image={ToolsImage} title={content.skills.tools} skills={skills.tools} />
 			</div>
 		</section>
 	);

@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './Button';
-import launch from '../Assets/Images/launch.svg';
-import scroll from '../Assets/Images/scroll-down.svg';
+import Launch from '../Assets/Images/launch.svg';
+import Scroll from '../Assets/Images/scroll-down.svg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
@@ -26,10 +26,10 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-				<img src={launch} alt='Spaceship' />
+				<img src={Launch} alt='Spaceship' />
 			</section>
 			<div className='scroll-down'>
-				<img src={scroll} alt='Scroll down' />
+				<img src={Scroll} alt='Scroll down' />
 			</div>
 		</>
 	);

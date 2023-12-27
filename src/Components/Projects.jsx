@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import projects from '../Services/Constants/projects';
-import socialFrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
+import SocialFrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
@@ -30,7 +30,7 @@ export default function Projects({refProperty}) {
 					href='https://www.frontendmentor.io/profile/paladinescamila/solutions'
 					target='_blank'
 					rel='noreferrer'>
-					<img alt='Link to Frontend Mentor profile' src={socialFrontendMentor} />
+					<img alt='Link to Frontend Mentor profile' src={SocialFrontendMentor} />
 					{content.projects.frontendMentor}
 				</a>
 			</ul>

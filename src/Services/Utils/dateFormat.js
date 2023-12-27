@@ -13,6 +13,7 @@ const dateFormat = (date, language) => {
 		'November',
 		'December',
 	];
+
 	const monthNamesES = [
 		'Enero',
 		'Febrero',

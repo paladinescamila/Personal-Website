@@ -6,7 +6,6 @@ export function NavigationProvider({children}) {
 	// Navigation between sections
 	const [section, setSection] = useState('home');
 
-	// Sections references
 	const references = {
 		home: useRef(null),
 		about: useRef(null),
@@ -22,17 +21,6 @@ export function NavigationProvider({children}) {
 		closeHeader();
 	};
 
-	useEffect(() => {
-		const showHideMenuOnResize = () => {
-			setShowHeader(window.innerWidth > 1000);
-			setShowBurger(window.innerWidth <= 1000);
-		};
-
-		window.addEventListener('resize', showHideMenuOnResize);
-
-		return () => window.removeEventListener('resize', showHideMenuOnResize);
-	}, []);
-
 	// Show or hide the menu and the header
 	const [showBurger, setShowBurger] = useState(true);
 	const [showHeader, setShowHeader] = useState(window.innerWidth > 1000);
@@ -46,6 +34,12 @@ export function NavigationProvider({children}) {
 		setShowHeader(window.innerWidth > 1000);
 		setShowBurger(window.innerWidth <= 1000);
 	};
+
+	useEffect(() => {
+		window.addEventListener('resize', closeHeader);
+
+		return () => window.removeEventListener('resize', closeHeader);
+	}, []);
 
 	// Set page loader
 	const [loading, setLoading] = useState(true);

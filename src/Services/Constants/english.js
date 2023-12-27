@@ -1,4 +1,4 @@
-import cvEnglish from './CV-Camila-Paladines-(English).pdf';
+import CV_English from './CV-Camila-Paladines-(English).pdf';
 
 const englishJSON = {
 	header: {
@@ -38,7 +38,7 @@ const englishJSON = {
 			</>
 		),
 		cvTitle: 'Download CV',
-		cvFile: cvEnglish,
+		cvFile: CV_English,
 	},
 	skills: {
 		title: 'Skills',

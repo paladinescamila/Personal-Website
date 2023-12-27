@@ -1,4 +1,4 @@
-import cvSpanish from './CV-Camila-Paladines-(Spanish).pdf';
+import CV_Spanish from './CV-Camila-Paladines-(Spanish).pdf';
 
 const spanishJSON = {
 	header: {
@@ -38,7 +38,7 @@ const spanishJSON = {
 			</>
 		),
 		cvTitle: 'Descargar CV',
-		cvFile: cvSpanish,
+		cvFile: CV_Spanish,
 	},
 	skills: {
 		title: 'Habilidades',

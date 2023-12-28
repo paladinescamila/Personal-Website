@@ -11,9 +11,9 @@ const projects = [
 	{
 		name: 'Alle Shop',
 		descriptionEN:
-			'This is a simple e-commerce website, where you can add products to the cart and make a purchase.',
+			'This is a fake e-commerce website, where you can add products to the cart and make a purchase.',
 		descriptionES:
-			'Este es un sitio web de comercio electrónico simple, donde puedes agregar productos al carrito y realizar una compra.',
+			'Este es un sitio web de comercio electrónico falso, donde puedes agregar productos al carrito y realizar una compra.',
 		tools: ['React', 'TypeScript', 'Tailwind CSS', 'Firebase'],
 		website: 'https://alle-shop.netlify.app',
 		github: 'https://github.com/paladinescamila/Alle-Shop',
@@ -22,9 +22,9 @@ const projects = [
 	{
 		name: 'Calculator App',
 		descriptionEN:
-			'This is a simple calculator application, where you can perform basic operations.',
+			'This is a calculator application, where you can perform basic operations. Also, you can change between three different themes.',
 		descriptionES:
-			'Esta es una aplicación de calculadora simple, donde puedes realizar operaciones básicas.',
+			'Esta es una aplicación de calculadora, donde puedes realizar operaciones básicas. Además, puedes cambiar entre tres aspectos diferentes.',
 		tools: ['React', 'TypeScript', 'SCSS'],
 		website: 'https://ca-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/Calculator-App',
@@ -44,9 +44,9 @@ const projects = [
 	{
 		name: 'Card Details',
 		descriptionEN:
-			'This is a simple card details form, where you can enter your card information.',
+			'This is a card details form, where you can enter your card information (no saved, just validated).',
 		descriptionES:
-			'Este es un simple formulario de detalles de tarjeta, donde puedes ingresar la información de tu tarjeta.',
+			'Este es un formulario de detalles de tarjeta, donde puedes ingresar tu información de tarjeta (no se guarda, solo se valida).',
 		tools: ['React', 'TypeScript', 'SCSS'],
 		website: 'https://icdf-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/Interactive-Card-Details-Form',
@@ -55,9 +55,9 @@ const projects = [
 	{
 		name: 'Space Tourism',
 		descriptionEN:
-			'This is a simple website, where you can see different planets and their characteristics.',
+			'This is a website where you can see different planets to visit and their characteristics.',
 		descriptionES:
-			'Este es un sitio web simple, donde puedes ver diferentes planetas y sus características.',
+			'Este es un sitio web donde puedes ver diferentes planetas para visitar y sus características.',
 		tools: ['React', 'TypeScript', 'SCSS'],
 		website: 'https://stmw-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/Space-Tourism',
@@ -65,8 +65,8 @@ const projects = [
 	},
 	{
 		name: 'Advice Generator App',
-		descriptionEN: 'This is a simple application that shows you random advice.',
-		descriptionES: 'Esta es una aplicación simple que te muestra consejos aleatorios.',
+		descriptionEN: 'This application shows you random advices.',
+		descriptionES: 'Esta aplicación te muestra consejos aleatorios.',
 		tools: ['React', 'TypeScript', 'CSS'],
 		website: 'https://aga-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/Advice-Generator-App',

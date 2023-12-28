@@ -30,9 +30,9 @@ const englishJSON = {
 			<>
 				My approach is based on the constant search for challenges that drive my{' '}
 				<p className='hightlight'>professional growth</p> and the delivery of solutions that
-				combine efficiency and elegance. I am committed to{' '}
+				combine efficiency and elegance. I'm committed to{' '}
 				<p className='hightlight'>continuous improvement</p>, effective collaboration and
-				creating digital experiences that are useful to people. I am excited to continue to
+				creating digital experiences that are useful to people. I'm excited to continue to
 				expand my skills and contribute to the world of web development.
 			</>
 		),

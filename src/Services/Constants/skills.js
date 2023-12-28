@@ -1,39 +1,37 @@
-/*
-    Type
-    0 -> Languages
-    1 -> Libraries & Frameworks
-    2 -> Tools & Platforms
+import HTML from '../../Assets/Images/skills/html.png';
+import CSS from '../../Assets/Images/skills/css.png';
+import SCSS from '../../Assets/Images/skills/scss.png';
+import JS from '../../Assets/Images/skills/js.png';
+import TS from '../../Assets/Images/skills/ts.png';
+import React from '../../Assets/Images/skills/react.png';
+import ReactNative from '../../Assets/Images/skills/react-native.png';
+import Tailwind from '../../Assets/Images/skills/tailwind.png';
+import Git from '../../Assets/Images/skills/git.png';
+import GitHub from '../../Assets/Images/skills/github.png';
+import Firebase from '../../Assets/Images/skills/firebase.png';
+import Figma from '../../Assets/Images/skills/figma.png';
+import Scrum from '../../Assets/Images/skills/scrum.png';
 
-    Level
-    0 -> Basic
-    1 -> Intermediate
-    2 -> Advanced
-*/
-
-import html from "../../Assets/Images/skills/html.png";
-import css from "../../Assets/Images/skills/css.png";
-import scss from "../../Assets/Images/skills/scss.png";
-import js from "../../Assets/Images/skills/js.png";
-import ts from "../../Assets/Images/skills/ts.png";
-import react from "../../Assets/Images/skills/react.png";
-import reactNative from "../../Assets/Images/skills/react-native.png";
-import git from "../../Assets/Images/skills/git.png";
-import firebase from "../../Assets/Images/skills/firebase.png";
-import figma from "../../Assets/Images/skills/figma.png";
-import scrum from "../../Assets/Images/skills/scrum.png";
-
-const skills = [
-	{name: "HTML", img: html, type: 0, level: 1},
-	{name: "CSS", img: css, type: 0, level: 1},
-	{name: "SCSS", img: scss, type: 0, level: 0},
-	{name: "JavaScript", img: js, type: 0, level: 1},
-	{name: "TypeScript", img: ts, type: 0, level: 0},
-	{name: "React.js", img: react, type: 1, level: 0},
-	{name: "React Native", img: reactNative, type: 1, level: 0},
-	{name: "Git", img: git, type: 2, level: 0},
-	{name: "Firebase", img: firebase, type: 2, level: 0},
-	{name: "Figma", img: figma, type: 2, level: 0},
-	{name: "Scrum", img: scrum, type: 2, level: 1},
-];
+const skills = {
+	languages: [
+		{name: 'HTML', img: HTML},
+		{name: 'CSS', img: CSS},
+		{name: 'SCSS', img: SCSS},
+		{name: 'JavaScript', img: JS},
+		{name: 'TypeScript', img: TS},
+	],
+	libraries: [
+		{name: 'React', img: React},
+		{name: 'React Native', img: ReactNative},
+		{name: 'Tailwind CSS', img: Tailwind},
+	],
+	tools: [
+		{name: 'Git', img: Git},
+		{name: 'GitHub', img: GitHub},
+		{name: 'Firebase', img: Firebase},
+		{name: 'Figma', img: Figma},
+		{name: 'Scrum', img: Scrum},
+	],
+};
 
 export default skills;

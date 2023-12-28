@@ -1,6 +1,6 @@
-import React from "react";
-import projectGitHub from "../Assets/Images/project-github.svg";
-import projectWebsite from "../Assets/Images/project-website.svg";
+import React from 'react';
+import ProjectGitHub from '../Assets/Images/project-github.svg';
+import ProjectWebsite from '../Assets/Images/project-website.svg';
 
 export default function ProjectCard({name, description, tools, website, github, img}) {
 	return (
@@ -16,15 +16,15 @@ export default function ProjectCard({name, description, tools, website, github, 
 				<div className='project-tools-and-resources'>
 					<ul className='project-card-tools'>
 						{tools.map((t) => (
-							<li>{t}</li>
+							<li key={t}>{t}</li>
 						))}
 					</ul>
 					<div className='project-card-resources'>
 						<a href={website} target='_blank' rel='noreferrer'>
-							<img src={projectWebsite} alt='Website' />
+							<img src={ProjectWebsite} alt='Website' />
 						</a>
 						<a href={github} target='_blank' rel='noreferrer'>
-							<img src={projectGitHub} alt='GitHub' />
+							<img src={ProjectGitHub} alt='GitHub' />
 						</a>
 					</div>
 				</div>

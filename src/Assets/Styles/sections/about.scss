@@ -17,8 +17,8 @@
 .about-photo {
 	width: 300px;
 	height: 300px;
-	border: 3px solid $theme-1;
-	box-shadow: 7px 7px 0 0 $theme-3;
+	border: 3px solid darken($theme, 20%);
+	box-shadow: 7px 7px 0 0 $theme;
 	background-color: $black;
 
 	img {
@@ -30,12 +30,25 @@
 }
 
 .about-text {
-	color: $gray-D;
+	color: rgba($white, 0.7);
 	margin-bottom: 1em;
 
 	p {
-		color: lighten($theme-4, 10);
 		display: inline;
+	}
+
+	.hightlight {
+		color: lighten($theme, 10);
+	}
+
+	.link {
+		color: rgba($white, 0.7);
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			color: rgba($white, 0.9);
+		}
 	}
 }
 

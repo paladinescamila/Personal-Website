@@ -10,17 +10,15 @@
 .project-card {
 	display: flex;
 	flex-direction: column;
-	background-color: $gray-2;
+	background-color: rgba($white, 0.07);
 
 	&:hover {
-		outline: 1px solid $theme-1;
-		box-shadow: 0 0 10px 1px $theme-1;
+		outline: 1px solid darken($theme, 20%);
+		box-shadow: 0 0 10px 1px darken($theme, 20%);
 	}
 }
 
 .project-card-photo {
-	background-color: $theme-3;
-
 	img {
 		width: 100%;
 		height: 100%;
@@ -43,14 +41,14 @@
 		text-decoration: none;
 
 		p:nth-of-type(1) {
-			font-weight: bold;
+			font-weight: 700;
 			font-size: 1.3em;
 			color: $white;
 		}
 
 		p:nth-of-type(2) {
 			margin: 1em 0 0 0;
-			color: $gray-9;
+			color: rgba($white, 0.7);
 		}
 	}
 }
@@ -72,7 +70,7 @@
 		margin-top: 1em;
 		margin-right: 1.3em;
 		font-size: 0.9em;
-		color: $gray-5;
+		color: rgba($white, 0.3);
 	}
 }
 
@@ -94,7 +92,8 @@
 		}
 
 		img {
-			width: 30px;
+			width: 25px;
+			height: 25px;
 		}
 
 		&:first-of-type {
@@ -108,11 +107,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 3px dashed $gray-5;
-	background-color: $gray-2;
+	border: 3px dashed rgba($white, 0.3);
+	background-color: rgba($white, 0.04);
 	opacity: 0.7;
 	text-decoration: none;
-	color: $gray-A;
+	color: rgba($white, 0.7);
+	padding: 50px 10px;
 
 	&:hover {
 		opacity: 1;

@@ -1,7 +1,7 @@
 /* Main container */
 
 #root {
-	background-color: $gray-1;
+	background-color: $black;
 }
 
 .sections {
@@ -23,10 +23,11 @@
 
 .section-title {
 	color: $white;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 3em;
-	border-bottom: 3px solid $theme-3;
+	border-bottom: 3px solid $theme;
 	margin: 0 0 1em 0;
+	font-family: $title-font;
 }
 
 @media (max-width: 1000px) {

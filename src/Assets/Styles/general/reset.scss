@@ -1,10 +1,8 @@
 /* TYPOGRAPHY */
 
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-
 body {
-	font-family: "Mulish", sans-serif;
-	background-color: $gray-1;
+	font-family: $paragraph-font;
+	background-color: $black;
 }
 
 /* RESET */
@@ -34,7 +32,7 @@ ul {
 
 * {
 	&::-webkit-scrollbar-track {
-		background-color: $gray-1;
+		background-color: $black;
 	}
 
 	&::-webkit-scrollbar {
@@ -45,7 +43,7 @@ ul {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: $gray-5;
+		background-color: rgba($white, 0.3);
 	}
 }
 
@@ -57,7 +55,7 @@ p::-moz-selection,
 a::-moz-selection,
 li::-moz-selection,
 img::-moz-selection {
-	background-color: rgba($theme-4, 0.5);
+	background-color: rgba($theme, 0.3);
 }
 
 h1::selection,
@@ -66,5 +64,5 @@ p::selection,
 a::selection,
 li::selection,
 img::selection {
-	background-color: rgba($theme-4, 0.5);
+	background-color: rgba($theme, 0.3);
 }

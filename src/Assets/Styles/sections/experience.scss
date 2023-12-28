@@ -9,52 +9,42 @@
 }
 
 .job-item {
-	// margin-bottom: 3em;
+	margin-bottom: 2em;
 	width: 100%;
 	display: grid;
 	grid-gap: 25px 20px;
-	grid-template-columns: 1fr 30px 1fr;
+	grid-template-columns: 1fr 20px 1fr;
 	grid-template-rows: 30px 1fr;
 	grid-template-areas:
-		"company circle position"
-		"date empty tasks";
+		'company circle position'
+		'date empty tasks';
 }
 
 .time-line {
 	margin-top: 4em;
 	height: 100%;
 	border: none;
-	border-left: 4px dashed $gray-3;
+	border-left: 4px solid lighten($black, 7);
 	position: absolute;
 	top: -3em;
 	left: 50%;
 	margin-left: -2px;
-
-	&::after {
-		content: "";
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: $gray-2;
-		position: absolute;
-		left: -12px;
-		bottom: 0;
-	}
 }
 
 .job-circle {
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background-color: $gray-2;
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	background-color: $theme;
 	grid-area: circle;
 	z-index: 900;
 	margin-top: 7px;
+	border-radius: 1.5px;
 }
 
 .job-item:first-of-type .job-circle {
 	background-color: transparent;
-	outline: 2px solid $theme-1;
+	outline: 2px solid $theme;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -62,8 +52,7 @@
 	& > div {
 		width: 70%;
 		height: 70%;
-		border-radius: 50%;
-		background-color: $theme-1;
+		background-color: $theme;
 	}
 }
 
@@ -73,25 +62,29 @@
 }
 
 .job-company {
-	padding-top: 10px;
+	padding-top: 5px;
 	text-decoration: none;
 	font-size: 20px;
-	font-weight: bold;
-	color: $gray-D;
+	font-weight: 700;
+	color: rgba($white, 0.7);
 	grid-area: company;
+
+	&:hover {
+		color: rgba($white, 0.9);
+	}
 }
 
 .job-date {
 	font-size: 16px;
-	color: $gray-5;
+	color: rgba($white, 0.3);
 	grid-area: date;
 }
 
 .job-position {
 	font-size: 20px;
-	font-weight: bold;
-	color: $theme-4;
-	padding-top: 10px;
+	font-weight: 700;
+	color: $theme;
+	padding-top: 5px;
 	margin-bottom: 20px;
 	grid-area: position;
 }
@@ -103,29 +96,33 @@
 
 	li {
 		font-size: 16px;
-		color: $gray-A;
+		color: rgba($white, 0.7);
 		margin-bottom: 10px;
 	}
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1100px) {
 	.jobs-container {
 		width: 700px;
 	}
 
 	.time-line {
-		left: 15px;
+		left: 10px;
+	}
+
+	.job-circle {
+		margin-top: 4px;
 	}
 
 	.job-item {
 		grid-gap: 5px 20px;
-		grid-template-columns: 50px 1fr;
+		grid-template-columns: 20px 1fr;
 		grid-template-rows: repeat(3, 30px) 1fr;
 		grid-template-areas:
-			"circle position"
-			"empty company"
-			"empty date"
-			"empty tasks";
+			'circle position'
+			'empty company'
+			'empty date'
+			'empty tasks';
 	}
 
 	.job-position,
@@ -148,28 +145,9 @@
 		width: 100%;
 		margin-top: 3em;
 	}
-
-	.time-line {
-		left: 16px;
-
-		&::after {
-			width: 15px;
-			height: 15px;
-			left: -9px;
-		}
-	}
-
-	.job-item {
-		grid-template-columns: 30px 1fr;
-	}
-
-	.job-circle {
-		width: 30px;
-		height: 30px;
-	}
 }
 
-@media (max-width: 530px) {
+@media (max-width: 600px) {
 	.jobs-container {
 		margin-top: 0;
 	}

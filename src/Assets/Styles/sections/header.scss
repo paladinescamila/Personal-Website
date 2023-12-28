@@ -1,15 +1,16 @@
-.header {
+.showed-header,
+.hidden-header {
 	height: 100vh;
 	width: 150px;
 	padding: 1em;
 	position: fixed;
 	top: 0;
 	left: 0;
-	display: var(--display-header);
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	background-color: $gray-2;
+	background-color: rgba($white, 0.07);
 }
 
 .header-logo {
@@ -24,14 +25,12 @@
 
 .header-sections {
 	list-style: none;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: grid;
+	grid-gap: 2em;
+	justify-items: center;
 
 	& > p {
-		margin-bottom: 2em;
-		color: $gray-E;
-		text-decoration: none;
+		color: $white;
 		opacity: 0.5;
 		cursor: pointer;
 
@@ -51,7 +50,7 @@
 		width: 100px;
 		height: 40px;
 		border: none;
-		color: $gray-E;
+		color: rgba($white, 0.9);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -70,12 +69,12 @@
 	}
 
 	&:hover > button {
-		border-color: $gray-5;
+		border-color: rgba($white, 0.07);
 	}
 }
 
 .language-selector {
-	background-color: $gray-3;
+	background-color: rgba($white, 0.07);
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
@@ -85,16 +84,23 @@
 		background-color: transparent;
 
 		&:hover {
-			background-color: $gray-4;
+			background-color: rgba($white, 0.07);
 		}
 	}
 }
 
 @media (max-width: 1000px) {
-	.header {
-		background-color: $gray-1;
+	.showed-header,
+	.hidden-header {
+		background-color: $black;
 		width: 100vw;
 		z-index: 1000;
+		left: auto;
+		right: -100vw;
+	}
+
+	.showed-header {
+		right: 0;
 	}
 
 	.header-logo {

@@ -10,16 +10,16 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $gray-2;
+	background-color: rgba($white, 0.07);
 
 	img {
 		width: 40px;
 	}
 
 	& > p {
-		font-weight: bold;
+		font-weight: 600;
 		margin: 1em 0 2em 0;
-		color: $gray-D;
+		color: rgba($white, 0.8);
 	}
 }
 
@@ -30,20 +30,27 @@
 	align-items: center;
 
 	li {
-		background-color: $gray-2;
 		margin: 0.5em;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		img {
-			mix-blend-mode: luminosity;
+		div {
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				filter: grayscale(100%);
+			}
 		}
 
 		p {
 			font-size: 0.7em;
 			padding: 0.5em 0 0 0;
-			color: $gray-7;
+			color: rgba($white, 0.3);
 		}
 	}
 }

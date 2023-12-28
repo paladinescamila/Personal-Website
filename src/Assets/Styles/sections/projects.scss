@@ -10,7 +10,7 @@
 .project-card {
 	display: flex;
 	flex-direction: column;
-	background-color: rgba($white, 0.05);
+	background-color: rgba($white, 0.07);
 
 	&:hover {
 		outline: 1px solid darken($theme, 20%);

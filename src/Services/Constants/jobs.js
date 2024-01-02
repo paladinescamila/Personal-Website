@@ -3,8 +3,8 @@ const jobs = [
 		companyName: 'Piyion',
 		companyLink: 'https://piyion.com',
 		date: [new Date(2022, 5), new Date()],
-		positionEN: 'Frontend Web / Mobile Developer',
-		positionES: 'Desarrolladora Frontend Web / Móvil',
+		positionEN: 'Frontend Web/Mobile Developer',
+		positionES: 'Desarrolladora Frontend Web/Móvil',
 		tasksEN: [
 			'Developed responsive web interfaces using React, TypeScript and Firebase services, creating client interactions based on the provided design specifications.',
 			'Built a mobile application using React Native, TypeScript, SCSS and Firebase services.',

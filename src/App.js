@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigation} from './Context/Navigation';
-import './Assets/Styles/main.scss';
+import './Styles/main.scss';
 
 // Sections
 import Header from './Components/Header';
@@ -17,7 +17,7 @@ import Favicon from './Assets/Images/logo.png';
 import Loader from './Components/Loader';
 import BurgerButton from './Components/BurgerButton';
 
-function App() {
+export default function App() {
 	const {loading, goTo} = useNavigation();
 
 	if (loading) return <Loader />;
@@ -41,5 +41,3 @@ function App() {
 		</>
 	);
 }
-
-export default App;

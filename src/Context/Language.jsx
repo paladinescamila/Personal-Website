@@ -1,19 +1,20 @@
 import React, {createContext, useContext, useState} from 'react';
-import englishJSON from '../Services/Constants/english';
-import spanishJSON from '../Services/Constants/spanish';
+import {contentEN} from '../Constants/english';
+import {contentES} from '../Constants/spanish';
+
+const languages = {en: contentEN, es: contentES};
+const defaultLanguage = languages.en;
 
 const LanguageContext = createContext({});
 
 export function LanguageProvider({children}) {
-	const LANGUAGE = navigator.language.slice(0, 2);
+	const NAVIGATOR_LANGUAGE = navigator.language.slice(0, 2);
 
-	const [content, setContent] = useState(LANGUAGE === 'es' ? spanishJSON : englishJSON);
-
-	const switchToSpanish = () => setContent(spanishJSON);
-	const switchToEnglish = () => setContent(englishJSON);
+	const [content, setContent] = useState(languages[NAVIGATOR_LANGUAGE] || defaultLanguage);
+	const switchToLanguage = (language) => setContent(languages[language]);
 
 	return (
-		<LanguageContext.Provider value={{content, switchToSpanish, switchToEnglish}}>
+		<LanguageContext.Provider value={{content, switchToLanguage}}>
 			{children}
 		</LanguageContext.Provider>
 	);

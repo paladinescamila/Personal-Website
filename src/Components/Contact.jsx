@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from './Button';
-import social from '../Services/Constants/social';
+import {social} from '../Constants/social';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
-export default function Contact({refProperty}) {
+export default function Contact() {
 	const {content} = useLanguage();
 	const {references} = useNavigation();
 

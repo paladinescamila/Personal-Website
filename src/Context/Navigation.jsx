@@ -37,7 +37,6 @@ export function NavigationProvider({children}) {
 
 	useEffect(() => {
 		window.addEventListener('resize', closeHeader);
-
 		return () => window.removeEventListener('resize', closeHeader);
 	}, []);
 
@@ -51,9 +50,7 @@ export function NavigationProvider({children}) {
 
 	useEffect(() => {
 		const showLoaderOnLoad = () => showLoader(1000);
-
 		window.addEventListener('load', showLoaderOnLoad);
-
 		return () => window.removeEventListener('load', showLoaderOnLoad);
 	}, []);
 

@@ -1,6 +1,7 @@
-import CV_English from './CV-Camila-Paladines-(English).pdf';
+import CV_EN from '../Assets/Documents/Camila-Paladines-CV-EN.pdf';
+import {getYearsOfExperience} from '../Utils/date';
 
-const englishJSON = {
+export const contentEN = {
 	header: {
 		about: 'About',
 		skills: 'Skills',
@@ -22,8 +23,8 @@ const englishJSON = {
 				<a href='https://piyion.com' className='link' target='_blank' rel='noreferrer'>
 					Piyion
 				</a>
-				. With <p className='hightlight'>1+ years of experience</p> in the field, I have
-				excelled in developing innovative and functional projects.
+				. With <p className='hightlight'>{getYearsOfExperience()} years of experience</p> in
+				the field, I have excelled in developing innovative and functional projects.
 			</>
 		),
 		paragraph2: (
@@ -37,7 +38,7 @@ const englishJSON = {
 			</>
 		),
 		cvTitle: 'Download CV',
-		cvFile: CV_English,
+		cvFile: CV_EN,
 	},
 	skills: {
 		title: 'Skills',
@@ -61,5 +62,3 @@ const englishJSON = {
 		button: 'Say hello',
 	},
 };
-
-export default englishJSON;

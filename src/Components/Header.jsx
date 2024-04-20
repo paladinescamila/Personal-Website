@@ -7,7 +7,7 @@ import {useNavigation} from '../Context/Navigation';
 
 export default function Header() {
 	const [displaySelector, setDisplaySelector] = useState('none');
-	const {content, switchToSpanish, switchToEnglish} = useLanguage();
+	const {content, switchToLanguage} = useLanguage();
 	const {showHeader, closeHeader, goTo, showLoader} = useNavigation();
 
 	// Displays the language selector
@@ -18,12 +18,10 @@ export default function Header() {
 
 	// Changes the language
 	const setLanguage = (language) => {
+		switchToLanguage(language);
 		showLoader(500);
 		hideSelector();
 		closeHeader();
-
-		if (language === 'es') switchToSpanish();
-		else switchToEnglish();
 	};
 
 	const sections = ['about', 'skills', 'experience', 'projects', 'contact'];

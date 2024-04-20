@@ -1,10 +1,10 @@
-import GitHub from '../../Assets/Images/social/github.svg';
-import LinkedIn from '../../Assets/Images/social/linkedin.svg';
-import CodePen from '../../Assets/Images/social/codepen.svg';
-import FrontendMentor from '../../Assets/Images/social/frontend-mentor.svg';
-import Medium from '../../Assets/Images/social/medium.svg';
+import GitHub from '../Assets/Images/social/github.svg';
+import LinkedIn from '../Assets/Images/social/linkedin.svg';
+import CodePen from '../Assets/Images/social/codepen.svg';
+import FrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
+import Medium from '../Assets/Images/social/medium.svg';
 
-const social = [
+export const social = [
 	{
 		name: 'Link to GitHub profile',
 		link: 'https://github.com/paladinescamila',
@@ -31,5 +31,3 @@ const social = [
 		img: Medium,
 	},
 ];
-
-export default social;

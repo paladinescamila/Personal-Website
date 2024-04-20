@@ -1,6 +1,7 @@
-import CV_Spanish from './CV-Camila-Paladines-(Spanish).pdf';
+import CV_ES from '../Assets/Documents/Camila-Paladines-CV-ES.pdf';
+import {getYearsOfExperience} from '../Utils/date';
 
-const spanishJSON = {
+export const contentES = {
 	header: {
 		about: 'Sobre mí',
 		skills: 'Habilidades',
@@ -22,8 +23,8 @@ const spanishJSON = {
 				<a href='https://piyion.com' className='link' target='_blank' rel='noreferrer'>
 					Piyion
 				</a>
-				. Con <p className='hightlight'>más de 1 año de experiencia</p> en el área, me he
-				destacado en el desarrollo de proyectos innovadores y funcionales.
+				. Con <p className='hightlight'>{getYearsOfExperience()} años de experiencia</p> en
+				el área, me he destacado en el desarrollo de proyectos innovadores y funcionales.
 			</>
 		),
 		paragraph2: (
@@ -37,7 +38,7 @@ const spanishJSON = {
 			</>
 		),
 		cvTitle: 'Descargar CV',
-		cvFile: CV_Spanish,
+		cvFile: CV_ES,
 	},
 	skills: {
 		title: 'Habilidades',
@@ -61,5 +62,3 @@ const spanishJSON = {
 		button: 'Escríbeme',
 	},
 };
-
-export default spanishJSON;

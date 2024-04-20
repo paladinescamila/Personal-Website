@@ -1,4 +1,5 @@
-import CV_English from './CV-Camila-Paladines-(English).pdf';
+import CV_English from '../Assets/Documents/CV-Camila-Paladines-(English).pdf';
+import {getYearsOfExperience} from '../Utils/date';
 
 const englishJSON = {
 	header: {
@@ -22,8 +23,8 @@ const englishJSON = {
 				<a href='https://piyion.com' className='link' target='_blank' rel='noreferrer'>
 					Piyion
 				</a>
-				. With <p className='hightlight'>1+ years of experience</p> in the field, I have
-				excelled in developing innovative and functional projects.
+				. With <p className='hightlight'>{getYearsOfExperience()} years of experience</p> in
+				the field, I have excelled in developing innovative and functional projects.
 			</>
 		),
 		paragraph2: (

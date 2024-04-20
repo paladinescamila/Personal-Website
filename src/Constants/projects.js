@@ -1,11 +1,11 @@
-import AlleShopPhoto from '../../Assets/Images/projects/alle-shop.png';
-import CalculatorAppPhoto from '../../Assets/Images/projects/calculator-app.png';
-import SunnysideAgencyPhoto from '../../Assets/Images/projects/sunnyside-agency.png';
-import CardDetailsPhoto from '../../Assets/Images/projects/card-details.png';
-import SpaceTourismPhoto from '../../Assets/Images/projects/space-tourism.png';
-import AdviceGeneratorAppPhoto from '../../Assets/Images/projects/advice-generator-app.png';
-import PurpleCalendarPhoto from '../../Assets/Images/projects/purple-calendar.png';
-import TomatoTimePhoto from '../../Assets/Images/projects/tomato-time.png';
+import AlleShopPhoto from '../Assets/Images/projects/alle-shop.png';
+import CalculatorAppPhoto from '../Assets/Images/projects/calculator-app.png';
+import SunnysideAgencyPhoto from '../Assets/Images/projects/sunnyside-agency.png';
+import CardDetailsPhoto from '../Assets/Images/projects/card-details.png';
+import SpaceTourismPhoto from '../Assets/Images/projects/space-tourism.png';
+import AdviceGeneratorAppPhoto from '../Assets/Images/projects/advice-generator-app.png';
+import PurpleCalendarPhoto from '../Assets/Images/projects/purple-calendar.png';
+import TomatoTimePhoto from '../Assets/Images/projects/tomato-time.png';
 
 const projects = [
 	{

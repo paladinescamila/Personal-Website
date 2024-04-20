@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import projects from '../Services/Constants/projects';
+import projects from '../Constants/projects';
 import SocialFrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';

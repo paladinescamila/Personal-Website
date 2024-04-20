@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigation} from './Context/Navigation';
-import './Assets/Styles/main.scss';
+import './Styles/main.scss';
 
 // Sections
 import Header from './Components/Header';

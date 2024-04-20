@@ -3,7 +3,7 @@ import SkillCard from './SkillCard';
 import LanguagesImage from '../Assets/Images/skill-languages.svg';
 import LibrariesImage from '../Assets/Images/skill-libraries.svg';
 import ToolsImage from '../Assets/Images/skill-tools.svg';
-import skills from '../Services/Constants/skills';
+import skills from '../Constants/skills';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 

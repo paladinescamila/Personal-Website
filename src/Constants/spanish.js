@@ -1,7 +1,7 @@
-import CV_Spanish from '../Assets/Documents/CV-Camila-Paladines-(Spanish).pdf';
+import CV_ES from '../Assets/Documents/Camila-Paladines-CV-ES.pdf';
 import {getYearsOfExperience} from '../Utils/date';
 
-const spanishJSON = {
+export const contentES = {
 	header: {
 		about: 'Sobre mí',
 		skills: 'Habilidades',
@@ -38,7 +38,7 @@ const spanishJSON = {
 			</>
 		),
 		cvTitle: 'Descargar CV',
-		cvFile: CV_Spanish,
+		cvFile: CV_ES,
 	},
 	skills: {
 		title: 'Habilidades',
@@ -62,5 +62,3 @@ const spanishJSON = {
 		button: 'Escríbeme',
 	},
 };
-
-export default spanishJSON;

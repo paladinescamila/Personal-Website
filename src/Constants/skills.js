@@ -12,7 +12,7 @@ import Firebase from '../Assets/Images/skills/firebase.png';
 import Figma from '../Assets/Images/skills/figma.png';
 import Scrum from '../Assets/Images/skills/scrum.png';
 
-const skills = {
+export const skills = {
 	languages: [
 		{name: 'HTML', img: HTML},
 		{name: 'CSS', img: CSS},
@@ -33,5 +33,3 @@ const skills = {
 		{name: 'Scrum', img: Scrum},
 	],
 };
-
-export default skills;

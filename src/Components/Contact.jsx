@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import social from '../Constants/social';
+import {social} from '../Constants/social';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 

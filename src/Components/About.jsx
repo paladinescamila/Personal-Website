@@ -4,7 +4,7 @@ import Photo from '../Assets/Images/profile.png';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
-export default function About({refProperty}) {
+export default function About() {
 	const {content} = useLanguage();
 	const {references} = useNavigation();
 

@@ -5,7 +5,7 @@ import {dateRangeFormat} from '../Utils/date';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
-export default function Experience({refProperty}) {
+export default function Experience() {
 	const {content} = useLanguage();
 	const {references} = useNavigation();
 	const {language} = content.experience;

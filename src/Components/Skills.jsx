@@ -7,7 +7,7 @@ import {skills} from '../Constants/skills';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
-export default function Skills({refProperty}) {
+export default function Skills() {
 	const {content} = useLanguage();
 	const {references} = useNavigation();
 

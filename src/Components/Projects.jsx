@@ -5,7 +5,7 @@ import SocialFrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
-export default function Projects({refProperty}) {
+export default function Projects() {
 	const {content} = useLanguage();
 	const {references} = useNavigation();
 	const {language} = content.projects;

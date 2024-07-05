@@ -4,7 +4,7 @@ import CodePen from '../Assets/Images/social/codepen.svg';
 import FrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
 import Medium from '../Assets/Images/social/medium.svg';
 
-export const social = [
+export const SOCIAL = [
 	{
 		name: 'Link to GitHub profile',
 		link: 'https://github.com/paladinescamila',

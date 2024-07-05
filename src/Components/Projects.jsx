@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import {projects} from '../Constants/projects';
+import {PROJECTS} from '../Constants/projects';
 import SocialFrontendMentor from '../Assets/Images/social/frontend-mentor.svg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
@@ -14,7 +14,7 @@ export default function Projects() {
 		<section className='section-container projects-section' ref={references.projects}>
 			<h2 className='section-title'>{content.projects.title}</h2>
 			<ul className='projects-container'>
-				{projects.map((p) => (
+				{PROJECTS.map((p) => (
 					<ProjectCard
 						key={p.name}
 						name={p.name}

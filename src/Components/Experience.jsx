@@ -1,6 +1,6 @@
 import React from 'react';
 import Job from './Job';
-import {jobs} from '../Constants/jobs';
+import {JOBS} from '../Constants/jobs';
 import {dateRangeFormat} from '../Utils/date';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
@@ -14,7 +14,7 @@ export default function Experience() {
 		<section className='section-container experience-section' ref={references.experience}>
 			<h2 className='section-title'>{content.experience.title}</h2>
 			<div className='jobs-container'>
-				{jobs.map((j) => (
+				{JOBS.map((j) => (
 					<Job
 						key={j.companyName}
 						companyName={j.companyName}

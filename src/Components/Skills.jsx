@@ -3,7 +3,7 @@ import SkillCard from './SkillCard';
 import LanguagesImage from '../Assets/Images/components/LanguagesImage';
 import LibrariesImage from '../Assets/Images/components/LibrariesImage';
 import ToolsImage from '../Assets/Images/components/ToolsImage';
-import {skills} from '../Constants/skills';
+import {SKILLS} from '../Constants/skills';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
@@ -18,14 +18,14 @@ export default function Skills() {
 				<SkillCard
 					image={LanguagesImage}
 					title={content.skills.languages}
-					skills={skills.languages}
+					skills={SKILLS.languages}
 				/>
 				<SkillCard
 					image={LibrariesImage}
 					title={content.skills.libraries}
-					skills={skills.libraries}
+					skills={SKILLS.libraries}
 				/>
-				<SkillCard image={ToolsImage} title={content.skills.tools} skills={skills.tools} />
+				<SkillCard image={ToolsImage} title={content.skills.tools} skills={SKILLS.tools} />
 			</div>
 		</section>
 	);

@@ -13,7 +13,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
 // Icons and Components
-import Favicon from './Assets/Images/logo.png';
+import Favicon from './Assets/Images/logo.svg';
 import Loader from './Components/Loader';
 import BurgerButton from './Components/BurgerButton';
 

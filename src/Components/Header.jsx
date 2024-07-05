@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Favicon from '../Assets/Images/logo.png';
+import Favicon from '../Assets/Images/logo.svg';
 import SocialGitHub from '../Assets/Images/social/github.svg';
 import SocialLinkedIn from '../Assets/Images/social/linkedin.svg';
 import {useLanguage} from '../Context/Language';

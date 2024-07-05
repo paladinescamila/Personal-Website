@@ -12,7 +12,7 @@
 	align-items: center;
 	background-color: rgba($white, 0.07);
 
-	img {
+	.skill-icon {
 		width: 40px;
 	}
 
@@ -43,6 +43,7 @@
 			align-items: center;
 
 			img {
+				width: 40px;
 				filter: grayscale(100%);
 			}
 		}

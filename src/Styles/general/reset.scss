@@ -71,3 +71,12 @@ li::selection,
 img::selection {
 	background-color: rgba($theme, 0.3);
 }
+
+/* Strokes */
+.theme-stroke {
+	stroke: $theme;
+}
+
+.black-stroke {
+	stroke: $black;
+}

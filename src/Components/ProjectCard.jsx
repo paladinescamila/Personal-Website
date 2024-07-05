@@ -1,6 +1,6 @@
 import React from 'react';
-import ProjectGitHub from '../Assets/Images/project-github.svg';
-import ProjectWebsite from '../Assets/Images/project-website.svg';
+import ProjectGitHub from '../Assets/Images/components/ProjectGitHub';
+import ProjectWebsite from '../Assets/Images/components/ProjectWebsite';
 
 export default function ProjectCard({name, description, tools, website, github, img}) {
 	return (
@@ -21,10 +21,10 @@ export default function ProjectCard({name, description, tools, website, github, 
 					</ul>
 					<div className='project-card-resources'>
 						<a href={website} target='_blank' rel='noreferrer'>
-							<img src={ProjectWebsite} alt='Website' />
+							<ProjectWebsite className='project-card-resources-icon' />
 						</a>
 						<a href={github} target='_blank' rel='noreferrer'>
-							<img src={ProjectGitHub} alt='GitHub' />
+							<ProjectGitHub className='project-card-resources-icon' />
 						</a>
 					</div>
 				</div>

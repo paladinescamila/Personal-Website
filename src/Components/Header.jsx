@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Favicon from '../Assets/Images/logo.svg';
+import Logo from '../Assets/Images/components/Logo';
 import SocialGitHub from '../Assets/Images/social/github.svg';
 import SocialLinkedIn from '../Assets/Images/social/linkedin.svg';
 import {useLanguage} from '../Context/Language';
@@ -28,12 +28,7 @@ export default function Header() {
 
 	return (
 		<header className={showHeader ? 'showed-header' : 'hidden-header'}>
-			<img
-				className='header-logo'
-				src={Favicon}
-				alt='Planet logo'
-				onClick={() => goTo('home')}
-			/>
+			<Logo className='header-logo' onClick={() => goTo('home')} />
 			<nav className='header-sections'>
 				{sections.map((sectionName) => (
 					<p key={sectionName} onClick={() => goTo(sectionName)}>

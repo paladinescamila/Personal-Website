@@ -6,7 +6,7 @@
 }
 
 .burger-button line {
-	stroke: darken($theme, 10%);
+	stroke: $theme;
 	stroke-dasharray: 100%;
 	stroke-dashoffset: 0%;
 	transition: transform 0.3s, stroke-dashoffset 0.4s;

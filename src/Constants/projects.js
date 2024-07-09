@@ -7,7 +7,7 @@ import AdviceGeneratorAppPhoto from '../Assets/Images/projects/advice-generator-
 import PurpleCalendarPhoto from '../Assets/Images/projects/purple-calendar.png';
 import TomatoTimePhoto from '../Assets/Images/projects/tomato-time.png';
 
-export const projects = [
+export const PROJECTS = [
 	{
 		name: 'Alle Shop',
 		descriptionEN:

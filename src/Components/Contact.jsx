@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import {social} from '../Constants/social';
+import {SOCIAL} from '../Constants/social';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 
@@ -19,7 +19,7 @@ export default function Contact() {
 				link='mailto:camilapaladines27@gmail.com'
 			/>
 			<div className='all-social-links'>
-				{social.map((s) => (
+				{SOCIAL.map((s) => (
 					<a href={s.link} target='_blank' rel='noreferrer' key={s.name}>
 						<img alt={s.name} src={s.img} />
 					</a>

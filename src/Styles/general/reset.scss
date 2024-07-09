@@ -43,7 +43,12 @@ ul {
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background-color: rgba($white, 0.3);
+		background-color: rgba($white, 0.2);
+		cursor: pointer;
+
+		&:hover {
+			background-color: $theme;
+		}
 	}
 }
 
@@ -65,4 +70,13 @@ a::selection,
 li::selection,
 img::selection {
 	background-color: rgba($theme, 0.3);
+}
+
+/* Strokes */
+.theme-stroke {
+	stroke: $theme;
+}
+
+.black-stroke {
+	stroke: $black;
 }

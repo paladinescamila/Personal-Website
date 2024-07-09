@@ -1,4 +1,4 @@
-export const jobs = [
+export const JOBS = [
 	{
 		companyName: 'Piyion',
 		companyLink: 'https://piyion.com',

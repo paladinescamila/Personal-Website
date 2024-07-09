@@ -13,7 +13,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 
 // Icons and Components
-import Favicon from './Assets/Images/logo.png';
+import Logo from './Assets/Images/components/Logo';
 import Loader from './Components/Loader';
 import BurgerButton from './Components/BurgerButton';
 
@@ -35,7 +35,7 @@ export default function App() {
 				<Footer />
 			</div>
 			<div className='mobile-header'>
-				<img src={Favicon} alt='Logo' className='logo' onClick={() => goTo('home')} />
+				<Logo className='logo' onClick={() => goTo('home')} />
 				<BurgerButton />
 			</div>
 		</>

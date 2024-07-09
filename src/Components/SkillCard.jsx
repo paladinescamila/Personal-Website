@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function SkillCard({image, title, skills}) {
+export default function SkillCard({image: Image, title, skills}) {
 	return (
 		<div className='skill-card'>
-			<img src={image} alt={title} />
+			<Image className='skill-icon' />
 			<p>{title}</p>
 			<ul className='tools-list'>
 				{skills.map((s) => (

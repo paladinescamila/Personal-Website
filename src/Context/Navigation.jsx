@@ -40,20 +40,6 @@ export function NavigationProvider({children}) {
 		return () => window.removeEventListener('resize', closeHeader);
 	}, []);
 
-	// Set page loader
-	const [loading, setLoading] = useState(true);
-
-	const showLoader = (time) => {
-		setLoading(true);
-		setTimeout(() => setLoading(false), time);
-	};
-
-	useEffect(() => {
-		const showLoaderOnLoad = () => showLoader(1000);
-		window.addEventListener('load', showLoaderOnLoad);
-		return () => window.removeEventListener('load', showLoaderOnLoad);
-	}, []);
-
 	return (
 		<LanguageContext.Provider
 			value={{
@@ -67,10 +53,6 @@ export function NavigationProvider({children}) {
 				showHeader,
 				showHideMenu,
 				closeHeader,
-
-				// Set page loader
-				loading,
-				showLoader,
 			}}>
 			{children}
 		</LanguageContext.Provider>

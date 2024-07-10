@@ -97,10 +97,10 @@
 		z-index: 1000;
 		left: auto;
 		right: -100vw;
+		transition: right 0.5s;
 	}
 
 	.showed-header {
-		transition: right 0.5s;
 		right: 0;
 	}
 

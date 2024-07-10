@@ -23,18 +23,19 @@ export const contentES = {
 				<a href='https://piyion.com' className='link' target='_blank' rel='noreferrer'>
 					Piyion
 				</a>
-				. Con <p className='hightlight'>{getYearsOfExperience()} años de experiencia</p> en
+				. Con{' '}
+				<span className='hightlight'>{getYearsOfExperience()} años de experiencia</span> en
 				el área, me he destacado en el desarrollo de proyectos innovadores y funcionales.
 			</>
 		),
 		paragraph2: (
 			<>
 				Mi enfoque se basa en la búsqueda constante de desafíos que impulsen mi{' '}
-				<p className='hightlight'>crecimiento profesional</p> y la entrega de soluciones que
-				combinen eficiencia y elegancia. Estoy comprometida con la{' '}
-				<p className='hightlight'>mejora continua</p>, la colaboración eficaz y la creación
-				de experiencias digitales que sean útiles para las personas. Me entusiasma seguir
-				ampliando mis conocimientos y contribuir al mundo del desarrollo web.
+				<span className='hightlight'>crecimiento profesional</span> y la entrega de
+				soluciones que combinen eficiencia y elegancia. Estoy comprometida con la{' '}
+				<span className='hightlight'>mejora continua</span>, la colaboración eficaz y la
+				creación de experiencias digitales que sean útiles para las personas. Me entusiasma
+				seguir ampliando mis conocimientos y contribuir al mundo del desarrollo web.
 			</>
 		),
 		cvTitle: 'Descargar CV',

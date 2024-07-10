@@ -2,7 +2,7 @@ export const JOBS = [
 	{
 		companyName: 'Piyion',
 		companyLink: 'https://piyion.com',
-		date: {start: new Date('June 2022'), end: new Date()},
+		date: {start: new Date(2022, 5), end: new Date()},
 		positionEN: 'Frontend Web/Mobile Developer',
 		positionES: 'Desarrolladora Frontend Web/Móvil',
 		tasksEN: [
@@ -19,7 +19,7 @@ export const JOBS = [
 	{
 		companyName: 'Ninus Design & Technology',
 		companyLink: 'https://ninus.co',
-		date: {start: new Date('March 2022'), end: new Date('June 2022')},
+		date: {start: new Date(2022, 2), end: new Date(2022, 5)},
 		positionEN: 'Frontend Web Developer',
 		positionES: 'Desarrolladora Frontend Web',
 		tasksEN: [

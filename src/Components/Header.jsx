@@ -8,7 +8,7 @@ import {useNavigation} from '../Context/Navigation';
 export default function Header() {
 	const [displaySelector, setDisplaySelector] = useState('none');
 	const {content, switchToLanguage} = useLanguage();
-	const {showHeader, closeHeader, goTo, showLoader} = useNavigation();
+	const {showHeader, closeHeader, goTo} = useNavigation();
 
 	// Displays the language selector
 	const showSelector = () => setDisplaySelector('flex');
@@ -19,7 +19,6 @@ export default function Header() {
 	// Changes the language
 	const setLanguage = (language) => {
 		switchToLanguage(language);
-		showLoader(500);
 		hideSelector();
 		closeHeader();
 	};

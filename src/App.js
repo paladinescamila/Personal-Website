@@ -14,13 +14,10 @@ import Footer from './Components/Footer';
 
 // Icons and Components
 import Logo from './Assets/Images/components/Logo';
-import Loader from './Components/Loader';
 import BurgerButton from './Components/BurgerButton';
 
 export default function App() {
-	const {loading, goTo} = useNavigation();
-
-	if (loading) return <Loader />;
+	const {goTo} = useNavigation();
 
 	return (
 		<>

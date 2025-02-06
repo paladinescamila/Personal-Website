@@ -3,6 +3,7 @@ import CalculatorAppPhoto from '../Assets/Images/projects/calculator-app.png';
 import SunnysideAgencyPhoto from '../Assets/Images/projects/sunnyside-agency.png';
 import CardDetailsPhoto from '../Assets/Images/projects/card-details.png';
 import SpaceTourismPhoto from '../Assets/Images/projects/space-tourism.png';
+import IpAddressTrackerPhoto from '../Assets/Images/projects/ip-address-tracker.png';
 import AdviceGeneratorAppPhoto from '../Assets/Images/projects/advice-generator-app.png';
 import PurpleCalendarPhoto from '../Assets/Images/projects/purple-calendar.png';
 import TomatoTimePhoto from '../Assets/Images/projects/tomato-time.png';
@@ -62,6 +63,17 @@ export const PROJECTS = [
 		website: 'https://stmw-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/Space-Tourism',
 		img: SpaceTourismPhoto,
+	},
+	{
+		name: 'IP Address Tracker',
+		descriptionEN:
+			'This is a website that allows you to track IP addresses, providing information such as location, time zone and internet service provider.',
+		descriptionES:
+			'Este es un sitio web que permite rastrear direcciones IP, proporcionando información como la ubicación, zona horaria y proveedor de servicios de internet.',
+		tools: ['React', 'TypeScript', 'TailwindCSS'],
+		website: 'https://ipat-frontend-mentor.netlify.app',
+		github: 'https://github.com/paladinescamila/IP-Address-Tracker',
+		img: IpAddressTrackerPhoto,
 	},
 	{
 		name: 'Advice Generator App',

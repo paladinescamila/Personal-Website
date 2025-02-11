@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import Photo from '../Assets/Images/profile.png';
+import Photo from '../Assets/Images/profile.jpg';
 import {useLanguage} from '../Context/Language';
 import {useNavigation} from '../Context/Navigation';
 

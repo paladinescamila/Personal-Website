@@ -1,7 +1,6 @@
 /* TYPOGRAPHY */
 
 body {
-	font-family: $paragraph-font;
 	background-color: $black;
 }
 
@@ -20,6 +19,7 @@ ul {
 *::after {
 	outline: none;
 	box-sizing: border-box;
+	font-family: $font-family;
 }
 
 ul {

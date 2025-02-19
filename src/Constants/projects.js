@@ -1,11 +1,9 @@
 import AlleShopPhoto from '../Assets/Images/projects/alle-shop.png';
+import MultiStepForm from '../Assets/Images/projects/multi-step-form.jpeg';
+import CountriesGallery from '../Assets/Images/projects/countries-gallery.jpeg';
 import CalculatorAppPhoto from '../Assets/Images/projects/calculator-app.png';
-import SunnysideAgencyPhoto from '../Assets/Images/projects/sunnyside-agency.png';
-import CardDetailsPhoto from '../Assets/Images/projects/card-details.png';
 import SpaceTourismPhoto from '../Assets/Images/projects/space-tourism.png';
 import IpAddressTrackerPhoto from '../Assets/Images/projects/ip-address-tracker.png';
-import AdviceGeneratorAppPhoto from '../Assets/Images/projects/advice-generator-app.png';
-import PurpleCalendarPhoto from '../Assets/Images/projects/purple-calendar.png';
 import TomatoTimePhoto from '../Assets/Images/projects/tomato-time.png';
 
 export const PROJECTS = [
@@ -21,6 +19,28 @@ export const PROJECTS = [
 		img: AlleShopPhoto,
 	},
 	{
+		name: 'Multi-step form',
+		descriptionEN:
+			'This is a multi-step form that simulates the purchase of a plan for a service.',
+		descriptionES:
+			'Este es un formulario de varios pasos que simula la compra de un plan para un servicio.',
+		tools: ['React', 'TypeScript', 'Redux', 'SCSS'],
+		website: 'https://msf-frontend-mentor.netlify.app',
+		github: 'https://github.com/paladinescamila/Multi-Step-Form',
+		img: MultiStepForm,
+	},
+	{
+		name: 'Countries Gallery',
+		descriptionEN:
+			'This is a gallery of countries containing key data for each one, such as population, region, capital city, etc.',
+		descriptionES:
+			'Esta es una galería de países que contiene datos clave de cada uno de ellos, como población, región, capital, etc.',
+		tools: ['React', 'TypeScript', 'SCSS'],
+		website: 'https://rca-frontend-mentor.netlify.app',
+		github: 'https://github.com/paladinescamila/Countries-Gallery',
+		img: CountriesGallery,
+	},
+	{
 		name: 'Calculator App',
 		descriptionEN:
 			'This is a calculator application, where you can perform basic operations. Also, you can change between three different themes.',
@@ -30,28 +50,6 @@ export const PROJECTS = [
 		website: 'https://ca-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/Calculator-App',
 		img: CalculatorAppPhoto,
-	},
-	{
-		name: 'Sunnyside Agency',
-		descriptionEN:
-			'This is a website for a fictitious agency, where you can see the services they offer and their portfolio.',
-		descriptionES:
-			'Este es un sitio web para una agencia ficticia, donde puedes ver los servicios que ofrecen y su portafolio.',
-		tools: ['React', 'TypeScript', 'SCSS'],
-		website: 'https://salp-frontend-mentor.netlify.app',
-		github: 'https://github.com/paladinescamila/Sunnyside-Agency-Landing-Page',
-		img: SunnysideAgencyPhoto,
-	},
-	{
-		name: 'Card Details',
-		descriptionEN:
-			'This is a card details form, where you can enter your card information (no saved, just validated).',
-		descriptionES:
-			'Este es un formulario de detalles de tarjeta, donde puedes ingresar tu información de tarjeta (no se guarda, solo se valida).',
-		tools: ['React', 'TypeScript', 'SCSS'],
-		website: 'https://icdf-frontend-mentor.netlify.app',
-		github: 'https://github.com/paladinescamila/Interactive-Card-Details-Form',
-		img: CardDetailsPhoto,
 	},
 	{
 		name: 'Space Tourism',
@@ -74,26 +72,6 @@ export const PROJECTS = [
 		website: 'https://ipat-frontend-mentor.netlify.app',
 		github: 'https://github.com/paladinescamila/IP-Address-Tracker',
 		img: IpAddressTrackerPhoto,
-	},
-	{
-		name: 'Advice Generator App',
-		descriptionEN: 'This application shows you random advices.',
-		descriptionES: 'Esta aplicación te muestra consejos aleatorios.',
-		tools: ['React', 'TypeScript', 'CSS'],
-		website: 'https://aga-frontend-mentor.netlify.app',
-		github: 'https://github.com/paladinescamila/Advice-Generator-App',
-		img: AdviceGeneratorAppPhoto,
-	},
-	{
-		name: 'Purple Calendar',
-		descriptionEN:
-			'This is a simple monthly calendar that allows you to navigate between months. Here you can also go to a specific month and year.',
-		descriptionES:
-			'Este es un simple calendario mensual que te permite navegar entre los meses. Aquí también puedes ir a un mes y año específico.',
-		tools: ['HTML', 'CSS', 'JavaScript'],
-		website: 'https://purple-calendar.netlify.app',
-		github: 'https://github.com/paladinescamila/Purple-Calendar',
-		img: PurpleCalendarPhoto,
 	},
 	{
 		name: 'Tomato Time',

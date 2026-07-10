@@ -1,4 +1,8 @@
 import AlleShopPhoto from '../Assets/Images/projects/alle-shop.png';
+import FlashcardAppPhoto from '../Assets/Images/projects/flashcard-app.png';
+import MarkdownEditorPhoto from '../Assets/Images/projects/markdown-editor.png';
+import DictionaryAppPhoto from '../Assets/Images/projects/dictionary-app.png';
+import PasswordGeneratorPhoto from '../Assets/Images/projects/password-generator.png';
 import MultiStepForm from '../Assets/Images/projects/multi-step-form.jpeg';
 import CountriesGallery from '../Assets/Images/projects/countries-gallery.jpeg';
 import CalculatorAppPhoto from '../Assets/Images/projects/calculator-app.png';
@@ -17,6 +21,50 @@ export const PROJECTS = [
 		website: 'https://alle-shop.netlify.app',
 		github: 'https://github.com/paladinescamila/Alle-Shop',
 		img: AlleShopPhoto,
+	},
+	{
+		name: 'Flashcard App',
+		descriptionEN:
+			'This is a flashcard application, where you can create your own flashcards and study them.',
+		descriptionES:
+			'Esta es una aplicación de tarjetas de memoria, donde puedes crear tus propias tarjetas y estudiarlas.',
+		tools: ['React', 'TypeScript', 'Tailwind CSS', 'Redux'],
+		website: 'https://flashcard-app-paladinescamila.netlify.app',
+		github: 'https://github.com/paladinescamila/Flashcard-App',
+		img: FlashcardAppPhoto,
+	},
+	{
+		name: 'Markdown Editor',
+		descriptionEN:
+			'This is a markdown editor, where you can write and preview your markdown files.',
+		descriptionES:
+			'Este es un editor de markdown, donde puedes escribir y previsualizar tus archivos markdown.',
+		tools: ['React', 'TypeScript', 'Tailwind CSS'],
+		website: 'https://markdown-editor-paladinescamila.netlify.app',
+		github: 'https://github.com/paladinescamila/Markdown-Editor',
+		img: MarkdownEditorPhoto,
+	},
+	{
+		name: 'Dictionary App',
+		descriptionEN:
+			'This is a dictionary application, where you can search for words and get their definitions.',
+		descriptionES:
+			'Esta es una aplicación de diccionario, donde puedes buscar palabras y obtener sus definiciones.',
+		tools: ['React', 'TypeScript', 'SCSS'],
+		website: 'https://dictionary-paladinescamila.netlify.app',
+		github: 'https://github.com/paladinescamila/Dictionary-Web-App',
+		img: DictionaryAppPhoto,
+	},
+	{
+		name: 'Password Generator',
+		descriptionEN:
+			'This is a password generator application, where you can generate strong passwords.',
+		descriptionES:
+			'Esta es una aplicación generadora de contraseñas, donde puedes generar contraseñas seguras.',
+		tools: ['React', 'TypeScript', 'Tailwind CSS'],
+		website: 'https://password-generator-paladinescamila.netlify.app',
+		github: 'https://github.com/paladinescamila/Password-Generator-App',
+		img: PasswordGeneratorPhoto,
 	},
 	{
 		name: 'Multi-step form',

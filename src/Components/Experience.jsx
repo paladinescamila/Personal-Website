@@ -21,7 +21,7 @@ export default function Experience() {
 						companyLink={j.companyLink}
 						date={dateRangeFormat(j.date.start, j.date.end, language)}
 						position={language === 'es' ? j.positionES : j.positionEN}
-						tasks={language === 'es' ? j.tasksES : j.tasksEN}
+						summary={language === 'es' ? j.summaryES : j.summaryEN}
 					/>
 				))}
 				<div className='time-line' />

@@ -89,16 +89,12 @@
 	grid-area: position;
 }
 
-.job-tasks {
-	list-style: circle;
-	padding-left: 1.5em;
+.job-summary {
 	grid-area: tasks;
-
-	li {
-		font-size: 16px;
-		color: rgba($white, 0.7);
-		margin-bottom: 10px;
-	}
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: rgba($white, 0.7);
 }
 
 @media (max-width: 1100px) {
@@ -138,6 +134,10 @@
 	.job-date {
 		text-align: start;
 	}
+
+	.job-summary {
+		width: 100%;
+	}
 }
 
 @media (max-width: 800px) {
@@ -165,18 +165,15 @@
 
 	.job-position,
 	.job-company,
-	.job-date {
+	.job-date,
+	.job-summary {
 		text-align: center;
 	}
 
 	.job-position,
 	.job-company,
 	.job-date,
-	.job-tasks {
+	.job-summary {
 		margin-bottom: 5px;
-	}
-
-	.job-tasks {
-		margin-top: 10px;
 	}
 }

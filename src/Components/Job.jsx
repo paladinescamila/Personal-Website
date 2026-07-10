@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Job({companyName, companyLink, date, position, tasks}) {
+export default function Job({companyName, companyLink, date, position, summary}) {
 	return (
 		<div className='job-item'>
 			<p className='job-position'>{position}</p>
@@ -12,11 +12,7 @@ export default function Job({companyName, companyLink, date, position, tasks}) {
 			<div className='job-circle'>
 				<div />
 			</div>
-			<ul className='job-tasks'>
-				{tasks.map((t) => (
-					<li key={t}>{t}</li>
-				))}
-			</ul>
+			<p className='job-summary'>{summary}</p>
 		</div>
 	);
 }

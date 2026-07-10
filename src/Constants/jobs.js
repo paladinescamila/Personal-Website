@@ -1,5 +1,24 @@
 export const JOBS = [
 	{
+		companyName: 'Ivy',
+		companyLink: 'https://www.ivyapp.com.co',
+		date: {start: new Date(2025, 1), end: new Date()},
+		positionEN: 'Mobile Developer',
+		positionES: 'Desarrolladora Móvil',
+		tasksEN: [
+			'Developed a cross-platform mobile application for event management using React Native, TypeScript, and NativeWind, optimizing the UX for organizers and vendors.',
+			'Integrated and consumed Supabase as a Backend as a Service from the frontend for authentication, database management, Storage, and server logic with Edge Functions.',
+			'Integrated Wompi payment gateway and Google Maps API to enable secure financial transactions and real-time geolocation features.',
+			'Managed automated deployments to the App Store and Google Play using EAS, streamlining the application delivery lifecycle.',
+		],
+		tasksES: [
+			'Desarrollé una app móvil para gestión de eventos con React Native, TypeScript y NativeWind.',
+			'Consumí e integré Supabase como Backend as a Service desde el frontend para autenticación, base de datos, Storage y lógica de servidor con Edge Functions.',
+			'Integré la pasarela de pagos Wompi y la API de Google Maps para transacciones seguras y geolocalización en tiempo real.',
+			'Gestioné el despliegue en App Store y Google Play utilizando EAS, agilizando el ciclo de distribución de la aplicación.',
+		],
+	},
+	{
 		companyName: 'Piyion',
 		companyLink: 'https://piyion.com',
 		date: {start: new Date(2022, 5), end: new Date()},
